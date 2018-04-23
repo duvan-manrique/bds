@@ -8,6 +8,7 @@ package proyecto_parqueadero;
 import java.sql.Connection;
 import java.sql.Statement;
 
+
 /**
  *
  * @author home
@@ -15,6 +16,7 @@ import java.sql.Statement;
 public class Inicio extends javax.swing.JFrame {
     Connection con=null;
     Statement stmt=null;
+  
     /**
      * Creates new form Inicio
      */
@@ -45,8 +47,8 @@ public void resivir(Registro registro1){
         jTabbedPane_principal = new javax.swing.JTabbedPane();
         jPanel_inicio = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField_placa = new javax.swing.JTextField();
-        jButton_registrar = new javax.swing.JButton();
+        tx_placa = new javax.swing.JTextField();
+        bn_registrar = new javax.swing.JButton();
         jPanel_primer = new javax.swing.JPanel();
         jButton_p1a = new javax.swing.JButton();
         jButton_p2a = new javax.swing.JButton();
@@ -352,17 +354,17 @@ public void resivir(Registro registro1){
         jLabel2.setFont(new java.awt.Font("Bookman Old Style", 0, 24)); // NOI18N
         jLabel2.setText("INGRESE SU PLACA ");
 
-        jTextField_placa.addActionListener(new java.awt.event.ActionListener() {
+        tx_placa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_placaActionPerformed(evt);
+                tx_placaActionPerformed(evt);
             }
         });
 
-        jButton_registrar.setFont(new java.awt.Font("Bookman Old Style", 0, 18)); // NOI18N
-        jButton_registrar.setText("REGISTAR ");
-        jButton_registrar.addActionListener(new java.awt.event.ActionListener() {
+        bn_registrar.setFont(new java.awt.Font("Bookman Old Style", 0, 18)); // NOI18N
+        bn_registrar.setText("REGISTAR ");
+        bn_registrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_registrarActionPerformed(evt);
+                bn_registrarActionPerformed(evt);
             }
         });
 
@@ -376,10 +378,10 @@ public void resivir(Registro registro1){
                     .addComponent(jLabel2)
                     .addGroup(jPanel_inicioLayout.createSequentialGroup()
                         .addGap(48, 48, 48)
-                        .addComponent(jTextField_placa, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(tx_placa, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel_inicioLayout.createSequentialGroup()
                         .addGap(35, 35, 35)
-                        .addComponent(jButton_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(bn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(269, 269, 269))
         );
         jPanel_inicioLayout.setVerticalGroup(
@@ -388,9 +390,9 @@ public void resivir(Registro registro1){
                 .addGap(153, 153, 153)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField_placa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tx_placa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(222, Short.MAX_VALUE))
         );
 
@@ -3050,14 +3052,15 @@ public void resivir(Registro registro1){
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField_placaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_placaActionPerformed
+    private void tx_placaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_placaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_placaActionPerformed
+    }//GEN-LAST:event_tx_placaActionPerformed
 
-    private void jButton_registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_registrarActionPerformed
+    private void bn_registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_registrarActionPerformed
     Registro.setVisible(true);
-    Registro.placa_res(jTextField_placa.getText());
-    }//GEN-LAST:event_jButton_registrarActionPerformed
+    Registro.placa_res(tx_placa.getText());
+    
+    }//GEN-LAST:event_bn_registrarActionPerformed
 
     private void jButton_p99aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p99aActionPerformed
         // TODO add your handling code here:
@@ -3311,6 +3314,7 @@ public void resivir(Registro registro1){
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bn_registrar;
     private javax.swing.JButton jButton_p10a;
     private javax.swing.JButton jButton_p10a1;
     private javax.swing.JButton jButton_p10a2;
@@ -3602,7 +3606,6 @@ public void resivir(Registro registro1){
     private javax.swing.JButton jButton_p99a;
     private javax.swing.JButton jButton_p99a1;
     private javax.swing.JButton jButton_p99a2;
-    private javax.swing.JButton jButton_registrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
@@ -3611,6 +3614,6 @@ public void resivir(Registro registro1){
     private javax.swing.JPanel jPanel_segunda;
     private javax.swing.JPanel jPanel_tercera;
     private javax.swing.JTabbedPane jTabbedPane_principal;
-    private javax.swing.JTextField jTextField_placa;
+    private javax.swing.JTextField tx_placa;
     // End of variables declaration//GEN-END:variables
 }

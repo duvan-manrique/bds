@@ -49,12 +49,12 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField_nombre" max="32767" attributes="0"/>
+                                  <Component id="tx_nombre" max="32767" attributes="0"/>
                                   <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jTextField_residencia" alignment="0" pref="359" max="32767" attributes="0"/>
+                                  <Component id="tx_residencia" alignment="0" pref="359" max="32767" attributes="0"/>
                               </Group>
                               <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jTextField_n_celular" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
+                              <Component id="tx_celular" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
                               <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -65,18 +65,16 @@
                                   <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jTextField_marca" max="32767" attributes="0"/>
-                                          <Component id="jTextField_modelo" pref="210" max="32767" attributes="0"/>
+                                          <Component id="tx_marca" max="32767" attributes="0"/>
+                                          <Component id="tx_modelo" pref="210" max="32767" attributes="0"/>
                                       </Group>
-                                      <Component id="jTextField_palaca" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                                      <Component id="tx_placa" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bn_registrarse" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+                                  <Component id="bn_cancelar" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -94,37 +92,36 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTextField_nombre" min="-2" max="-2" attributes="0"/>
+                  <Component id="tx_nombre" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jTextField_residencia" min="-2" max="-2" attributes="0"/>
+                  <Component id="tx_residencia" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTextField_n_celular" min="-2" max="-2" attributes="0"/>
+                  <Component id="tx_celular" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel6" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField_marca" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tx_marca" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel7" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField_modelo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tx_modelo" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField_palaca" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tx_placa" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="76" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="bn_registrarse" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="bn_cancelar" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
               </Group>
@@ -145,9 +142,9 @@
             <Property name="text" type="java.lang.String" value="Nombre Completo"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField_nombre">
+        <Component class="javax.swing.JTextField" name="tx_nombre">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_nombreActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tx_nombreActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
@@ -155,14 +152,14 @@
             <Property name="text" type="java.lang.String" value="Residencia"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField_residencia">
+        <Component class="javax.swing.JTextField" name="tx_residencia">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="text" type="java.lang.String" value="Numero celular"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField_n_celular">
+        <Component class="javax.swing.JTextField" name="tx_celular">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
@@ -174,38 +171,36 @@
             <Property name="text" type="java.lang.String" value="marca "/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField_marca">
+        <Component class="javax.swing.JTextField" name="tx_marca">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
             <Property name="text" type="java.lang.String" value="modelo"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField_modelo">
+        <Component class="javax.swing.JTextField" name="tx_modelo">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
             <Property name="text" type="java.lang.String" value="placa"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField_palaca">
+        <Component class="javax.swing.JTextField" name="tx_placa">
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="bn_registrarse">
           <Properties>
             <Property name="text" type="java.lang.String" value="Registarse"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bn_registrarseActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="jButton2"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="jButton3">
+        <Component class="javax.swing.JButton" name="bn_cancelar">
           <Properties>
             <Property name="text" type="java.lang.String" value="calcelar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bn_cancelarActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

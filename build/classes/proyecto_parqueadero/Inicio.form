@@ -91,11 +91,11 @@
                               <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                                  <Component id="jTextField_placa" min="-2" pref="137" max="-2" attributes="0"/>
+                                  <Component id="tx_placa" min="-2" pref="137" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                                  <Component id="jButton_registrar" min="-2" pref="166" max="-2" attributes="0"/>
+                                  <Component id="bn_registrar" min="-2" pref="166" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <EmptySpace min="-2" pref="269" max="-2" attributes="0"/>
@@ -108,9 +108,9 @@
                           <EmptySpace min="-2" pref="153" max="-2" attributes="0"/>
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jTextField_placa" min="-2" max="-2" attributes="0"/>
+                          <Component id="tx_placa" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jButton_registrar" min="-2" pref="65" max="-2" attributes="0"/>
+                          <Component id="bn_registrar" min="-2" pref="65" max="-2" attributes="0"/>
                           <EmptySpace pref="222" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -125,12 +125,12 @@
                     <Property name="text" type="java.lang.String" value="INGRESE SU PLACA "/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="jTextField_placa">
+                <Component class="javax.swing.JTextField" name="tx_placa">
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField_placaActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tx_placaActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="javax.swing.JButton" name="jButton_registrar">
+                <Component class="javax.swing.JButton" name="bn_registrar">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Bookman Old Style" size="18" style="0"/>
@@ -138,7 +138,7 @@
                     <Property name="text" type="java.lang.String" value="REGISTAR "/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton_registrarActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bn_registrarActionPerformed"/>
                   </Events>
                 </Component>
               </SubComponents>

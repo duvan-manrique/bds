@@ -6,28 +6,46 @@
 package proyecto_parqueadero;
 
 import java.awt.Color;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author home
  */
 public class Registro extends javax.swing.JFrame {
-
+String EMPTY = new String();
+int IND_NR;
     /**
      * Creates new form Registro
      */
-    public Registro() {
+ Connection con=null;
+    Statement stmt=null;
+    ResultSet rs = null;
+    public Registro(Connection con,Statement stm) {
         initComponents();
-        jTextField_palaca.setEditable(false);
-        jTextField_palaca.setBackground(Color.WHITE);
+        this.stmt=stm;
+        this.con=con;
+        
         
         
         
     }
     String placa1;
+
+    public Registro() {
+        initComponents();
+        tx_placa.setEditable(false);
+        tx_placa.setBackground(Color.WHITE);
+        
+        
+        
+    }
     public void placa_res(String placa){
          placa1= placa;
-         jTextField_palaca.setText(placa1);
+         tx_placa.setText(placa1);
     }
 
     /**
@@ -42,21 +60,20 @@ public class Registro extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField_nombre = new javax.swing.JTextField();
+        tx_nombre = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTextField_residencia = new javax.swing.JTextField();
+        tx_residencia = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField_n_celular = new javax.swing.JTextField();
+        tx_celular = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField_marca = new javax.swing.JTextField();
+        tx_marca = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jTextField_modelo = new javax.swing.JTextField();
+        tx_modelo = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField_palaca = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        tx_placa = new javax.swing.JTextField();
+        bn_registrarse = new javax.swing.JButton();
+        bn_cancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,9 +82,9 @@ public class Registro extends javax.swing.JFrame {
 
         jLabel2.setText("Nombre Completo");
 
-        jTextField_nombre.addActionListener(new java.awt.event.ActionListener() {
+        tx_nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_nombreActionPerformed(evt);
+                tx_nombreActionPerformed(evt);
             }
         });
 
@@ -83,14 +100,17 @@ public class Registro extends javax.swing.JFrame {
 
         jLabel8.setText("placa");
 
-        jButton1.setText("Registarse");
-
-        jButton2.setText("jButton2");
-
-        jButton3.setText("calcelar");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        bn_registrarse.setText("Registarse");
+        bn_registrarse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                bn_registrarseActionPerformed(evt);
+            }
+        });
+
+        bn_cancelar.setText("calcelar");
+        bn_cancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bn_cancelarActionPerformed(evt);
             }
         });
 
@@ -108,11 +128,11 @@ public class Registro extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jLabel2)
-                                .addComponent(jTextField_nombre)
+                                .addComponent(tx_nombre)
                                 .addComponent(jLabel3)
-                                .addComponent(jTextField_residencia, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE))
+                                .addComponent(tx_residencia, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE))
                             .addComponent(jLabel4)
-                            .addComponent(jTextField_n_celular, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tx_celular, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -122,15 +142,13 @@ public class Registro extends javax.swing.JFrame {
                                 .addGap(28, 28, 28)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jTextField_marca)
-                                        .addComponent(jTextField_modelo, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE))
-                                    .addComponent(jTextField_palaca, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(tx_marca)
+                                        .addComponent(tx_modelo, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE))
+                                    .addComponent(tx_placa, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton1)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton2)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton3)))
+                                .addComponent(bn_registrarse)
+                                .addGap(109, 109, 109)
+                                .addComponent(bn_cancelar)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -142,34 +160,33 @@ public class Registro extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tx_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField_residencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tx_residencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField_n_celular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tx_celular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jTextField_marca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tx_marca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jTextField_modelo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tx_modelo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
-                    .addComponent(jTextField_palaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tx_placa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(bn_registrarse)
+                    .addComponent(bn_cancelar))
                 .addGap(44, 44, 44))
         );
 
@@ -187,13 +204,35 @@ public class Registro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField_nombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_nombreActionPerformed
+    private void tx_nombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_nombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_nombreActionPerformed
+    }//GEN-LAST:event_tx_nombreActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void bn_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_cancelarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_bn_cancelarActionPerformed
+
+    private void bn_registrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_registrarseActionPerformed
+        // TODO add your handling code here:
+         if(IND_NR==0){
+           String sid = tx_placa.getText();
+          // int iId = Integer.parseInt(sid);
+           String sNombre =tx_nombre.getText();
+           String srecidencia =tx_residencia.getText();
+           String scelular =tx_celular.getText();
+           String smarca =tx_marca.getText();
+           String smodelo =tx_modelo.getText();
+           
+           String qrq ="INSERT INTO actor (nombre, residencia, celular, marca, modelo, placa ) values ('"+sNombre+"','"+srecidencia+"','"+scelular+"','"+srecidencia+"','"+smarca+"','"+smodelo+"','"+sid+"')";
+           System.out.println(qrq);
+           try{
+               stmt.executeUpdate(qrq);
+               JOptionPane.showMessageDialog(null, "Registro grabado satisfactoriamente");
+           }catch(Exception e){
+               System.out.println("error al grabar "+e.getMessage());
+           }
+       }
+    }//GEN-LAST:event_bn_registrarseActionPerformed
 
     /**
      * @param args the command line arguments
@@ -231,9 +270,8 @@ public class Registro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton bn_cancelar;
+    private javax.swing.JButton bn_registrarse;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -243,12 +281,12 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField_marca;
-    private javax.swing.JTextField jTextField_modelo;
-    private javax.swing.JTextField jTextField_n_celular;
-    private javax.swing.JTextField jTextField_nombre;
-    private javax.swing.JTextField jTextField_palaca;
-    private javax.swing.JTextField jTextField_residencia;
+    private javax.swing.JTextField tx_celular;
+    private javax.swing.JTextField tx_marca;
+    private javax.swing.JTextField tx_modelo;
+    private javax.swing.JTextField tx_nombre;
+    private javax.swing.JTextField tx_placa;
+    private javax.swing.JTextField tx_residencia;
     // End of variables declaration//GEN-END:variables
 
 
