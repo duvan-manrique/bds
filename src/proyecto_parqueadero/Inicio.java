@@ -5,15 +5,24 @@
  */
 package proyecto_parqueadero;
 
+import java.sql.Connection;
+import java.sql.Statement;
+
 /**
  *
  * @author home
  */
 public class Inicio extends javax.swing.JFrame {
-
+    Connection con=null;
+    Statement stmt=null;
     /**
      * Creates new form Inicio
      */
+     public Inicio( Connection con, Statement stmt) {
+        this.con=con;
+        this.stmt=stmt;
+        initComponents();
+    }
     public Inicio() {
         initComponents();
     }
