@@ -28,7 +28,7 @@ import javax.swing.JFrame;
  */
 public class acceso extends javax.swing.JFrame {
  private final String EMPTY = new String () ;
- String user,contra,Mensaje;
+ String user,contra,Mensaje,u_admin="admin",contra_admin="admin",u_user="user",contra_user="user";
     Connection con=null;
     Statement stmt=null;
     /**
@@ -71,6 +71,9 @@ public class acceso extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 255));
+        setMaximumSize(new java.awt.Dimension(628, 439));
+        setMinimumSize(new java.awt.Dimension(628, 439));
+        setPreferredSize(new java.awt.Dimension(628, 439));
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -93,7 +96,7 @@ public class acceso extends javax.swing.JFrame {
         getContentPane().add(nomUser);
         nomUser.setBounds(320, 290, 120, 30);
 
-        btnEjecutar.setText("ajecutar");
+        btnEjecutar.setText("ejecutar");
         btnEjecutar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEjecutarActionPerformed(evt);
@@ -137,7 +140,7 @@ public class acceso extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(20, 0, 670, 440);
+        jLabel3.setBounds(20, 0, 610, 440);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -154,23 +157,60 @@ public class acceso extends javax.swing.JFrame {
    	//etiqAviso1.setText("Acceso denegado: campos en blanco");
       }else{
 	   //etqaviso.setText("Acceso comprobado: ID Usuario y contraseña correcta");
-           user=nomUser.getText();
-           contra=new String(contraUser.getPassword());
-           Conexion objVideo = new Conexion(user,contra);
-          // etiqAviso1.setForeground(new Color(255,255,255));
-          // etiqAviso1.setText(objVideo.rAviso1());
-           if (objVideo.indica_1() == 1 && objVideo.indica_2() == 1 ){
-              stmt= objVideo.stamt();
-              con = objVideo.con();
-              Inicio menu=new Inicio(con,stmt);
-              menu.setExtendedState(MAXIMIZED_BOTH);
-              menu.setVisible(true);
-              menu.setSize(550,400);
-              this.dispose();
+           if((u_admin.equals(nomUser.getText().trim()))&(contra_admin.equals(contraUser.getText().trim()))){
+               user="postgres";
+                contra="0000";
+                Conexion objVideo = new Conexion(user,contra);
+               // etiqAviso1.setForeground(new Color(255,255,255));
+               // etiqAviso1.setText(objVideo.rAviso1());
+                if (objVideo.indica_1() == 1 && objVideo.indica_2() == 1 ){
+                   stmt= objVideo.stamt();
+                   con = objVideo.con();
+                   Inicio menu=new Inicio(con,stmt);
+                   menu.setExtendedState(MAXIMIZED_BOTH);
+                   menu.setVisible(true);
+                   menu.setSize(550,400);
+                   this.dispose();
+                   //aca crear clases de administrador osea objetos de crud
+                }
+                else{
+                    Mensaje="No se puede ejecutar ERRORRRRRRR::::";
+                }
+                
+           }else{
+               if((u_user.equals(nomUser.getText().trim()))&(contra_user.equals(contraUser.getText().trim()))){
+                       user="postgres";
+                        contra="0000";
+                        Conexion objVideo = new Conexion(user,contra);
+                       // etiqAviso1.setForeground(new Color(255,255,255));
+                       // etiqAviso1.setText(objVideo.rAviso1());
+                        if (objVideo.indica_1() == 1 && objVideo.indica_2() == 1 ){
+                           stmt= objVideo.stamt();
+                           con = objVideo.con();
+                           Inicio menu=new Inicio(con,stmt);
+                           menu.setExtendedState(MAXIMIZED_BOTH);
+                           menu.setVisible(true);
+                           menu.setSize(550,400);
+                           this.dispose();
+                           
+                           
+                           //******************* crear clases de las vistas del usuario
+                            Inicio a = new Inicio();
+                            Registro b = new Registro();
+                            a.setVisible(true);
+                            b.setVisible(false);
+                            a.resivir(b);
+                            Ubicacion c = new Ubicacion();
+                            c.setVisible(false);
+                           //******************
+                        }
+                        else{
+                            Mensaje="No se puede ejecutar ERRORRRRRRR::::";
+                        }
+                        
+               }
            }
-           else{
-               Mensaje="No se puede ejecutar ERRORRRRRRR::::";
-           }
+           
        }
    //    etiqAviso1.setText(Mensaje);
     }//GEN-LAST:event_btnEjecutarActionPerformed

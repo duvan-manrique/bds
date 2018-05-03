@@ -15,13 +15,8 @@ public class Proyecto_parqueadero {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Inicio a = new Inicio();
-        Registro b = new Registro();
-        a.setVisible(true);
-        b.setVisible(false);
-        a.resivir(b);
-        Ubicacion c = new Ubicacion();
-        c.setVisible(true);
+        acceso acceso1 = new acceso();
+        acceso1.setVisible(true);
         
         
     }
