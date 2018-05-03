@@ -39,13 +39,14 @@ public class acceso extends javax.swing.JFrame {
         initComponents();
         contraUser.setEchoChar('*');
         setLocationRelativeTo(null); // centrar el formulario en la pantalla
-        this.setMinimumSize(new Dimension(400, 300)); 
+        this.setMinimumSize(new Dimension(650, 500)); 
         this.setResizable(false);
         this.setTitle("Contraseña");
       
         ((JPanel)getContentPane()).setOpaque(false);
         Mensaje="";
     }
+  
 /*
     }
 
@@ -58,20 +59,24 @@ public class acceso extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         nomUser = new javax.swing.JTextField();
-        contraUser = new javax.swing.JPasswordField();
         btnEjecutar = new javax.swing.JButton();
-        btnLimpiar = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        contraUser = new javax.swing.JPasswordField();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 0, 255));
+        getContentPane().setLayout(null);
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/add-user-male.png"))); // NOI18N
         jLabel1.setText("usuario");
-
-        jLabel2.setText("password");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(210, 290, 90, 40);
 
         nomUser.setText("postgres");
         nomUser.addActionListener(new java.awt.event.ActionListener() {
@@ -79,13 +84,8 @@ public class acceso extends javax.swing.JFrame {
                 nomUserActionPerformed(evt);
             }
         });
-
-        contraUser.setText("0000");
-        contraUser.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                contraUserActionPerformed(evt);
-            }
-        });
+        getContentPane().add(nomUser);
+        nomUser.setBounds(320, 290, 120, 30);
 
         btnEjecutar.setText("ajecutar");
         btnEjecutar.addActionListener(new java.awt.event.ActionListener() {
@@ -93,13 +93,8 @@ public class acceso extends javax.swing.JFrame {
                 btnEjecutarActionPerformed(evt);
             }
         });
-
-        btnLimpiar.setText("limpiar");
-        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnLimpiarActionPerformed(evt);
-            }
-        });
+        getContentPane().add(btnEjecutar);
+        btnEjecutar.setBounds(260, 380, 100, 30);
 
         btnSalir.setText("salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -107,59 +102,36 @@ public class acceso extends javax.swing.JFrame {
                 btnSalirActionPerformed(evt);
             }
         });
+        getContentPane().add(btnSalir);
+        btnSalir.setBounds(160, 380, 70, 30);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(54, 54, 54)
-                .addComponent(btnEjecutar)
-                .addGap(39, 39, 39)
-                .addComponent(btnLimpiar)
-                .addGap(46, 46, 46)
-                .addComponent(btnSalir)
-                .addContainerGap(74, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
-                .addGap(49, 49, 49)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(nomUser, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
-                    .addComponent(contraUser))
-                .addGap(99, 99, 99))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(83, 83, 83)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(nomUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(contraUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addGap(38, 38, 38)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnEjecutar)
-                    .addComponent(btnLimpiar)
-                    .addComponent(btnSalir))
-                .addContainerGap(98, Short.MAX_VALUE))
-        );
+        btnLimpiar.setText("limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnLimpiar);
+        btnLimpiar.setBounds(400, 380, 100, 30);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/password1.png"))); // NOI18N
+        jLabel2.setText("password");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(210, 330, 90, 30);
+
+        contraUser.setText("0000");
+        contraUser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contraUserActionPerformed(evt);
+            }
+        });
+        getContentPane().add(contraUser);
+        contraUser.setBounds(320, 330, 120, 30);
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(20, 0, 670, 440);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -256,7 +228,7 @@ public class acceso extends javax.swing.JFrame {
     private javax.swing.JPasswordField contraUser;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField nomUser;
     // End of variables declaration//GEN-END:variables
 }
