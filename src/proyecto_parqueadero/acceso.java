@@ -87,7 +87,6 @@ public class acceso extends javax.swing.JFrame {
         getContentPane().add(jLabel4);
         jLabel4.setBounds(170, 40, 300, 80);
 
-        nomUser.setText("postgres");
         nomUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nomUserActionPerformed(evt);
@@ -129,7 +128,6 @@ public class acceso extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(210, 330, 90, 30);
 
-        contraUser.setText("0000");
         contraUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 contraUserActionPerformed(evt);

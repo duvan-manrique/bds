@@ -3474,6 +3474,7 @@ public void resivir(Registro registro1){
     }//GEN-LAST:event_tx_placaActionPerformed
 
     private void bn_registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_registrarActionPerformed
+    //aca va el condicional de si encuentra la placa en la base de datos o no
     Registro.setVisible(true);
     Registro.placa_res(tx_placa.getText());
     
