@@ -60,6 +60,7 @@ public class acceso extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         nomUser = new javax.swing.JTextField();
         btnEjecutar = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
@@ -77,6 +78,11 @@ public class acceso extends javax.swing.JFrame {
         jLabel1.setText("usuario");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(210, 290, 90, 40);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(170, 40, 300, 80);
 
         nomUser.setText("postgres");
         nomUser.addActionListener(new java.awt.event.ActionListener() {
@@ -229,6 +235,7 @@ public class acceso extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField nomUser;
     // End of variables declaration//GEN-END:variables
 }

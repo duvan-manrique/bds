@@ -57,149 +57,118 @@ int IND_NR;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        tx_nombre = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        tx_residencia = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        tx_celular = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        bn_registrarse = new javax.swing.JButton();
         tx_marca = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        tx_celular = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         tx_modelo = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        tx_placa = new javax.swing.JTextField();
-        bn_registrarse = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        tx_residencia = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
         bn_cancelar = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        tx_placa = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        tx_nombre = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
-        jLabel1.setText("BIENVENIDO AL REGISTRO");
-
-        jLabel2.setText("Nombre Completo");
-
-        tx_nombre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tx_nombreActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setText("Residencia");
-
-        jLabel4.setText("Numero celular");
-
-        jLabel5.setText("Informacion del auto");
-
-        jLabel6.setText("marca ");
-
-        jLabel7.setText("modelo");
-
-        jLabel8.setText("placa");
-
+        bn_registrarse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/add-user-male.png"))); // NOI18N
         bn_registrarse.setText("Registarse");
         bn_registrarse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bn_registrarseActionPerformed(evt);
             }
         });
+        getContentPane().add(bn_registrarse);
+        bn_registrarse.setBounds(53, 340, 120, 30);
 
+        tx_marca.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tx_marcaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(tx_marca);
+        tx_marca.setBounds(490, 110, 100, 20);
+
+        jLabel7.setText("modelo");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(290, 120, 34, 14);
+
+        jLabel4.setText("Numero celular");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(40, 150, 71, 14);
+        getContentPane().add(tx_celular);
+        tx_celular.setBounds(120, 150, 100, 20);
+
+        jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
+        jLabel1.setText("BIENVENIDO AL REGISTRO");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(130, 40, 347, 29);
+
+        jLabel3.setText("Residencia");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(40, 120, 51, 14);
+        getContentPane().add(tx_modelo);
+        tx_modelo.setBounds(330, 110, 100, 20);
+
+        jLabel5.setFont(new java.awt.Font("Lucida Handwriting", 1, 11)); // NOI18N
+        jLabel5.setText("Informacion del auto");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(370, 70, 180, 30);
+        getContentPane().add(tx_residencia);
+        tx_residencia.setBounds(120, 120, 100, 20);
+
+        jLabel2.setText("Nombre Completo");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(40, 90, 85, 14);
+
+        bn_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cancelar-o-cerrar-simbolo-de-la-cruz_318-30725.jpg"))); // NOI18N
         bn_cancelar.setText("calcelar");
         bn_cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bn_cancelarActionPerformed(evt);
             }
         });
+        getContentPane().add(bn_cancelar);
+        bn_cancelar.setBounds(230, 340, 120, 29);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 28, Short.MAX_VALUE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel2)
-                                .addComponent(tx_nombre)
-                                .addComponent(jLabel3)
-                                .addComponent(tx_residencia, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE))
-                            .addComponent(jLabel4)
-                            .addComponent(tx_celular, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel8))
-                                .addGap(28, 28, 28)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(tx_marca)
-                                        .addComponent(tx_modelo, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE))
-                                    .addComponent(tx_placa, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(bn_registrarse)
-                                .addGap(109, 109, 109)
-                                .addComponent(bn_cancelar)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tx_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(tx_residencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tx_celular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(tx_marca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(tx_modelo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(tx_placa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bn_registrarse)
-                    .addComponent(bn_cancelar))
-                .addGap(44, 44, 44))
-        );
+        jLabel6.setText("marca ");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(450, 110, 32, 14);
+        getContentPane().add(tx_placa);
+        tx_placa.setBounds(330, 140, 100, 20);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        jLabel8.setText("placa");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(290, 140, 25, 14);
+
+        tx_nombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tx_nombreActionPerformed(evt);
+            }
+        });
+        getContentPane().add(tx_nombre);
+        tx_nombre.setBounds(140, 80, 170, 20);
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(500, 350, 100, 80);
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "automovil", "motocicleta", "cicla" }));
+        getContentPane().add(jComboBox1);
+        jComboBox1.setBounds(490, 140, 100, 20);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(0, 0, 620, 450);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -233,6 +202,10 @@ int IND_NR;
            }
        }
     }//GEN-LAST:event_bn_registrarseActionPerformed
+
+    private void tx_marcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_marcaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tx_marcaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -272,7 +245,9 @@ int IND_NR;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bn_cancelar;
     private javax.swing.JButton bn_registrarse;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -280,7 +255,7 @@ int IND_NR;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField tx_celular;
     private javax.swing.JTextField tx_marca;
     private javax.swing.JTextField tx_modelo;
