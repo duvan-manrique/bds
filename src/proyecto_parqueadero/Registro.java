@@ -74,11 +74,6 @@ int IND_NR;
         jLabel8 = new javax.swing.JLabel();
         tx_nombre = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
 
@@ -96,7 +91,7 @@ int IND_NR;
             }
         });
         getContentPane().add(bn_registrarse);
-        bn_registrarse.setBounds(70, 370, 120, 30);
+        bn_registrarse.setBounds(53, 340, 120, 30);
 
         tx_marca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,7 +141,7 @@ int IND_NR;
             }
         });
         getContentPane().add(bn_cancelar);
-        bn_cancelar.setBounds(260, 370, 120, 29);
+        bn_cancelar.setBounds(230, 340, 120, 29);
 
         jLabel6.setText("marca ");
         getContentPane().add(jLabel6);
@@ -168,27 +163,7 @@ int IND_NR;
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(500, 170, 300, 100);
-
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("HASTA");
-        getContentPane().add(jLabel12);
-        jLabel12.setBounds(320, 310, 40, 14);
-
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("dias de servicio DESDE");
-        getContentPane().add(jLabel11);
-        jLabel11.setBounds(80, 310, 180, 14);
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/info-parqueadero-01.jpg"))); // NOI18N
-        getContentPane().add(jLabel13);
-        jLabel13.setBounds(500, 250, 300, 180);
-        getContentPane().add(jDateChooser1);
-        jDateChooser1.setBounds(220, 310, 81, 20);
-        getContentPane().add(jDateChooser2);
-        jDateChooser2.setBounds(380, 310, 81, 20);
+        jLabel10.setBounds(500, 350, 100, 80);
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "automovil", "motocicleta", "cicla" }));
         getContentPane().add(jComboBox1);
@@ -274,13 +249,8 @@ int IND_NR;
     private javax.swing.JButton bn_cancelar;
     private javax.swing.JButton bn_registrarse;
     private javax.swing.JComboBox<String> jComboBox1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
