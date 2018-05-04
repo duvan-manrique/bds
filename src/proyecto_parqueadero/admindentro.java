@@ -27,21 +27,53 @@ public class admindentro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        bn_editarcliente = new javax.swing.JButton();
+        bn_cienteplus = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        bn_eliminarcliente = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        bn_editarcliente.setText("editar cliente");
+        bn_editarcliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bn_editarclienteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bn_editarcliente);
+        bn_editarcliente.setBounds(110, 300, 120, 40);
+
+        bn_cienteplus.setText("agregar cliente plus");
+        getContentPane().add(bn_cienteplus);
+        bn_cienteplus.setBounds(240, 300, 140, 40);
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Business-Restaurant.png"))); // NOI18N
+        jLabel3.setText("Bienvenido  adminstrador");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(50, 70, 400, 90);
+
+        bn_eliminarcliente.setText("eliminar cliente");
+        getContentPane().add(bn_eliminarcliente);
+        bn_eliminarcliente.setBounds(400, 300, 110, 40);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(160, 0, 290, 89);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 620, 410);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void bn_editarclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_editarclienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bn_editarclienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +111,11 @@ public class admindentro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bn_cienteplus;
+    private javax.swing.JButton bn_editarcliente;
+    private javax.swing.JButton bn_eliminarcliente;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

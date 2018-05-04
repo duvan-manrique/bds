@@ -76,11 +76,12 @@ public class acceso extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(628, 439));
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/add-user-male.png"))); // NOI18N
         jLabel1.setText("usuario");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(210, 290, 90, 40);
+        jLabel1.setBounds(220, 290, 100, 40);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         jLabel4.setText("jLabel4");
@@ -95,6 +96,7 @@ public class acceso extends javax.swing.JFrame {
         getContentPane().add(nomUser);
         nomUser.setBounds(320, 290, 120, 30);
 
+        btnEjecutar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cargando_logo_712_aa4.gif"))); // NOI18N
         btnEjecutar.setText("ejecutar");
         btnEjecutar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,8 +104,9 @@ public class acceso extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnEjecutar);
-        btnEjecutar.setBounds(260, 380, 100, 30);
+        btnEjecutar.setBounds(270, 370, 130, 40);
 
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icon_038490_256.png"))); // NOI18N
         btnSalir.setText("salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,8 +114,9 @@ public class acceso extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSalir);
-        btnSalir.setBounds(160, 380, 70, 30);
+        btnSalir.setBounds(90, 370, 130, 40);
 
+        btnLimpiar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/kisspng-computer-icons-tango-desktop-project-scalable-vect-delete-cliparts-5aaf0ff6da38c3.7911196415214223268939.jpg"))); // NOI18N
         btnLimpiar.setText("limpiar");
         btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,13 +124,14 @@ public class acceso extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnLimpiar);
-        btnLimpiar.setBounds(400, 380, 100, 30);
+        btnLimpiar.setBounds(450, 370, 120, 40);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/password1.png"))); // NOI18N
         jLabel2.setText("password");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(210, 330, 90, 30);
+        jLabel2.setBounds(220, 330, 110, 30);
 
         contraUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
