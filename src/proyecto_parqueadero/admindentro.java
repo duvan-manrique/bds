@@ -32,11 +32,14 @@ public class admindentro extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         bn_eliminarcliente = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        bn_verclientes = new javax.swing.JButton();
+        bn_verclientesplus = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
+        bn_editarcliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/images.jpg"))); // NOI18N
         bn_editarcliente.setText("editar cliente");
         bn_editarcliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -44,11 +47,12 @@ public class admindentro extends javax.swing.JFrame {
             }
         });
         getContentPane().add(bn_editarcliente);
-        bn_editarcliente.setBounds(110, 300, 120, 40);
+        bn_editarcliente.setBounds(30, 280, 170, 60);
 
+        bn_cienteplus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/business_application_addmale_useradd_insert_add_user_client_2312.png"))); // NOI18N
         bn_cienteplus.setText("agregar cliente plus");
         getContentPane().add(bn_cienteplus);
-        bn_cienteplus.setBounds(240, 300, 140, 40);
+        bn_cienteplus.setBounds(200, 280, 180, 60);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Business-Restaurant.png"))); // NOI18N
@@ -56,13 +60,34 @@ public class admindentro extends javax.swing.JFrame {
         getContentPane().add(jLabel3);
         jLabel3.setBounds(50, 70, 400, 90);
 
+        bn_eliminarcliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/descarga.jpg"))); // NOI18N
         bn_eliminarcliente.setText("eliminar cliente");
         getContentPane().add(bn_eliminarcliente);
-        bn_eliminarcliente.setBounds(400, 300, 110, 40);
+        bn_eliminarcliente.setBounds(380, 280, 160, 60);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(160, 0, 290, 89);
+
+        bn_verclientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/personal-information-icon.png"))); // NOI18N
+        bn_verclientes.setText("ver clientes");
+        bn_verclientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bn_verclientesActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bn_verclientes);
+        bn_verclientes.setBounds(30, 340, 170, 60);
+
+        bn_verclientesplus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/personal-information-icon.png"))); // NOI18N
+        bn_verclientesplus.setText("ver clientes plus");
+        bn_verclientesplus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bn_verclientesplusActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bn_verclientesplus);
+        bn_verclientesplus.setBounds(200, 340, 180, 60);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -74,6 +99,14 @@ public class admindentro extends javax.swing.JFrame {
     private void bn_editarclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_editarclienteActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_bn_editarclienteActionPerformed
+
+    private void bn_verclientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_verclientesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bn_verclientesActionPerformed
+
+    private void bn_verclientesplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_verclientesplusActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bn_verclientesplusActionPerformed
 
     /**
      * @param args the command line arguments
@@ -114,6 +147,8 @@ public class admindentro extends javax.swing.JFrame {
     private javax.swing.JButton bn_cienteplus;
     private javax.swing.JButton bn_editarcliente;
     private javax.swing.JButton bn_eliminarcliente;
+    private javax.swing.JButton bn_verclientes;
+    private javax.swing.JButton bn_verclientesplus;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

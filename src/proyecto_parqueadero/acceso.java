@@ -78,10 +78,10 @@ public class acceso extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/add-user-male.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/1211811974.png"))); // NOI18N
         jLabel1.setText("usuario");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(220, 290, 100, 40);
+        jLabel1.setBounds(200, 260, 130, 70);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         jLabel4.setText("jLabel4");
@@ -94,7 +94,7 @@ public class acceso extends javax.swing.JFrame {
             }
         });
         getContentPane().add(nomUser);
-        nomUser.setBounds(320, 290, 120, 30);
+        nomUser.setBounds(320, 280, 120, 30);
 
         btnEjecutar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cargando_logo_712_aa4.gif"))); // NOI18N
         btnEjecutar.setText("ejecutar");
@@ -128,10 +128,10 @@ public class acceso extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/password1.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Delayed_Lock_icon.png"))); // NOI18N
         jLabel2.setText("password");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(220, 330, 110, 30);
+        jLabel2.setBounds(180, 310, 150, 60);
 
         contraUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

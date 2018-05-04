@@ -70,9 +70,11 @@ int IND_NR;
         jLabel2 = new javax.swing.JLabel();
         bn_cancelar = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
+        tx_cedula = new javax.swing.JTextField();
         tx_placa = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         tx_nombre = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
@@ -83,7 +85,7 @@ int IND_NR;
         setPreferredSize(new java.awt.Dimension(604, 450));
         getContentPane().setLayout(null);
 
-        bn_registrarse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/add-user-male.png"))); // NOI18N
+        bn_registrarse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/business_application_addmale_useradd_insert_add_user_client_2312.png"))); // NOI18N
         bn_registrarse.setText("Registarse");
         bn_registrarse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +93,7 @@ int IND_NR;
             }
         });
         getContentPane().add(bn_registrarse);
-        bn_registrarse.setBounds(53, 340, 120, 30);
+        bn_registrarse.setBounds(53, 340, 150, 59);
 
         tx_marca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,17 +101,17 @@ int IND_NR;
             }
         });
         getContentPane().add(tx_marca);
-        tx_marca.setBounds(490, 110, 100, 22);
+        tx_marca.setBounds(490, 110, 100, 20);
 
         jLabel7.setText("modelo");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(290, 120, 42, 16);
+        jLabel7.setBounds(290, 120, 34, 14);
 
-        jLabel4.setText("Numero celular");
+        jLabel4.setText("cc");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(40, 150, 87, 16);
+        jLabel4.setBounds(40, 190, 20, 14);
         getContentPane().add(tx_celular);
-        tx_celular.setBounds(120, 150, 100, 22);
+        tx_celular.setBounds(120, 150, 100, 20);
 
         jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jLabel1.setText("BIENVENIDO AL REGISTRO");
@@ -118,22 +120,22 @@ int IND_NR;
 
         jLabel3.setText("Residencia");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(40, 120, 61, 16);
+        jLabel3.setBounds(40, 120, 51, 14);
         getContentPane().add(tx_modelo);
-        tx_modelo.setBounds(330, 110, 100, 22);
+        tx_modelo.setBounds(330, 110, 100, 20);
 
         jLabel5.setFont(new java.awt.Font("Lucida Handwriting", 1, 11)); // NOI18N
         jLabel5.setText("Informacion del auto");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(370, 70, 180, 30);
         getContentPane().add(tx_residencia);
-        tx_residencia.setBounds(120, 120, 100, 22);
+        tx_residencia.setBounds(120, 120, 100, 20);
 
         jLabel2.setText("Nombre Completo");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(40, 90, 103, 16);
+        jLabel2.setBounds(40, 90, 85, 14);
 
-        bn_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cancelar-o-cerrar-simbolo-de-la-cruz_318-30725.jpg"))); // NOI18N
+        bn_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/descarga.jpg"))); // NOI18N
         bn_cancelar.setText("calcelar");
         bn_cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,17 +143,19 @@ int IND_NR;
             }
         });
         getContentPane().add(bn_cancelar);
-        bn_cancelar.setBounds(230, 340, 120, 29);
+        bn_cancelar.setBounds(230, 340, 160, 60);
 
         jLabel6.setText("marca ");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(450, 110, 40, 16);
+        jLabel6.setBounds(450, 110, 32, 14);
+        getContentPane().add(tx_cedula);
+        tx_cedula.setBounds(60, 180, 6, 20);
         getContentPane().add(tx_placa);
-        tx_placa.setBounds(330, 140, 100, 22);
+        tx_placa.setBounds(330, 140, 100, 20);
 
         jLabel8.setText("placa");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(290, 140, 30, 16);
+        jLabel8.setBounds(290, 140, 25, 14);
 
         tx_nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -159,7 +163,11 @@ int IND_NR;
             }
         });
         getContentPane().add(tx_nombre);
-        tx_nombre.setBounds(140, 80, 170, 22);
+        tx_nombre.setBounds(140, 80, 170, 20);
+
+        jLabel11.setText("Numero celular");
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(40, 150, 71, 14);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         getContentPane().add(jLabel10);
@@ -167,7 +175,7 @@ int IND_NR;
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "automovil", "motocicleta", "cicla" }));
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(490, 140, 100, 22);
+        jComboBox1.setBounds(490, 140, 100, 20);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
         getContentPane().add(jLabel9);
@@ -251,6 +259,7 @@ int IND_NR;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -259,6 +268,7 @@ int IND_NR;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField tx_cedula;
     private javax.swing.JTextField tx_celular;
     private javax.swing.JTextField tx_marca;
     private javax.swing.JTextField tx_modelo;
