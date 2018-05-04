@@ -32,6 +32,7 @@ public class admindentro extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         bn_eliminarcliente = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        tx_cajadeldia = new javax.swing.JButton();
         bn_verclientes = new javax.swing.JButton();
         bn_verclientesplus = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -56,7 +57,7 @@ public class admindentro extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Business-Restaurant.png"))); // NOI18N
-        jLabel3.setText("Bienvenido  adminstrador");
+        jLabel3.setText("Bienvenido  administrador");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(50, 70, 400, 90);
 
@@ -68,6 +69,11 @@ public class admindentro extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(160, 0, 290, 89);
+
+        tx_cajadeldia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/gana-dinero-android.jpg"))); // NOI18N
+        tx_cajadeldia.setText("caja del dia");
+        getContentPane().add(tx_cajadeldia);
+        tx_cajadeldia.setBounds(380, 340, 160, 60);
 
         bn_verclientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/personal-information-icon.png"))); // NOI18N
         bn_verclientes.setText("ver clientes");
@@ -152,5 +158,6 @@ public class admindentro extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JButton tx_cajadeldia;
     // End of variables declaration//GEN-END:variables
 }
