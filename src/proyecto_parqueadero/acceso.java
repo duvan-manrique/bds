@@ -190,21 +190,23 @@ public class acceso extends javax.swing.JFrame {
                         if (objVideo.indica_1() == 1 && objVideo.indica_2() == 1 ){
                            stmt= objVideo.stamt();
                            con = objVideo.con();
-                           Inicio menu=new Inicio(con,stmt);
-                           menu.setExtendedState(MAXIMIZED_BOTH);
-                           menu.setVisible(true);
-                           menu.setSize(550,400);
-                           this.dispose();
+                           
+                           //menu.setExtendedState(MAXIMIZED_BOTH);
+                          // menu.setVisible(true);
+                           //menu.setSize(550,400);
+                         //
                            
                            
                            //******************* crear clases de las vistas del usuario
-                            Inicio a = new Inicio();
+                            Inicio menu=new Inicio(con,stmt);
                             Registro b = new Registro();
-                            a.setVisible(true);
+                            menu.setVisible(true);
                             b.setVisible(false);
-                            a.resivir(b);
+                            menu.resivir(b);
                             Ubicacion c = new Ubicacion();
                             c.setVisible(false);
+                            this.dispose();
+                              
                            //******************
                         }
                         else{

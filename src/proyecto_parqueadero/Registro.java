@@ -24,25 +24,16 @@ int IND_NR;
  Connection con=null;
     Statement stmt=null;
     ResultSet rs = null;
+    String placa1;
     public Registro(Connection con,Statement stm) {
         initComponents();
         this.stmt=stm;
-        this.con=con;
-        
-        
-        
-        
-    }
-    String placa1;
-
-    public Registro() {
-        initComponents();
+        this.con=con; 
         tx_placa.setEditable(false);
         tx_placa.setBackground(Color.WHITE);
-        
-        
-        
     }
+
+  
     public void placa_res(String placa){
          placa1= placa;
          tx_placa.setText(placa1);
@@ -106,17 +97,17 @@ int IND_NR;
             }
         });
         getContentPane().add(tx_marca);
-        tx_marca.setBounds(490, 110, 100, 20);
+        tx_marca.setBounds(490, 110, 100, 22);
 
         jLabel7.setText("modelo");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(290, 120, 34, 14);
+        jLabel7.setBounds(290, 120, 42, 16);
 
         jLabel4.setText("cc");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(40, 190, 20, 14);
+        jLabel4.setBounds(40, 190, 20, 16);
         getContentPane().add(tx_celular);
-        tx_celular.setBounds(120, 150, 100, 20);
+        tx_celular.setBounds(120, 150, 100, 22);
 
         jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jLabel1.setText("BIENVENIDO AL REGISTRO");
@@ -125,20 +116,20 @@ int IND_NR;
 
         jLabel3.setText("Residencia");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(40, 120, 51, 14);
+        jLabel3.setBounds(40, 120, 61, 16);
         getContentPane().add(tx_modelo);
-        tx_modelo.setBounds(330, 110, 100, 20);
+        tx_modelo.setBounds(330, 110, 100, 22);
 
         jLabel5.setFont(new java.awt.Font("Lucida Handwriting", 1, 11)); // NOI18N
         jLabel5.setText("Informacion del auto");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(370, 70, 180, 30);
         getContentPane().add(tx_residencia);
-        tx_residencia.setBounds(120, 120, 100, 20);
+        tx_residencia.setBounds(120, 120, 100, 22);
 
         jLabel2.setText("Nombre Completo");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(40, 90, 85, 14);
+        jLabel2.setBounds(40, 90, 103, 16);
 
         bn_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/descarga.jpg"))); // NOI18N
         bn_cancelar.setText("calcelar");
@@ -152,15 +143,15 @@ int IND_NR;
 
         jLabel6.setText("marca ");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(450, 110, 32, 14);
+        jLabel6.setBounds(450, 110, 40, 16);
         getContentPane().add(tx_cedula);
-        tx_cedula.setBounds(60, 180, 110, 20);
+        tx_cedula.setBounds(60, 180, 6, 22);
         getContentPane().add(tx_placa);
-        tx_placa.setBounds(330, 140, 100, 20);
+        tx_placa.setBounds(330, 140, 100, 22);
 
         jLabel8.setText("placa");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(290, 140, 25, 14);
+        jLabel8.setBounds(290, 140, 30, 16);
 
         tx_nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -168,11 +159,11 @@ int IND_NR;
             }
         });
         getContentPane().add(tx_nombre);
-        tx_nombre.setBounds(140, 80, 170, 20);
+        tx_nombre.setBounds(140, 80, 170, 22);
 
         jLabel11.setText("Numero celular");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(40, 150, 71, 14);
+        jLabel11.setBounds(40, 150, 87, 16);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         getContentPane().add(jLabel10);
@@ -180,7 +171,7 @@ int IND_NR;
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "automovil", "motocicleta", "cicla" }));
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(490, 140, 100, 20);
+        jComboBox1.setBounds(490, 140, 100, 22);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
         getContentPane().add(jLabel9);
@@ -198,35 +189,25 @@ int IND_NR;
     }//GEN-LAST:event_bn_cancelarActionPerformed
 
     private void bn_registrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_registrarseActionPerformed
-            String nombre = tx_nombre.getText().trim();
-            String direccion = tx_residencia.getText().trim();
-            String telefono = tx_celular.getText().trim();
-            String placa = tx_placa.getText().trim();
-            String marca = tx_marca.getText().trim();
-            String modelo = tx_modelo.getText().trim();
-
-            String query = String.format("insert into datos_usuario1 values('%s', '%s', '%s', '%s', '%s', '%s')", nombre, direccion, marca, modelo, placa, telefono);
-
-            bd.ingreso(query);
-//        // TODO add your handling code here:
-//         if(IND_NR==0){
-//           String sPlaca = tx_placa.getText();
-//          // int iId = Integer.parseInt(sid);
-//           String sNombre =tx_nombre.getText();
-//           String srecidencia =tx_residencia.getText();
-//           String scelular =tx_celular.getText();
-//           String smarca =tx_marca.getText();
-//           String smodelo =tx_modelo.getText();
-//           
-//           String qrq ="INSERT INTO registro (placa, nombre_completo, residencia, num_celular, modelo, marca ) values ('"+sPlaca+"','"+sNombre+"','"+srecidencia+"',"+scelular+",'"+smodelo+"','"+smarca+"')";
-//           System.out.println(qrq);
-//           try{
-//               stmt.executeUpdate(qrq);
-//               JOptionPane.showMessageDialog(null, "Registro grabado satisfactoriamente");
-//           }catch(Exception e){
-//               System.out.println("error al grabar "+e.getMessage());
-//           }
-//       }
+        // TODO add your handling code here:
+         if(IND_NR==0){
+           String sPlaca = tx_placa.getText();
+          // int iId = Integer.parseInt(sid);
+           String sNombre =tx_nombre.getText();
+           String srecidencia =tx_residencia.getText();
+           String scelular =tx_celular.getText();
+           String smarca =tx_marca.getText();
+           String smodelo =tx_modelo.getText();
+           
+           String qrq ="INSERT INTO registro (placa, nombre_completo, residencia, num_celular, modelo, marca ) values ('"+sPlaca+"','"+sNombre+"','"+srecidencia+"',"+scelular+",'"+smodelo+"','"+smarca+"')";
+           System.out.println(qrq);
+           try{
+               stmt.executeUpdate(qrq);
+               JOptionPane.showMessageDialog(null, "Registro grabado satisfactoriamente");
+           }catch(Exception e){
+               System.out.println("error al grabar "+e.getMessage());
+           }
+       }
     }//GEN-LAST:event_bn_registrarseActionPerformed
 
     private void tx_marcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_marcaActionPerformed
