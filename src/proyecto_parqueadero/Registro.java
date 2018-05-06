@@ -145,7 +145,7 @@ int IND_NR;
         getContentPane().add(jLabel6);
         jLabel6.setBounds(450, 110, 40, 16);
         getContentPane().add(tx_cedula);
-        tx_cedula.setBounds(60, 180, 6, 22);
+        tx_cedula.setBounds(60, 180, 110, 22);
         getContentPane().add(tx_placa);
         tx_placa.setBounds(330, 140, 100, 22);
 
@@ -244,7 +244,7 @@ int IND_NR;
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Registro().setVisible(true);
+                //new Registro().setVisible(true);
             }
         });
     }
