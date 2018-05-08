@@ -121,7 +121,7 @@ public class admindentro extends javax.swing.JFrame {
     }//GEN-LAST:event_bn_verclientesActionPerformed
 
     private void bn_verclientesplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_verclientesplusActionPerformed
-        // TODO add your handling code here:
+       
     }//GEN-LAST:event_bn_verclientesplusActionPerformed
 
     private void bn_cienteplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_cienteplusActionPerformed
