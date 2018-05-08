@@ -7,6 +7,7 @@ package proyecto_parqueadero;
 
 import java.sql.Connection;
 import java.sql.Statement;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -16,7 +17,7 @@ import java.sql.Statement;
 public class Inicio extends javax.swing.JFrame {
     Connection con=null;
     Statement stmt=null;
-  
+    private final String EMPTY = new String () ;
     /**
      * Creates new form Inicio
      */
@@ -28,9 +29,9 @@ public class Inicio extends javax.swing.JFrame {
     public Inicio() {
         initComponents();
     }
-    Registro Registro;
-public void resivir(Registro registro1){
-    Registro=registro1;
+   Ubicacion ubicacion;
+public void resivir(Ubicacion registro1){
+    ubicacion =registro1;
 }
 
 
@@ -370,7 +371,7 @@ public void resivir(Registro registro1){
         });
 
         bn_registrar.setFont(new java.awt.Font("Bookman Old Style", 0, 18)); // NOI18N
-        bn_registrar.setText("REGISTAR ");
+        bn_registrar.setText("ACCEDER");
         bn_registrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bn_registrarActionPerformed(evt);
@@ -3474,9 +3475,14 @@ public void resivir(Registro registro1){
     }//GEN-LAST:event_tx_placaActionPerformed
 
     private void bn_registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_registrarActionPerformed
-    //aca va el condicional de si encuentra la placa en la base de datos o no
-    Registro.setVisible(true);
-    Registro.placa_res(tx_placa.getText());
+    
+        if(EMPTY.equals(tx_placa.getText().trim())){
+            JOptionPane.showMessageDialog(null, "ingrese la placa");
+        }else{
+            ubicacion.setVisible(true);
+            ubicacion.placa_res(tx_placa.getText());
+        }
+    
     
     }//GEN-LAST:event_bn_registrarActionPerformed
 

@@ -7,9 +7,13 @@ package proyecto_parqueadero;
 
 import java.awt.Color;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -76,9 +80,9 @@ int IND_NR;
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(604, 450));
-        setMinimumSize(new java.awt.Dimension(604, 450));
-        setPreferredSize(new java.awt.Dimension(604, 450));
+        setMaximumSize(new java.awt.Dimension(620, 480));
+        setMinimumSize(new java.awt.Dimension(620, 480));
+        setPreferredSize(new java.awt.Dimension(620, 480));
         getContentPane().setLayout(null);
 
         bn_registrarse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/business_application_addmale_useradd_insert_add_user_client_2312.png"))); // NOI18N
@@ -209,7 +213,72 @@ int IND_NR;
            }
        }
     }//GEN-LAST:event_bn_registrarseActionPerformed
-
+//********* arley
+    public void eliminar(String script){
+        PreparedStatement p = null;
+        //Connection conexion = obtenerConexion(usuario, contrasena);
+        System.err.println(script);
+        try{
+            p = con.prepareStatement(script);
+           
+            p.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Ejecucion Completa");
+        }catch(Exception ex ){
+            JOptionPane.showMessageDialog(null, ex.getMessage());
+            System.err.println("No se pudo ejecutar la sentencia");
+            System.err.println(script);
+        }
+    }
+    
+     
+    public void consultar(JTable tabla, String script){
+        Statement codigoSQL = null;
+        ResultSet resultados = null;
+        try{
+            
+            DefaultTableModel t = new DefaultTableModel();
+            tabla.setModel(t);
+             
+            //Connection conexion = obtenerConexion(usuario, contrasena);
+            
+            codigoSQL = con.createStatement();
+            
+            resultados = codigoSQL.executeQuery(script);
+            ResultSetMetaData datos = resultados.getMetaData();
+            
+            int numeroColumnas = datos.getColumnCount();
+            
+            
+            for(int i = 1; i <= numeroColumnas; i++){
+                t.addColumn(datos.getColumnLabel(i));
+            }
+            
+            while(resultados.next()){
+                Object [] f = new Object[numeroColumnas];
+                
+                for(int i = 0; i < numeroColumnas ;i++){
+                    
+                    f[i] = resultados.getObject(i+1);
+//                    Es por que: mmmm pos toco mirarlo d enuevo :'v
+//                    para recorrer el "resultados.getObject(i)" dice que desde 1: entonces -> 1,2,3,4,5,6
+//                    y para recorrer el "Object [] f" como es array hay que recorrerlo desde 0: entoces -> 0,1,2,3,4,5
+                }
+                t.addRow(f);
+                
+            }
+//           si lo quiere como lo tenia solo se cambia esto
+//            hay ta rata :V la f es earray aun no entiendo bien lo de las tablas como asi? es que me confundi en los indices pense que era aca el i+1
+            
+            codigoSQL.close();
+            resultados.close();
+            //obtenerConexion(usuario, contrasena).close();
+        }catch(Exception ex){
+            JOptionPane.showMessageDialog(null, ex);
+            
+        }
+    }
+  
+//***************arley    
     private void tx_marcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_marcaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tx_marcaActionPerformed

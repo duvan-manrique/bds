@@ -14,8 +14,10 @@ public class admindentro extends javax.swing.JFrame {
     /**
      * Creates new form admindentro
      */
-    public admindentro() {
+    Registro registro;
+    public admindentro(Registro registro1) {
         initComponents();
+        registro= registro1;
     }
 
     /**
@@ -38,6 +40,9 @@ public class admindentro extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(607, 455));
+        setMinimumSize(new java.awt.Dimension(607, 455));
+        setPreferredSize(new java.awt.Dimension(607, 455));
         getContentPane().setLayout(null);
 
         bn_editarcliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/images.jpg"))); // NOI18N
@@ -52,6 +57,11 @@ public class admindentro extends javax.swing.JFrame {
 
         bn_cienteplus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/business_application_addmale_useradd_insert_add_user_client_2312.png"))); // NOI18N
         bn_cienteplus.setText("agregar cliente plus");
+        bn_cienteplus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bn_cienteplusActionPerformed(evt);
+            }
+        });
         getContentPane().add(bn_cienteplus);
         bn_cienteplus.setBounds(200, 280, 180, 60);
 
@@ -114,6 +124,11 @@ public class admindentro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_bn_verclientesplusActionPerformed
 
+    private void bn_cienteplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_cienteplusActionPerformed
+        registro.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_bn_cienteplusActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -144,7 +159,7 @@ public class admindentro extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new admindentro().setVisible(true);
+               // new admindentro(registro).setVisible(true);
             }
         });
     }

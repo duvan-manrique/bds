@@ -19,6 +19,11 @@ public class Ubicacion extends javax.swing.JFrame {
     public Ubicacion() {
         initComponents();
     }
+    String placa1;
+    public void placa_res(String placa){
+         placa1= placa;
+         
+    }
     public void desactivar(int seleccion,int index){
         seleccion--;
         if(index==1){

@@ -169,10 +169,16 @@ public class acceso extends javax.swing.JFrame {
                 if (objVideo.indica_1() == 1 && objVideo.indica_2() == 1 ){
                    stmt= objVideo.stamt();
                    con = objVideo.con();
-                   Inicio menu=new Inicio(con,stmt);
+                   Registro b = new Registro(con,stmt);
+                   b.setVisible(false);
+                   admindentro admin_entro = new admindentro(b);
+                   admin_entro.setVisible(true);
+                   
+                   
+                 /*  Inicio menu=new Inicio(con,stmt);
                    menu.setExtendedState(MAXIMIZED_BOTH);
                    menu.setVisible(true);
-                   menu.setSize(550,400);
+                   menu.setSize(550,400);*/
                    this.dispose();
                    //aca crear clases de administrador osea objetos de crud
                 }
@@ -199,12 +205,13 @@ public class acceso extends javax.swing.JFrame {
                            
                            //******************* crear clases de las vistas del usuario
                             Inicio menu=new Inicio(con,stmt);
-                            Registro b = new Registro(con,stmt);
+                            //Registro b = new Registro(con,stmt);
                             menu.setVisible(true);
-                            b.setVisible(false);
-                            menu.resivir(b);
+                            //b.setVisible(false);
                             Ubicacion c = new Ubicacion();
                             c.setVisible(false);
+                            menu.resivir(c);
+                            
                             this.dispose();
                               
                            //******************
