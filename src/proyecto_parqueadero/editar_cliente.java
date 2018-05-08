@@ -14,9 +14,12 @@ public class editar_cliente extends javax.swing.JFrame {
     /**
      * Creates new form editar_cliente
      */
-    public editar_cliente() {
+    Registro registro;
+    public editar_cliente(Registro registro1) {
         initComponents();
+        registro=registro1;
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -221,7 +224,7 @@ public class editar_cliente extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new editar_cliente().setVisible(true);
+              //  new editar_cliente().setVisible(true);
             }
         });
     }

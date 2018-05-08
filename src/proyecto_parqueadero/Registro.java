@@ -33,7 +33,7 @@ int IND_NR;
         initComponents();
         this.stmt=stm;
         this.con=con; 
-        tx_placa.setEditable(false);
+      
         tx_placa.setBackground(Color.WHITE);
     }
 

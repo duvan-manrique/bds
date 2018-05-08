@@ -6,6 +6,8 @@
 package proyecto_parqueadero;
 
 import java.awt.Color;
+import java.sql.Connection;
+import java.sql.Statement;
 
 /**
  *
@@ -16,7 +18,10 @@ public class Ubicacion extends javax.swing.JFrame {
     /**
      * Creates new form Ubicacion
      */
-    public Ubicacion() {
+    Registro registro;
+     Connection con=null;
+    Statement stmt=null;
+    public Ubicacion(Statement stmt1,Connection con1) {
         initComponents();
     }
     String placa1;
@@ -4270,7 +4275,7 @@ public class Ubicacion extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Ubicacion().setVisible(true);
+                //new Ubicacion().setVisible(true);
             }
         });
     }

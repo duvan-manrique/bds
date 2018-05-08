@@ -14,8 +14,10 @@ public class eliminar_cliente extends javax.swing.JFrame {
     /**
      * Creates new form eliminar_cliente
      */
-    public eliminar_cliente() {
+    Registro registro;
+    public eliminar_cliente(Registro registro1) {
         initComponents();
+        registro=registro1;
     }
 
     /**
@@ -35,10 +37,18 @@ public class eliminar_cliente extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(610, 420));
+        setMinimumSize(new java.awt.Dimension(610, 420));
+        setPreferredSize(new java.awt.Dimension(610, 420));
         getContentPane().setLayout(null);
 
         bn_eliminarcliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/descarga.jpg"))); // NOI18N
         bn_eliminarcliente.setText("eliminar cliente");
+        bn_eliminarcliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bn_eliminarclienteActionPerformed(evt);
+            }
+        });
         getContentPane().add(bn_eliminarcliente);
         bn_eliminarcliente.setBounds(220, 290, 160, 60);
 
@@ -48,7 +58,7 @@ public class eliminar_cliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(290, 130, 130, 20);
+        jTextField1.setBounds(290, 130, 130, 22);
 
         jLabel4.setBackground(new java.awt.Color(255, 0, 0));
         jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -76,6 +86,12 @@ public class eliminar_cliente extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void bn_eliminarclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_eliminarclienteActionPerformed
+        String placa_el =jTextField1.getText();
+        String query = String.format("delete from registro where placa='%s'",placa_el);
+        registro.eliminar(query);
+    }//GEN-LAST:event_bn_eliminarclienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -107,7 +123,7 @@ public class eliminar_cliente extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new eliminar_cliente().setVisible(true);
+                //new eliminar_cliente().setVisible(true);
             }
         });
     }

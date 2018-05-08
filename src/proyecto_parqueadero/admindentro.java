@@ -19,6 +19,7 @@ public class admindentro extends javax.swing.JFrame {
         initComponents();
         registro= registro1;
     }
+   
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -73,6 +74,11 @@ public class admindentro extends javax.swing.JFrame {
 
         bn_eliminarcliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/descarga.jpg"))); // NOI18N
         bn_eliminarcliente.setText("eliminar cliente");
+        bn_eliminarcliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bn_eliminarclienteActionPerformed(evt);
+            }
+        });
         getContentPane().add(bn_eliminarcliente);
         bn_eliminarcliente.setBounds(380, 280, 160, 60);
 
@@ -113,7 +119,7 @@ public class admindentro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bn_editarclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_editarclienteActionPerformed
-        // TODO add your handling code here:
+       editar_cliente cliente_edit = new editar_cliente(registro);
     }//GEN-LAST:event_bn_editarclienteActionPerformed
 
     private void bn_verclientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_verclientesActionPerformed
@@ -128,6 +134,11 @@ public class admindentro extends javax.swing.JFrame {
         registro.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_bn_cienteplusActionPerformed
+
+    private void bn_eliminarclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_eliminarclienteActionPerformed
+       eliminar_cliente eliminar = new eliminar_cliente(registro);
+       eliminar.setVisible(true);
+    }//GEN-LAST:event_bn_eliminarclienteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -159,7 +170,7 @@ public class admindentro extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-               // new admindentro(registro).setVisible(true);
+               // new admindentro().setVisible(true);
             }
         });
     }

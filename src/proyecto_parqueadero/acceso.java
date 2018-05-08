@@ -208,7 +208,7 @@ public class acceso extends javax.swing.JFrame {
                             //Registro b = new Registro(con,stmt);
                             menu.setVisible(true);
                             //b.setVisible(false);
-                            Ubicacion c = new Ubicacion();
+                            Ubicacion c = new Ubicacion(stmt,con);
                             c.setVisible(false);
                             menu.resivir(c);
                             
