@@ -19,7 +19,7 @@ public class ver_cliente_plus extends javax.swing.JFrame {
         initComponents();
         registro =registro1;
         
-        registro.consultar(tabla_clientes_plus, "select * from datos_usuario1;");
+        registro.consultar(tabla_clientes_plus, "select * from registro;");
     }
 
     /**
