@@ -72,17 +72,17 @@ public class agregar_clienteplus extends javax.swing.JFrame {
             }
         });
         getContentPane().add(tx_marca);
-        tx_marca.setBounds(490, 110, 100, 20);
+        tx_marca.setBounds(490, 110, 100, 22);
 
         jLabel7.setText("modelo");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(290, 120, 34, 14);
+        jLabel7.setBounds(290, 120, 42, 16);
 
         jLabel4.setText("cc");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(40, 190, 20, 14);
+        jLabel4.setBounds(40, 190, 20, 16);
         getContentPane().add(tx_celular);
-        tx_celular.setBounds(120, 150, 100, 20);
+        tx_celular.setBounds(120, 150, 100, 22);
 
         jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jLabel1.setText("BIENVENIDO AL REGISTRO");
@@ -91,20 +91,20 @@ public class agregar_clienteplus extends javax.swing.JFrame {
 
         jLabel3.setText("Residencia");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(40, 120, 51, 14);
+        jLabel3.setBounds(40, 120, 61, 16);
         getContentPane().add(tx_modelo);
-        tx_modelo.setBounds(330, 110, 100, 20);
+        tx_modelo.setBounds(330, 110, 100, 22);
 
         jLabel5.setFont(new java.awt.Font("Lucida Handwriting", 1, 11)); // NOI18N
         jLabel5.setText("Informacion del auto");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(370, 70, 180, 30);
         getContentPane().add(tx_residencia);
-        tx_residencia.setBounds(120, 120, 100, 20);
+        tx_residencia.setBounds(120, 120, 100, 22);
 
         jLabel2.setText("Nombre Completo");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(40, 90, 85, 14);
+        jLabel2.setBounds(40, 90, 103, 16);
 
         bn_cancelarplus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/descarga.jpg"))); // NOI18N
         bn_cancelarplus.setText("calcelar cliente plus");
@@ -114,17 +114,17 @@ public class agregar_clienteplus extends javax.swing.JFrame {
             }
         });
         getContentPane().add(bn_cancelarplus);
-        bn_cancelarplus.setBounds(250, 340, 200, 60);
+        bn_cancelarplus.setBounds(280, 340, 200, 60);
 
         jLabel6.setText("marca ");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(450, 110, 32, 14);
+        jLabel6.setBounds(450, 110, 40, 16);
         getContentPane().add(fecha_inicio);
-        fecha_inicio.setBounds(230, 300, 81, 20);
+        fecha_inicio.setBounds(230, 300, 88, 22);
         getContentPane().add(tx_cedula);
-        tx_cedula.setBounds(70, 190, 60, 20);
+        tx_cedula.setBounds(70, 190, 60, 22);
         getContentPane().add(tx_placa);
-        tx_placa.setBounds(330, 140, 100, 20);
+        tx_placa.setBounds(330, 140, 100, 22);
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
@@ -135,9 +135,9 @@ public class agregar_clienteplus extends javax.swing.JFrame {
 
         jLabel8.setText("placa");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(290, 140, 25, 14);
+        jLabel8.setBounds(290, 140, 30, 16);
         getContentPane().add(fecha_final);
-        fecha_final.setBounds(380, 300, 81, 20);
+        fecha_final.setBounds(380, 300, 88, 22);
 
         tx_nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,7 +145,7 @@ public class agregar_clienteplus extends javax.swing.JFrame {
             }
         });
         getContentPane().add(tx_nombre);
-        tx_nombre.setBounds(140, 80, 170, 20);
+        tx_nombre.setBounds(140, 80, 170, 22);
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
@@ -155,7 +155,7 @@ public class agregar_clienteplus extends javax.swing.JFrame {
 
         jLabel11.setText("Numero celular");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(40, 150, 71, 14);
+        jLabel11.setBounds(40, 150, 87, 16);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         getContentPane().add(jLabel10);
@@ -163,7 +163,7 @@ public class agregar_clienteplus extends javax.swing.JFrame {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "automovil", "motocicleta", "cicla" }));
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(490, 140, 100, 20);
+        jComboBox1.setBounds(490, 140, 100, 22);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
         getContentPane().add(jLabel9);
