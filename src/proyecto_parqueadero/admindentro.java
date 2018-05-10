@@ -133,12 +133,16 @@ public class admindentro extends javax.swing.JFrame {
 
     private void bn_cienteplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_cienteplusActionPerformed
         registro.setVisible(true);
+        registro.resibir(this);
         this.dispose();
+        
     }//GEN-LAST:event_bn_cienteplusActionPerformed
 
     private void bn_eliminarclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_eliminarclienteActionPerformed
        eliminar_cliente eliminar = new eliminar_cliente(registro);
        eliminar.setVisible(true);
+       eliminar.resibir(this);
+       this.dispose();
     }//GEN-LAST:event_bn_eliminarclienteActionPerformed
 
     /**

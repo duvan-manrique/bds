@@ -15,9 +15,13 @@ public class eliminar_cliente extends javax.swing.JFrame {
      * Creates new form eliminar_cliente
      */
     Registro registro;
+    admindentro admin;
     public eliminar_cliente(Registro registro1) {
         initComponents();
         registro=registro1;
+    }
+     public void resibir(admindentro admin1){
+        admin=admin1;
     }
 
     /**
@@ -91,6 +95,8 @@ public class eliminar_cliente extends javax.swing.JFrame {
         String placa_el =jTextField1.getText();
         String query = String.format("delete from registro where placa='%s'",placa_el);
         registro.eliminar(query);
+        this.dispose();
+        admin.setVisible(true);
     }//GEN-LAST:event_bn_eliminarclienteActionPerformed
 
     /**

@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class Registro extends javax.swing.JFrame {
 String EMPTY = new String();
-int IND_NR;
+String IND_NR="";
     /**
      * Creates new form Registro
      */
@@ -29,6 +29,7 @@ int IND_NR;
     Statement stmt=null;
     ResultSet rs = null;
     String placa1;
+    admindentro admin;
     public Registro(Connection con,Statement stm) {
         initComponents();
         this.stmt=stm;
@@ -36,6 +37,10 @@ int IND_NR;
       
         tx_placa.setBackground(Color.WHITE);
     }
+    public void resibir(admindentro admin1){
+        admin=admin1;
+    }
+            
 
   
     public void placa_res(String placa){
@@ -101,17 +106,17 @@ int IND_NR;
             }
         });
         getContentPane().add(tx_marca);
-        tx_marca.setBounds(490, 110, 100, 20);
+        tx_marca.setBounds(490, 110, 100, 22);
 
         jLabel7.setText("modelo");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(290, 120, 34, 14);
+        jLabel7.setBounds(290, 120, 42, 16);
 
         jLabel4.setText("cc");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(40, 190, 20, 14);
+        jLabel4.setBounds(40, 190, 20, 16);
         getContentPane().add(tx_celular);
-        tx_celular.setBounds(120, 150, 100, 20);
+        tx_celular.setBounds(120, 150, 100, 22);
 
         jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jLabel1.setText("BIENVENIDO AL REGISTRO");
@@ -120,20 +125,20 @@ int IND_NR;
 
         jLabel3.setText("Residencia");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(40, 120, 51, 14);
+        jLabel3.setBounds(40, 120, 61, 16);
         getContentPane().add(tx_modelo);
-        tx_modelo.setBounds(330, 110, 100, 20);
+        tx_modelo.setBounds(330, 110, 100, 22);
 
         jLabel5.setFont(new java.awt.Font("Lucida Handwriting", 1, 11)); // NOI18N
         jLabel5.setText("Informacion del auto");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(370, 70, 180, 30);
         getContentPane().add(tx_residencia);
-        tx_residencia.setBounds(120, 120, 100, 20);
+        tx_residencia.setBounds(120, 120, 100, 22);
 
         jLabel2.setText("Nombre Completo");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(40, 90, 85, 14);
+        jLabel2.setBounds(40, 90, 103, 16);
 
         bn_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/descarga.jpg"))); // NOI18N
         bn_cancelar.setText("calcelar");
@@ -147,15 +152,15 @@ int IND_NR;
 
         jLabel6.setText("marca ");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(450, 110, 32, 14);
+        jLabel6.setBounds(450, 110, 40, 16);
         getContentPane().add(tx_cedula);
-        tx_cedula.setBounds(60, 180, 110, 20);
+        tx_cedula.setBounds(60, 180, 110, 22);
         getContentPane().add(tx_placa);
-        tx_placa.setBounds(330, 140, 100, 20);
+        tx_placa.setBounds(330, 140, 100, 22);
 
         jLabel8.setText("placa");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(290, 140, 25, 14);
+        jLabel8.setBounds(290, 140, 30, 16);
 
         tx_nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,11 +168,11 @@ int IND_NR;
             }
         });
         getContentPane().add(tx_nombre);
-        tx_nombre.setBounds(140, 80, 170, 20);
+        tx_nombre.setBounds(140, 80, 170, 22);
 
         jLabel11.setText("Numero celular");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(40, 150, 71, 14);
+        jLabel11.setBounds(40, 150, 87, 16);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         getContentPane().add(jLabel10);
@@ -175,7 +180,7 @@ int IND_NR;
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "automovil", "motocicleta", "cicla" }));
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(490, 140, 100, 20);
+        jComboBox1.setBounds(490, 140, 100, 22);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
         getContentPane().add(jLabel9);
@@ -189,14 +194,20 @@ int IND_NR;
     }//GEN-LAST:event_tx_nombreActionPerformed
 
     private void bn_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_cancelarActionPerformed
-        // TODO add your handling code here:
+                this.dispose();
+                tx_nombre.setText(IND_NR);
+                tx_residencia.setText(IND_NR);
+                tx_celular.setText(IND_NR);
+                tx_marca.setText(IND_NR);
+                tx_modelo.setText(IND_NR);
+                admin.setVisible(true);
     }//GEN-LAST:event_bn_cancelarActionPerformed
 
     private void bn_registrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_registrarseActionPerformed
         // TODO add your handling code here:
-         if(IND_NR==0){
+         if(!((IND_NR.equals(tx_placa.getText().trim()))&(IND_NR.equals(tx_nombre.getText().trim()))&(IND_NR.equals(tx_residencia.getText().trim()))&(IND_NR.equals(tx_celular.getText().trim()))&(IND_NR.equals(tx_marca.getText().trim()))&(IND_NR.equals(tx_modelo.getText().trim())))){
            String sPlaca = tx_placa.getText();
-          // int iId = Integer.parseInt(sid);
+     
            String sNombre =tx_nombre.getText();
            String srecidencia =tx_residencia.getText();
            String scelular =tx_celular.getText();
@@ -208,10 +219,20 @@ int IND_NR;
            try{
                stmt.executeUpdate(qrq);
                JOptionPane.showMessageDialog(null, "Registro grabado satisfactoriamente");
+               admin.setVisible(true);
+               this.dispose();
+                tx_nombre.setText(IND_NR);
+                tx_residencia.setText(IND_NR);
+                tx_celular.setText(IND_NR);
+                tx_marca.setText(IND_NR);
+                tx_modelo.setText(IND_NR);
+               
            }catch(Exception e){
                System.out.println("error al grabar "+e.getMessage());
            }
-       }
+       }else{
+             JOptionPane.showMessageDialog(null, "llene todos los campos");
+         }
     }//GEN-LAST:event_bn_registrarseActionPerformed
 //********* arley
     public void eliminar(String script){
@@ -220,11 +241,10 @@ int IND_NR;
         System.err.println(script);
         try{
             p = con.prepareStatement(script);
-           
             p.executeUpdate();
             JOptionPane.showMessageDialog(null, "Ejecucion Completa");
-        }catch(Exception ex ){
-            JOptionPane.showMessageDialog(null, ex.getMessage());
+        }catch(Exception e ){
+            JOptionPane.showMessageDialog(null, e.getMessage());
             System.err.println("No se pudo ejecutar la sentencia");
             System.err.println(script);
         }
