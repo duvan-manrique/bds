@@ -8,6 +8,7 @@ package proyecto_parqueadero;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.Statement;
+import java.time.LocalTime;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -52,13 +53,14 @@ public class Ubicacion extends javax.swing.JFrame {
     }
     public void inscribir(int index){
         Calendar c1 = Calendar.getInstance();
+        LocalTime horaActual = LocalTime.now();
         //Calendar c2 = new GregorianCalendar();
         //Date date = new Date();
         //date=null;
         // desde donde se inicia el programa? la clase principal? si
         String fecha_entrada = (Integer.toString(c1.get(Calendar.DATE))+"-"+Integer.toString(c1.get(Calendar.MONTH))+"-"+Integer.toString(c1.get(Calendar.YEAR)));
         String fecha_salida = (Integer.toString(c1.get(Calendar.DATE))+"-"+Integer.toString(c1.get(Calendar.MONTH))+"-"+Integer.toString(c1.get(Calendar.YEAR)));
-        String hora_entrada= (Integer.toString(c1.get(Calendar.HOUR)));
+        String hora_entrada= (""+horaActual.getHour()+":"+horaActual.getMinute());
         String hora_salida= (Integer.toString(c1.get(Calendar.HOUR)));
        String query = String.format("INSERT INTO historico( placa, posicion, fecha_entrada, hora_entrada) values ('"+placa+"',"+index+",'"+fecha_entrada+"','"+hora_entrada+"')");
        registro.eliminar(query);
