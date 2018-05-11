@@ -120,6 +120,9 @@ public class admindentro extends javax.swing.JFrame {
 
     private void bn_editarclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_editarclienteActionPerformed
        editar_cliente cliente_edit = new editar_cliente(registro);
+       cliente_edit.setVisible(true);
+       cliente_edit.resibir(this);
+       this.dispose();
     }//GEN-LAST:event_bn_editarclienteActionPerformed
 
     private void bn_verclientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_verclientesActionPerformed

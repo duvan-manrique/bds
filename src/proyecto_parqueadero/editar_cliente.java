@@ -5,6 +5,9 @@
  */
 package proyecto_parqueadero;
 
+import javax.swing.JOptionPane;
+import javax.swing.table.TableModel;
+
 /**
  *
  * @author rojas
@@ -15,11 +18,16 @@ public class editar_cliente extends javax.swing.JFrame {
      * Creates new form editar_cliente
      */
     Registro registro;
+    admindentro admin;
+    String  IND_NR=" ";
     public editar_cliente(Registro registro1) {
         initComponents();
         registro=registro1;
     }
-    
+public void resibir(admindentro admin1){
+        admin=admin1;
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -53,6 +61,10 @@ public class editar_cliente extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocationByPlatform(true);
+        setMaximumSize(new java.awt.Dimension(627, 440));
+        setMinimumSize(new java.awt.Dimension(627, 440));
+        setPreferredSize(new java.awt.Dimension(627, 440));
         getContentPane().setLayout(null);
 
         jLabel4.setBackground(new java.awt.Color(255, 0, 0));
@@ -134,6 +146,11 @@ public class editar_cliente extends javax.swing.JFrame {
 
         bn_buscarcliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/buscarClienteIcon.jpg"))); // NOI18N
         bn_buscarcliente.setText("buscar");
+        bn_buscarcliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bn_buscarclienteActionPerformed(evt);
+            }
+        });
         getContentPane().add(bn_buscarcliente);
         bn_buscarcliente.setBounds(360, 90, 130, 60);
 
@@ -149,7 +166,7 @@ public class editar_cliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(250, 100, 90, 20);
+        jTextField1.setBounds(250, 100, 90, 22);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         getContentPane().add(jLabel2);
@@ -179,7 +196,30 @@ public class editar_cliente extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bn_editarclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_editarclienteActionPerformed
-        // TODO add your handling code here:
+           String sPlaca = tx_placa.getText();     
+           String sNombre =tx_nombre.getText();
+           String srecidencia =tx_residencia.getText();
+           String scelular =tx_celular.getText();
+           String smarca =tx_marca.getText();
+           String smodelo =tx_modelo.getText();
+           
+           String qrq ="update registro set (placa, nombre_completo, residencia, num_celular, modelo, marca ) values ('"+sPlaca+"','"+sNombre+"','"+srecidencia+"',"+scelular+",'"+smodelo+"','"+smarca+"')";
+        
+        try{
+               
+               registro.eliminar(qrq);
+               JOptionPane.showMessageDialog(null, "Registro grabado satisfactoriamente");
+               admin.setVisible(true);
+               this.dispose();
+                tx_nombre.setText(IND_NR);
+                tx_residencia.setText(IND_NR);
+                tx_celular.setText(IND_NR);
+                tx_marca.setText(IND_NR);
+                tx_modelo.setText(IND_NR);
+               
+           }catch(Exception e){
+               System.out.println("error al grabar "+e.getMessage());
+           }
     }//GEN-LAST:event_bn_editarclienteActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -193,6 +233,24 @@ public class editar_cliente extends javax.swing.JFrame {
     private void tx_marcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_marcaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tx_marcaActionPerformed
+
+    private void bn_buscarclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_buscarclienteActionPerformed
+        String placa_el =jTextField1.getText();
+        String script= String.format("select * from registro where placa='%s'",placa_el);
+        TableModel tabla =registro.consultar(script).getModel();
+        if((tabla != null)){
+           tx_placa.setText(tabla.getValueAt(0, 0).toString());
+           tx_nombre.setText(tabla.getValueAt(0, 1).toString());
+           tx_residencia.setText(tabla.getValueAt(0, 2).toString());
+           tx_celular.setText(tabla.getValueAt(0, 3).toString());
+           tx_modelo.setText(tabla.getValueAt(0, 4).toString());
+           tx_marca.setText(tabla.getValueAt(0, 5).toString());
+            
+        }else{
+            JOptionPane.showMessageDialog(null, "no encontrado");
+        }
+            
+    }//GEN-LAST:event_bn_buscarclienteActionPerformed
 
     /**
      * @param args the command line arguments
