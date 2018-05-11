@@ -20,6 +20,7 @@ public class ver_cliente_plus extends javax.swing.JFrame {
         registro =registro1;
         
         tabla_clientes_plus = registro.consultar("select * from registro;");
+        System.err.println(tabla_clientes_plus);
     }
 
     /**
@@ -38,6 +39,9 @@ public class ver_cliente_plus extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(777, 485));
+        setMinimumSize(new java.awt.Dimension(777, 485));
+        setPreferredSize(new java.awt.Dimension(777, 485));
         getContentPane().setLayout(null);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -52,23 +56,15 @@ public class ver_cliente_plus extends javax.swing.JFrame {
 
         tabla_clientes_plus.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {},
+                {},
+                {},
+                {}
             },
             new String [] {
-                "placa", "nombre completo", "residencia", "numero de celular", "modelo", "marca"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, true, true, false, true, true
-            };
 
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
             }
-        });
+        ));
         tabla_clientes_plus.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tabla_clientes.setViewportView(tabla_clientes_plus);
 
