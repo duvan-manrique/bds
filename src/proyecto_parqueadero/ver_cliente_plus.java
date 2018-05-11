@@ -5,6 +5,9 @@
  */
 package proyecto_parqueadero;
 
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
+
 /**
  *
  * @author rojas
@@ -18,9 +21,9 @@ public class ver_cliente_plus extends javax.swing.JFrame {
     public ver_cliente_plus(Registro registro1) {
         initComponents();
         registro =registro1;
-        
-        tabla_clientes_plus = registro.consultar("select * from registro;");
-        System.err.println(tabla_clientes_plus);
+        TableModel tabla = registro.consultar("select * from registro;").getModel();
+        tabla_clientes_plus.setModel(tabla);
+       // System.err.println(tabla_clientes_plus);
     }
 
     /**

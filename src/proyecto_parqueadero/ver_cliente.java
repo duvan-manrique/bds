@@ -5,6 +5,8 @@
  */
 package proyecto_parqueadero;
 
+import javax.swing.table.TableModel;
+
 /**
  *
  * @author rojas
@@ -19,8 +21,8 @@ public class ver_cliente extends javax.swing.JFrame {
         initComponents();
         
         registro =registro1;
-        
-        tabla_cliente = registro.consultar("select * from historico;");// no se que paso pero hay aparecia la tabla 
+        TableModel tabla = registro.consultar("select * from historico;").getModel();
+        tabla_cliente.setModel(tabla);
     }
 
     /**
