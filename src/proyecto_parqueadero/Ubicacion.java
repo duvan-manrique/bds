@@ -34,12 +34,11 @@ public class Ubicacion extends javax.swing.JFrame {
     }
     JTable tabla;
     public void desactivar(){
-        int columnas=0;
-        String query= String.format("select from historico where hora_salida='0'");
-        registro.consultar(tabla, query);
-        for(int x=0; x<=tabla.getRowCount();x++){
-            columnas=x;
-        }
+        
+
+        
+        registro.consultar(tabla, "select * from historico;");
+        int columnas=tabla.getHeight();
         for(int y=0;y<columnas;y++){
            int u =  (int) tabla.getValueAt(y, 3);
            System.out.println(u);
