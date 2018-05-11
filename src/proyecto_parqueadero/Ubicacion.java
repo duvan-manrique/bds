@@ -12,6 +12,7 @@ import java.time.LocalTime;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import javax.swing.JComboBox;
 import javax.swing.JTable;
 
 /**
@@ -54,6 +55,7 @@ public class Ubicacion extends javax.swing.JFrame {
     public void inscribir(int index){
         Calendar c1 = Calendar.getInstance();
         LocalTime horaActual = LocalTime.now();
+        
         //Calendar c2 = new GregorianCalendar();
         //Date date = new Date();
         //date=null;
