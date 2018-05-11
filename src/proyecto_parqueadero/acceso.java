@@ -204,13 +204,15 @@ public class acceso extends javax.swing.JFrame {
                            
                            
                            //******************* crear clases de las vistas del usuario
-                            Inicio menu=new Inicio(con,stmt);
-                            //Registro b = new Registro(con,stmt);
-                            menu.setVisible(true);
+                           Registro registro = new Registro(con,stmt);
+                           Inicio menu=new Inicio(registro);
+                           menu.setVisible(true);
+                           Ubicacion c = new Ubicacion(registro);
+                           c.setVisible(false);
+                           menu.resivir_ubicacion(c);
                             //b.setVisible(false);
-                            Ubicacion c = new Ubicacion(stmt,con);
-                            c.setVisible(false);
-                            menu.resivir(c);
+                           
+                           
                             
                             this.dispose();
                               

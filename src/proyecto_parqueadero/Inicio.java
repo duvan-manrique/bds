@@ -15,25 +15,20 @@ import javax.swing.JOptionPane;
  * @author home
  */
 public class Inicio extends javax.swing.JFrame {
-    Connection con=null;
-    Statement stmt=null;
+   
     private final String EMPTY = new String () ;
     /**
      * Creates new form Inicio
      */
-     public Inicio( Connection con, Statement stmt) {
-        this.con=con;
-        this.stmt=stmt;
+    Registro registro;
+     public Inicio(Registro registro1) {
+       registro = registro1;
         initComponents();
-    }
-    public Inicio() {
-        initComponents();
-    }
-   Ubicacion ubicacion;
-public void resivir(Ubicacion registro1){
-    ubicacion =registro1;
-}
-
+    } 
+     Ubicacion ubicacion;
+  public void resivir_ubicacion(Ubicacion ubicacion1){
+      ubicacion = ubicacion1;
+  }
 
     /**
      * This method is called from within the constructor to initialize the form.
