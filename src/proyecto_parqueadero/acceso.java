@@ -162,7 +162,7 @@ public class acceso extends javax.swing.JFrame {
 	   //etqaviso.setText("Acceso comprobado: ID Usuario y contraseña correcta");
            if((u_admin.equals(nomUser.getText().trim()))&(contra_admin.equals(contraUser.getText().trim()))){
                user="postgres";
-                contra="0000";
+                contra="123";
                 Conexion objVideo = new Conexion(user,contra);
                // etiqAviso1.setForeground(new Color(255,255,255));
                // etiqAviso1.setText(objVideo.rAviso1());
@@ -189,7 +189,7 @@ public class acceso extends javax.swing.JFrame {
            }else{
                if((u_user.equals(nomUser.getText().trim()))&(contra_user.equals(contraUser.getText().trim()))){
                        user="postgres";
-                        contra="0000";
+                        contra="123";
                         Conexion objVideo = new Conexion(user,contra);
                        // etiqAviso1.setForeground(new Color(255,255,255));
                        // etiqAviso1.setText(objVideo.rAviso1());

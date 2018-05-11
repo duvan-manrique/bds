@@ -123,7 +123,8 @@ public class admindentro extends javax.swing.JFrame {
     }//GEN-LAST:event_bn_editarclienteActionPerformed
 
     private void bn_verclientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_verclientesActionPerformed
-        // TODO add your handling code here:
+        ver_cliente ver_client = new ver_cliente(registro);
+        ver_client.setVisible(true);
     }//GEN-LAST:event_bn_verclientesActionPerformed
 
     private void bn_verclientesplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_verclientesplusActionPerformed
