@@ -11,6 +11,7 @@ import java.sql.Statement;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import javax.swing.JTable;
 
 /**
  *
@@ -30,6 +31,20 @@ public class Ubicacion extends javax.swing.JFrame {
     public void placa_res(String placa1){
          placa= placa1;
          
+    }
+    JTable tabla;
+    public void desactivar(){
+        int columnas=0;
+        String query= String.format("select from historico where hora_salida='0'");
+        registro.consultar(tabla, query);
+        for(int x=0; x<=tabla.getRowCount();x++){
+            columnas=x;
+        }
+        for(int y=0;y<columnas;y++){
+           int u =  (int) tabla.getValueAt(y, 3);
+           System.out.println(u);
+        }
+        
     }
     public void inscribir(int index){
         Calendar c1 = Calendar.getInstance();

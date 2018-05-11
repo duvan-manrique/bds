@@ -79,107 +79,8 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p31a3 = new javax.swing.JButton();
         jButton_p32a3 = new javax.swing.JButton();
         jButton_p33a3 = new javax.swing.JButton();
-        jButton_p34a3 = new javax.swing.JButton();
-        jButton_p35a3 = new javax.swing.JButton();
-        jButton_p36a3 = new javax.swing.JButton();
-        jButton_p37a3 = new javax.swing.JButton();
-        jButton_p38a3 = new javax.swing.JButton();
-        jButton_p39a3 = new javax.swing.JButton();
-        jButton_p40a3 = new javax.swing.JButton();
-        jButton_p41a3 = new javax.swing.JButton();
-        jButton_p42a3 = new javax.swing.JButton();
-        jButton_p43a3 = new javax.swing.JButton();
-        jButton_p44a3 = new javax.swing.JButton();
-        jButton_p45a3 = new javax.swing.JButton();
-        jButton_p46a3 = new javax.swing.JButton();
-        jButton_p47a3 = new javax.swing.JButton();
-        jButton_p48a3 = new javax.swing.JButton();
-        jButton_p49a3 = new javax.swing.JButton();
-        jButton_p50a3 = new javax.swing.JButton();
-        jButton_p51a3 = new javax.swing.JButton();
-        jButton_p52a3 = new javax.swing.JButton();
-        jButton_p53a3 = new javax.swing.JButton();
-        jButton_p54a3 = new javax.swing.JButton();
-        jButton_p55a3 = new javax.swing.JButton();
-        jButton_p56a3 = new javax.swing.JButton();
-        jButton_p57a3 = new javax.swing.JButton();
-        jButton_p58a3 = new javax.swing.JButton();
-        jButton_p59a3 = new javax.swing.JButton();
-        jButton_p60a3 = new javax.swing.JButton();
-        jButton_p61a3 = new javax.swing.JButton();
-        jButton_p62a3 = new javax.swing.JButton();
-        jButton_p63a3 = new javax.swing.JButton();
-        jButton_p64a3 = new javax.swing.JButton();
-        jButton_p65a3 = new javax.swing.JButton();
-        jButton_p66a3 = new javax.swing.JButton();
-        jButton_p67a3 = new javax.swing.JButton();
-        jButton_p68a3 = new javax.swing.JButton();
-        jButton_p69a3 = new javax.swing.JButton();
-        jButton_p70a3 = new javax.swing.JButton();
-        jButton_p71a3 = new javax.swing.JButton();
-        jButton_p72a3 = new javax.swing.JButton();
-        jButton_p73a3 = new javax.swing.JButton();
-        jButton_p74a3 = new javax.swing.JButton();
-        jButton_p75a3 = new javax.swing.JButton();
-        jButton_p76a3 = new javax.swing.JButton();
-        jButton_p77a3 = new javax.swing.JButton();
-        jButton_p78a3 = new javax.swing.JButton();
-        jButton_p79a3 = new javax.swing.JButton();
-        jButton_p80a3 = new javax.swing.JButton();
-        jButton_p81a3 = new javax.swing.JButton();
-        jButton_p82a3 = new javax.swing.JButton();
-        jButton_p83a3 = new javax.swing.JButton();
-        jButton_p84a3 = new javax.swing.JButton();
-        jButton_p85a3 = new javax.swing.JButton();
-        jButton_p86a3 = new javax.swing.JButton();
-        jButton_p87a3 = new javax.swing.JButton();
-        jButton_p88a3 = new javax.swing.JButton();
-        jButton_p89a3 = new javax.swing.JButton();
-        jButton_p90a3 = new javax.swing.JButton();
-        jButton_p91a3 = new javax.swing.JButton();
-        jButton_p92a3 = new javax.swing.JButton();
-        jButton_p93a3 = new javax.swing.JButton();
-        jButton_p94a3 = new javax.swing.JButton();
-        jButton_p95a3 = new javax.swing.JButton();
-        jButton_p96a3 = new javax.swing.JButton();
-        jButton_p97a3 = new javax.swing.JButton();
-        jButton_p98a3 = new javax.swing.JButton();
-        jButton_p99a3 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jPanel_segunda = new javax.swing.JPanel();
-        jButton_p1a4 = new javax.swing.JButton();
-        jButton_p2a4 = new javax.swing.JButton();
-        jButton_p3a4 = new javax.swing.JButton();
-        jButton_p4a4 = new javax.swing.JButton();
-        jButton_p5a4 = new javax.swing.JButton();
-        jButton_p6a4 = new javax.swing.JButton();
-        jButton_p7a4 = new javax.swing.JButton();
-        jButton_p8a4 = new javax.swing.JButton();
-        jButton_p9a3 = new javax.swing.JButton();
-        jButton_p10a4 = new javax.swing.JButton();
-        jButton_p11a4 = new javax.swing.JButton();
-        jButton_p12a4 = new javax.swing.JButton();
-        jButton_p13a4 = new javax.swing.JButton();
-        jButton_p14a3 = new javax.swing.JButton();
-        jButton_p15a4 = new javax.swing.JButton();
-        jButton_p16a4 = new javax.swing.JButton();
-        jButton_p17a4 = new javax.swing.JButton();
-        jButton_p18a4 = new javax.swing.JButton();
-        jButton_p19a4 = new javax.swing.JButton();
-        jButton_p20a4 = new javax.swing.JButton();
-        jButton_p21a4 = new javax.swing.JButton();
-        jButton_p22a4 = new javax.swing.JButton();
-        jButton_p23a4 = new javax.swing.JButton();
-        jButton_p24a4 = new javax.swing.JButton();
-        jButton_p25a4 = new javax.swing.JButton();
-        jButton_p26a4 = new javax.swing.JButton();
-        jButton_p27a4 = new javax.swing.JButton();
-        jButton_p28a4 = new javax.swing.JButton();
-        jButton_p29a4 = new javax.swing.JButton();
-        jButton_p30a4 = new javax.swing.JButton();
-        jButton_p31a4 = new javax.swing.JButton();
-        jButton_p32a4 = new javax.swing.JButton();
-        jButton_p33a4 = new javax.swing.JButton();
         jButton_p34a4 = new javax.swing.JButton();
         jButton_p35a4 = new javax.swing.JButton();
         jButton_p36a4 = new javax.swing.JButton();
@@ -213,107 +114,8 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p64a4 = new javax.swing.JButton();
         jButton_p65a4 = new javax.swing.JButton();
         jButton_p66a4 = new javax.swing.JButton();
-        jButton_p67a4 = new javax.swing.JButton();
-        jButton_p68a4 = new javax.swing.JButton();
-        jButton_p69a4 = new javax.swing.JButton();
-        jButton_p70a4 = new javax.swing.JButton();
-        jButton_p71a4 = new javax.swing.JButton();
-        jButton_p72a4 = new javax.swing.JButton();
-        jButton_p73a4 = new javax.swing.JButton();
-        jButton_p74a4 = new javax.swing.JButton();
-        jButton_p75a4 = new javax.swing.JButton();
-        jButton_p76a4 = new javax.swing.JButton();
-        jButton_p77a4 = new javax.swing.JButton();
-        jButton_p78a4 = new javax.swing.JButton();
-        jButton_p79a4 = new javax.swing.JButton();
-        jButton_p80a4 = new javax.swing.JButton();
-        jButton_p81a4 = new javax.swing.JButton();
-        jButton_p82a4 = new javax.swing.JButton();
-        jButton_p83a4 = new javax.swing.JButton();
-        jButton_p84a4 = new javax.swing.JButton();
-        jButton_p85a4 = new javax.swing.JButton();
-        jButton_p86a4 = new javax.swing.JButton();
-        jButton_p87a4 = new javax.swing.JButton();
-        jButton_p88a4 = new javax.swing.JButton();
-        jButton_p89a4 = new javax.swing.JButton();
-        jButton_p90a4 = new javax.swing.JButton();
-        jButton_p91a4 = new javax.swing.JButton();
-        jButton_p92a4 = new javax.swing.JButton();
-        jButton_p93a4 = new javax.swing.JButton();
-        jButton_p94a4 = new javax.swing.JButton();
-        jButton_p95a4 = new javax.swing.JButton();
-        jButton_p96a4 = new javax.swing.JButton();
-        jButton_p97a4 = new javax.swing.JButton();
-        jButton_p98a4 = new javax.swing.JButton();
-        jButton_p99a4 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jPanel_tercera = new javax.swing.JPanel();
-        jButton_p1a2 = new javax.swing.JButton();
-        jButton_p2a2 = new javax.swing.JButton();
-        jButton_p3a2 = new javax.swing.JButton();
-        jButton_p4a2 = new javax.swing.JButton();
-        jButton_p5a2 = new javax.swing.JButton();
-        jButton_p6a2 = new javax.swing.JButton();
-        jButton_p7a2 = new javax.swing.JButton();
-        jButton_p8a2 = new javax.swing.JButton();
-        jButton_p9a4 = new javax.swing.JButton();
-        jButton_p10a2 = new javax.swing.JButton();
-        jButton_p11a2 = new javax.swing.JButton();
-        jButton_p12a2 = new javax.swing.JButton();
-        jButton_p13a2 = new javax.swing.JButton();
-        jButton_p14a4 = new javax.swing.JButton();
-        jButton_p15a2 = new javax.swing.JButton();
-        jButton_p16a2 = new javax.swing.JButton();
-        jButton_p17a2 = new javax.swing.JButton();
-        jButton_p18a2 = new javax.swing.JButton();
-        jButton_p19a2 = new javax.swing.JButton();
-        jButton_p20a2 = new javax.swing.JButton();
-        jButton_p21a2 = new javax.swing.JButton();
-        jButton_p22a2 = new javax.swing.JButton();
-        jButton_p23a2 = new javax.swing.JButton();
-        jButton_p24a2 = new javax.swing.JButton();
-        jButton_p25a2 = new javax.swing.JButton();
-        jButton_p26a2 = new javax.swing.JButton();
-        jButton_p27a2 = new javax.swing.JButton();
-        jButton_p28a2 = new javax.swing.JButton();
-        jButton_p29a2 = new javax.swing.JButton();
-        jButton_p30a2 = new javax.swing.JButton();
-        jButton_p31a2 = new javax.swing.JButton();
-        jButton_p32a2 = new javax.swing.JButton();
-        jButton_p33a2 = new javax.swing.JButton();
-        jButton_p34a2 = new javax.swing.JButton();
-        jButton_p35a2 = new javax.swing.JButton();
-        jButton_p36a2 = new javax.swing.JButton();
-        jButton_p37a2 = new javax.swing.JButton();
-        jButton_p38a2 = new javax.swing.JButton();
-        jButton_p39a2 = new javax.swing.JButton();
-        jButton_p40a2 = new javax.swing.JButton();
-        jButton_p41a2 = new javax.swing.JButton();
-        jButton_p42a2 = new javax.swing.JButton();
-        jButton_p43a2 = new javax.swing.JButton();
-        jButton_p44a2 = new javax.swing.JButton();
-        jButton_p45a2 = new javax.swing.JButton();
-        jButton_p46a2 = new javax.swing.JButton();
-        jButton_p47a2 = new javax.swing.JButton();
-        jButton_p48a2 = new javax.swing.JButton();
-        jButton_p49a2 = new javax.swing.JButton();
-        jButton_p50a2 = new javax.swing.JButton();
-        jButton_p51a2 = new javax.swing.JButton();
-        jButton_p52a2 = new javax.swing.JButton();
-        jButton_p53a2 = new javax.swing.JButton();
-        jButton_p54a2 = new javax.swing.JButton();
-        jButton_p55a2 = new javax.swing.JButton();
-        jButton_p56a2 = new javax.swing.JButton();
-        jButton_p57a2 = new javax.swing.JButton();
-        jButton_p58a2 = new javax.swing.JButton();
-        jButton_p59a2 = new javax.swing.JButton();
-        jButton_p60a2 = new javax.swing.JButton();
-        jButton_p61a2 = new javax.swing.JButton();
-        jButton_p62a2 = new javax.swing.JButton();
-        jButton_p63a2 = new javax.swing.JButton();
-        jButton_p64a2 = new javax.swing.JButton();
-        jButton_p65a2 = new javax.swing.JButton();
-        jButton_p66a2 = new javax.swing.JButton();
         jButton_p67a2 = new javax.swing.JButton();
         jButton_p68a2 = new javax.swing.JButton();
         jButton_p69a2 = new javax.swing.JButton();
@@ -817,594 +619,6 @@ public class Inicio extends javax.swing.JFrame {
         jPanel_primer.add(jButton_p33a3);
         jButton_p33a3.setBounds(500, 210, 50, 40);
 
-        jButton_p34a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p34a3.setText("34");
-        jButton_p34a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p34a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p34a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p34a3);
-        jButton_p34a3.setBounds(550, 210, 50, 40);
-
-        jButton_p35a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p35a3.setText("35");
-        jButton_p35a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p35a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p35a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p35a3);
-        jButton_p35a3.setBounds(600, 210, 50, 40);
-
-        jButton_p36a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p36a3.setText("36");
-        jButton_p36a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p36a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p36a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p36a3);
-        jButton_p36a3.setBounds(650, 210, 50, 40);
-
-        jButton_p37a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p37a3.setText("37");
-        jButton_p37a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p37a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p37a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p37a3);
-        jButton_p37a3.setBounds(100, 250, 50, 40);
-
-        jButton_p38a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p38a3.setText("38");
-        jButton_p38a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p38a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p38a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p38a3);
-        jButton_p38a3.setBounds(150, 250, 50, 40);
-
-        jButton_p39a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p39a3.setText("39");
-        jButton_p39a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p39a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p39a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p39a3);
-        jButton_p39a3.setBounds(200, 250, 50, 40);
-
-        jButton_p40a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p40a3.setText("40");
-        jButton_p40a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p40a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p40a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p40a3);
-        jButton_p40a3.setBounds(250, 250, 50, 40);
-
-        jButton_p41a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p41a3.setText("41");
-        jButton_p41a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p41a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p41a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p41a3);
-        jButton_p41a3.setBounds(300, 250, 50, 40);
-
-        jButton_p42a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p42a3.setText("42");
-        jButton_p42a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p42a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p42a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p42a3);
-        jButton_p42a3.setBounds(350, 250, 50, 40);
-
-        jButton_p43a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p43a3.setText("43");
-        jButton_p43a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p43a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p43a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p43a3);
-        jButton_p43a3.setBounds(400, 250, 50, 40);
-
-        jButton_p44a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p44a3.setText("44");
-        jButton_p44a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p44a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p44a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p44a3);
-        jButton_p44a3.setBounds(450, 250, 50, 40);
-
-        jButton_p45a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p45a3.setText("45");
-        jButton_p45a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p45a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p45a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p45a3);
-        jButton_p45a3.setBounds(500, 250, 50, 40);
-
-        jButton_p46a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p46a3.setText("46");
-        jButton_p46a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p46a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p46a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p46a3);
-        jButton_p46a3.setBounds(550, 250, 50, 40);
-
-        jButton_p47a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p47a3.setText("47");
-        jButton_p47a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p47a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p47a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p47a3);
-        jButton_p47a3.setBounds(600, 250, 50, 40);
-
-        jButton_p48a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p48a3.setText("48");
-        jButton_p48a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p48a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p48a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p48a3);
-        jButton_p48a3.setBounds(650, 250, 50, 40);
-
-        jButton_p49a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p49a3.setText("49");
-        jButton_p49a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p49a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p49a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p49a3);
-        jButton_p49a3.setBounds(100, 290, 50, 40);
-
-        jButton_p50a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p50a3.setText("50");
-        jButton_p50a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p50a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p50a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p50a3);
-        jButton_p50a3.setBounds(150, 290, 50, 40);
-
-        jButton_p51a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p51a3.setText("51");
-        jButton_p51a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p51a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p51a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p51a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p51a3ActionPerformed(evt);
-            }
-        });
-        jPanel_primer.add(jButton_p51a3);
-        jButton_p51a3.setBounds(200, 290, 50, 40);
-
-        jButton_p52a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p52a3.setText("52");
-        jButton_p52a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p52a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p52a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p52a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p52a3ActionPerformed(evt);
-            }
-        });
-        jPanel_primer.add(jButton_p52a3);
-        jButton_p52a3.setBounds(250, 290, 50, 40);
-
-        jButton_p53a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p53a3.setText("53");
-        jButton_p53a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p53a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p53a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p53a3);
-        jButton_p53a3.setBounds(300, 290, 50, 40);
-
-        jButton_p54a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p54a3.setText("54");
-        jButton_p54a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p54a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p54a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p54a3);
-        jButton_p54a3.setBounds(350, 290, 50, 40);
-
-        jButton_p55a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p55a3.setText("55");
-        jButton_p55a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p55a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p55a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p55a3);
-        jButton_p55a3.setBounds(400, 290, 50, 40);
-
-        jButton_p56a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p56a3.setText("56");
-        jButton_p56a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p56a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p56a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p56a3);
-        jButton_p56a3.setBounds(450, 290, 50, 40);
-
-        jButton_p57a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p57a3.setText("57");
-        jButton_p57a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p57a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p57a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p57a3);
-        jButton_p57a3.setBounds(500, 290, 50, 40);
-
-        jButton_p58a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p58a3.setText("58");
-        jButton_p58a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p58a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p58a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p58a3);
-        jButton_p58a3.setBounds(550, 290, 50, 40);
-
-        jButton_p59a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p59a3.setText("59");
-        jButton_p59a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p59a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p59a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p59a3);
-        jButton_p59a3.setBounds(600, 290, 50, 40);
-
-        jButton_p60a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p60a3.setText("60");
-        jButton_p60a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p60a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p60a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p60a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p60a3ActionPerformed(evt);
-            }
-        });
-        jPanel_primer.add(jButton_p60a3);
-        jButton_p60a3.setBounds(650, 290, 50, 40);
-
-        jButton_p61a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p61a3.setText("61");
-        jButton_p61a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p61a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p61a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p61a3);
-        jButton_p61a3.setBounds(100, 330, 50, 40);
-
-        jButton_p62a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p62a3.setText("62");
-        jButton_p62a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p62a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p62a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p62a3);
-        jButton_p62a3.setBounds(150, 330, 50, 40);
-
-        jButton_p63a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p63a3.setText("63");
-        jButton_p63a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p63a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p63a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p63a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p63a3ActionPerformed(evt);
-            }
-        });
-        jPanel_primer.add(jButton_p63a3);
-        jButton_p63a3.setBounds(200, 330, 50, 40);
-
-        jButton_p64a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p64a3.setText("64");
-        jButton_p64a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p64a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p64a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p64a3);
-        jButton_p64a3.setBounds(250, 330, 50, 40);
-
-        jButton_p65a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p65a3.setText("65");
-        jButton_p65a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p65a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p65a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p65a3);
-        jButton_p65a3.setBounds(300, 330, 50, 40);
-
-        jButton_p66a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p66a3.setText("66");
-        jButton_p66a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p66a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p66a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p66a3);
-        jButton_p66a3.setBounds(350, 330, 50, 40);
-
-        jButton_p67a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p67a3.setText("67");
-        jButton_p67a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p67a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p67a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p67a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p67a3ActionPerformed(evt);
-            }
-        });
-        jPanel_primer.add(jButton_p67a3);
-        jButton_p67a3.setBounds(400, 330, 50, 40);
-
-        jButton_p68a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p68a3.setText("68");
-        jButton_p68a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p68a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p68a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p68a3);
-        jButton_p68a3.setBounds(450, 330, 50, 40);
-
-        jButton_p69a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p69a3.setText("69");
-        jButton_p69a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p69a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p69a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p69a3);
-        jButton_p69a3.setBounds(500, 330, 50, 40);
-
-        jButton_p70a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p70a3.setText("70");
-        jButton_p70a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p70a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p70a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p70a3);
-        jButton_p70a3.setBounds(550, 330, 50, 40);
-
-        jButton_p71a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p71a3.setText("71");
-        jButton_p71a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p71a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p71a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p71a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p71a3ActionPerformed(evt);
-            }
-        });
-        jPanel_primer.add(jButton_p71a3);
-        jButton_p71a3.setBounds(600, 330, 50, 40);
-
-        jButton_p72a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p72a3.setText("72");
-        jButton_p72a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p72a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p72a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p72a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p72a3ActionPerformed(evt);
-            }
-        });
-        jPanel_primer.add(jButton_p72a3);
-        jButton_p72a3.setBounds(650, 330, 50, 40);
-
-        jButton_p73a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p73a3.setText("73");
-        jButton_p73a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p73a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p73a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p73a3);
-        jButton_p73a3.setBounds(100, 370, 50, 40);
-
-        jButton_p74a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p74a3.setText("74");
-        jButton_p74a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p74a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p74a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p74a3);
-        jButton_p74a3.setBounds(150, 370, 50, 40);
-
-        jButton_p75a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p75a3.setText("75");
-        jButton_p75a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p75a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p75a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p75a3);
-        jButton_p75a3.setBounds(200, 370, 50, 40);
-
-        jButton_p76a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p76a3.setText("76");
-        jButton_p76a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p76a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p76a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p76a3);
-        jButton_p76a3.setBounds(250, 370, 50, 40);
-
-        jButton_p77a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p77a3.setText("77");
-        jButton_p77a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p77a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p77a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p77a3);
-        jButton_p77a3.setBounds(300, 370, 50, 40);
-
-        jButton_p78a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p78a3.setText("78");
-        jButton_p78a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p78a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p78a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p78a3);
-        jButton_p78a3.setBounds(350, 370, 50, 40);
-
-        jButton_p79a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p79a3.setText("79");
-        jButton_p79a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p79a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p79a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p79a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p79a3ActionPerformed(evt);
-            }
-        });
-        jPanel_primer.add(jButton_p79a3);
-        jButton_p79a3.setBounds(400, 370, 50, 40);
-
-        jButton_p80a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p80a3.setText("80");
-        jButton_p80a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p80a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p80a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p80a3);
-        jButton_p80a3.setBounds(450, 370, 50, 40);
-
-        jButton_p81a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p81a3.setText("81");
-        jButton_p81a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p81a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p81a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p81a3);
-        jButton_p81a3.setBounds(500, 370, 50, 40);
-
-        jButton_p82a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p82a3.setText("82");
-        jButton_p82a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p82a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p82a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p82a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p82a3ActionPerformed(evt);
-            }
-        });
-        jPanel_primer.add(jButton_p82a3);
-        jButton_p82a3.setBounds(550, 370, 50, 40);
-
-        jButton_p83a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p83a3.setText("83");
-        jButton_p83a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p83a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p83a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p83a3);
-        jButton_p83a3.setBounds(600, 370, 50, 40);
-
-        jButton_p84a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p84a3.setText("84");
-        jButton_p84a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p84a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p84a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p84a3);
-        jButton_p84a3.setBounds(650, 370, 50, 40);
-
-        jButton_p85a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p85a3.setText("85");
-        jButton_p85a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p85a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p85a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p85a3);
-        jButton_p85a3.setBounds(100, 410, 50, 40);
-
-        jButton_p86a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p86a3.setText("86");
-        jButton_p86a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p86a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p86a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p86a3);
-        jButton_p86a3.setBounds(150, 410, 50, 40);
-
-        jButton_p87a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p87a3.setText("87");
-        jButton_p87a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p87a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p87a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p87a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p87a3ActionPerformed(evt);
-            }
-        });
-        jPanel_primer.add(jButton_p87a3);
-        jButton_p87a3.setBounds(200, 410, 50, 40);
-
-        jButton_p88a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p88a3.setText("88");
-        jButton_p88a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p88a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p88a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p88a3);
-        jButton_p88a3.setBounds(250, 410, 50, 40);
-
-        jButton_p89a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p89a3.setText("89");
-        jButton_p89a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p89a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p89a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p89a3);
-        jButton_p89a3.setBounds(300, 410, 50, 40);
-
-        jButton_p90a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p90a3.setText("90");
-        jButton_p90a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p90a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p90a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p90a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p90a3ActionPerformed(evt);
-            }
-        });
-        jPanel_primer.add(jButton_p90a3);
-        jButton_p90a3.setBounds(350, 410, 50, 40);
-
-        jButton_p91a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p91a3.setText("91");
-        jButton_p91a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p91a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p91a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p91a3);
-        jButton_p91a3.setBounds(400, 410, 50, 40);
-
-        jButton_p92a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p92a3.setText("92");
-        jButton_p92a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p92a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p92a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p92a3);
-        jButton_p92a3.setBounds(450, 410, 50, 40);
-
-        jButton_p93a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p93a3.setText("93");
-        jButton_p93a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p93a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p93a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p93a3);
-        jButton_p93a3.setBounds(500, 410, 50, 40);
-
-        jButton_p94a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p94a3.setText("94");
-        jButton_p94a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p94a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p94a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p94a3);
-        jButton_p94a3.setBounds(550, 410, 50, 40);
-
-        jButton_p95a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p95a3.setText("95");
-        jButton_p95a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p95a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p95a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p95a3);
-        jButton_p95a3.setBounds(600, 410, 50, 40);
-
-        jButton_p96a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p96a3.setText("96");
-        jButton_p96a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p96a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p96a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p96a3);
-        jButton_p96a3.setBounds(650, 410, 50, 40);
-
-        jButton_p97a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p97a3.setText("97");
-        jButton_p97a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p97a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p97a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p97a3);
-        jButton_p97a3.setBounds(100, 450, 50, 40);
-
-        jButton_p98a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p98a3.setText("98");
-        jButton_p98a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p98a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p98a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p98a3);
-        jButton_p98a3.setBounds(150, 450, 50, 40);
-
-        jButton_p99a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p99a3.setText("99");
-        jButton_p99a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p99a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p99a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p99a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p99a3ActionPerformed(evt);
-            }
-        });
-        jPanel_primer.add(jButton_p99a3);
-        jButton_p99a3.setBounds(200, 450, 50, 40);
-
         jLabel4.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jLabel4.setText("seleccione la posicion de ubicacion");
         jPanel_primer.add(jLabel4);
@@ -1417,422 +631,13 @@ public class Inicio extends javax.swing.JFrame {
         jPanel_segunda.setMinimumSize(new java.awt.Dimension(801, 529));
         jPanel_segunda.setLayout(null);
 
-        jButton_p1a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p1a4.setText("1");
-        jButton_p1a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p1a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p1a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p1a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p1a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p1a4);
-        jButton_p1a4.setBounds(100, 130, 50, 40);
-
-        jButton_p2a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p2a4.setText("2");
-        jButton_p2a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p2a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p2a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p2a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p2a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p2a4);
-        jButton_p2a4.setBounds(150, 130, 50, 40);
-
-        jButton_p3a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p3a4.setText("3");
-        jButton_p3a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p3a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p3a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p3a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p3a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p3a4);
-        jButton_p3a4.setBounds(200, 130, 50, 40);
-
-        jButton_p4a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p4a4.setText("4");
-        jButton_p4a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p4a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p4a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p4a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p4a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p4a4);
-        jButton_p4a4.setBounds(250, 130, 50, 40);
-
-        jButton_p5a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p5a4.setText("5");
-        jButton_p5a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p5a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p5a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p5a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p5a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p5a4);
-        jButton_p5a4.setBounds(300, 130, 50, 40);
-
-        jButton_p6a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p6a4.setText("6");
-        jButton_p6a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p6a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p6a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p6a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p6a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p6a4);
-        jButton_p6a4.setBounds(350, 130, 50, 40);
-
-        jButton_p7a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p7a4.setText("7");
-        jButton_p7a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p7a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p7a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p7a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p7a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p7a4);
-        jButton_p7a4.setBounds(400, 130, 50, 40);
-
-        jButton_p8a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p8a4.setText("8");
-        jButton_p8a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p8a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p8a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p8a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p8a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p8a4);
-        jButton_p8a4.setBounds(450, 130, 50, 40);
-
-        jButton_p9a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p9a3.setText("9");
-        jButton_p9a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p9a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p9a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p9a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p9a3ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p9a3);
-        jButton_p9a3.setBounds(500, 130, 50, 40);
-
-        jButton_p10a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p10a4.setText("10");
-        jButton_p10a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p10a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p10a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p10a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p10a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p10a4);
-        jButton_p10a4.setBounds(550, 130, 50, 40);
-
-        jButton_p11a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p11a4.setText("11");
-        jButton_p11a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p11a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p11a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p11a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p11a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p11a4);
-        jButton_p11a4.setBounds(600, 130, 50, 40);
-
-        jButton_p12a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p12a4.setText("12");
-        jButton_p12a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p12a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p12a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p12a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p12a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p12a4);
-        jButton_p12a4.setBounds(650, 130, 50, 40);
-
-        jButton_p13a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p13a4.setText("13");
-        jButton_p13a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p13a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p13a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p13a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p13a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p13a4);
-        jButton_p13a4.setBounds(100, 170, 50, 40);
-
-        jButton_p14a3.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p14a3.setText("14");
-        jButton_p14a3.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p14a3.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p14a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p14a3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p14a3ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p14a3);
-        jButton_p14a3.setBounds(150, 170, 50, 40);
-
-        jButton_p15a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p15a4.setText("15");
-        jButton_p15a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p15a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p15a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p15a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p15a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p15a4);
-        jButton_p15a4.setBounds(200, 170, 50, 40);
-
-        jButton_p16a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p16a4.setText("16");
-        jButton_p16a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p16a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p16a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p16a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p16a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p16a4);
-        jButton_p16a4.setBounds(250, 170, 50, 40);
-
-        jButton_p17a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p17a4.setText("17");
-        jButton_p17a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p17a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p17a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p17a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p17a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p17a4);
-        jButton_p17a4.setBounds(300, 170, 50, 40);
-
-        jButton_p18a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p18a4.setText("18");
-        jButton_p18a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p18a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p18a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p18a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p18a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p18a4);
-        jButton_p18a4.setBounds(350, 170, 50, 40);
-
-        jButton_p19a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p19a4.setText("19");
-        jButton_p19a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p19a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p19a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p19a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p19a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p19a4);
-        jButton_p19a4.setBounds(400, 170, 50, 40);
-
-        jButton_p20a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p20a4.setText("20");
-        jButton_p20a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p20a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p20a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p20a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p20a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p20a4);
-        jButton_p20a4.setBounds(450, 170, 50, 40);
-
-        jButton_p21a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p21a4.setText("21");
-        jButton_p21a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p21a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p21a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p21a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p21a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p21a4);
-        jButton_p21a4.setBounds(500, 170, 50, 40);
-
-        jButton_p22a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p22a4.setText("22");
-        jButton_p22a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p22a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p22a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p22a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p22a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p22a4);
-        jButton_p22a4.setBounds(550, 170, 50, 40);
-
-        jButton_p23a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p23a4.setText("23");
-        jButton_p23a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p23a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p23a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p23a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p23a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p23a4);
-        jButton_p23a4.setBounds(600, 170, 50, 40);
-
-        jButton_p24a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p24a4.setText("24");
-        jButton_p24a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p24a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p24a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p24a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p24a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p24a4);
-        jButton_p24a4.setBounds(650, 170, 50, 40);
-
-        jButton_p25a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p25a4.setText("25");
-        jButton_p25a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p25a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p25a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p25a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p25a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p25a4);
-        jButton_p25a4.setBounds(100, 210, 50, 40);
-
-        jButton_p26a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p26a4.setText("26");
-        jButton_p26a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p26a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p26a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p26a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p26a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p26a4);
-        jButton_p26a4.setBounds(150, 210, 50, 40);
-
-        jButton_p27a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p27a4.setText("27");
-        jButton_p27a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p27a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p27a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p27a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p27a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p27a4);
-        jButton_p27a4.setBounds(200, 210, 50, 40);
-
-        jButton_p28a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p28a4.setText("28");
-        jButton_p28a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p28a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p28a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p28a4);
-        jButton_p28a4.setBounds(250, 210, 50, 40);
-
-        jButton_p29a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p29a4.setText("29");
-        jButton_p29a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p29a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p29a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p29a4);
-        jButton_p29a4.setBounds(300, 210, 50, 40);
-
-        jButton_p30a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p30a4.setText("30");
-        jButton_p30a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p30a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p30a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p30a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p30a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p30a4);
-        jButton_p30a4.setBounds(350, 210, 50, 40);
-
-        jButton_p31a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p31a4.setText("31");
-        jButton_p31a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p31a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p31a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p31a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p31a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p31a4);
-        jButton_p31a4.setBounds(400, 210, 50, 40);
-
-        jButton_p32a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p32a4.setText("32");
-        jButton_p32a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p32a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p32a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p32a4);
-        jButton_p32a4.setBounds(450, 210, 50, 40);
-
-        jButton_p33a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p33a4.setText("33");
-        jButton_p33a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p33a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p33a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p33a4);
-        jButton_p33a4.setBounds(500, 210, 50, 40);
-
         jButton_p34a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p34a4.setText("34");
         jButton_p34a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p34a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p34a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p34a4);
-        jButton_p34a4.setBounds(550, 210, 50, 40);
+        jButton_p34a4.setBounds(550, 110, 50, 40);
 
         jButton_p35a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p35a4.setText("35");
@@ -1840,7 +645,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p35a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p35a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p35a4);
-        jButton_p35a4.setBounds(600, 210, 50, 40);
+        jButton_p35a4.setBounds(600, 110, 50, 40);
 
         jButton_p36a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p36a4.setText("36");
@@ -1848,7 +653,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p36a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p36a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p36a4);
-        jButton_p36a4.setBounds(650, 210, 50, 40);
+        jButton_p36a4.setBounds(650, 110, 50, 40);
 
         jButton_p37a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p37a4.setText("37");
@@ -1856,7 +661,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p37a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p37a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p37a4);
-        jButton_p37a4.setBounds(100, 250, 50, 40);
+        jButton_p37a4.setBounds(100, 150, 50, 40);
 
         jButton_p38a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p38a4.setText("38");
@@ -1864,7 +669,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p38a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p38a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p38a4);
-        jButton_p38a4.setBounds(150, 250, 50, 40);
+        jButton_p38a4.setBounds(150, 150, 50, 40);
 
         jButton_p39a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p39a4.setText("39");
@@ -1872,7 +677,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p39a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p39a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p39a4);
-        jButton_p39a4.setBounds(200, 250, 50, 40);
+        jButton_p39a4.setBounds(200, 150, 50, 40);
 
         jButton_p40a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p40a4.setText("40");
@@ -1880,7 +685,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p40a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p40a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p40a4);
-        jButton_p40a4.setBounds(250, 250, 50, 40);
+        jButton_p40a4.setBounds(250, 150, 50, 40);
 
         jButton_p41a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p41a4.setText("41");
@@ -1888,7 +693,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p41a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p41a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p41a4);
-        jButton_p41a4.setBounds(300, 250, 50, 40);
+        jButton_p41a4.setBounds(300, 150, 50, 40);
 
         jButton_p42a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p42a4.setText("42");
@@ -1896,7 +701,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p42a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p42a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p42a4);
-        jButton_p42a4.setBounds(350, 250, 50, 40);
+        jButton_p42a4.setBounds(350, 150, 50, 40);
 
         jButton_p43a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p43a4.setText("43");
@@ -1904,7 +709,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p43a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p43a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p43a4);
-        jButton_p43a4.setBounds(400, 250, 50, 40);
+        jButton_p43a4.setBounds(400, 150, 50, 40);
 
         jButton_p44a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p44a4.setText("44");
@@ -1912,7 +717,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p44a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p44a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p44a4);
-        jButton_p44a4.setBounds(450, 250, 50, 40);
+        jButton_p44a4.setBounds(450, 150, 50, 40);
 
         jButton_p45a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p45a4.setText("45");
@@ -1920,7 +725,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p45a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p45a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p45a4);
-        jButton_p45a4.setBounds(500, 250, 50, 40);
+        jButton_p45a4.setBounds(500, 150, 50, 40);
 
         jButton_p46a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p46a4.setText("46");
@@ -1928,7 +733,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p46a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p46a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p46a4);
-        jButton_p46a4.setBounds(550, 250, 50, 40);
+        jButton_p46a4.setBounds(550, 150, 50, 40);
 
         jButton_p47a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p47a4.setText("47");
@@ -1936,7 +741,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p47a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p47a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p47a4);
-        jButton_p47a4.setBounds(600, 250, 50, 40);
+        jButton_p47a4.setBounds(600, 150, 50, 40);
 
         jButton_p48a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p48a4.setText("48");
@@ -1944,7 +749,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p48a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p48a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p48a4);
-        jButton_p48a4.setBounds(650, 250, 50, 40);
+        jButton_p48a4.setBounds(650, 150, 50, 40);
 
         jButton_p49a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p49a4.setText("49");
@@ -1952,7 +757,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p49a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p49a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p49a4);
-        jButton_p49a4.setBounds(100, 290, 50, 40);
+        jButton_p49a4.setBounds(100, 190, 50, 40);
 
         jButton_p50a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p50a4.setText("50");
@@ -1960,7 +765,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p50a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p50a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p50a4);
-        jButton_p50a4.setBounds(150, 290, 50, 40);
+        jButton_p50a4.setBounds(150, 190, 50, 40);
 
         jButton_p51a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p51a4.setText("51");
@@ -1973,7 +778,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel_segunda.add(jButton_p51a4);
-        jButton_p51a4.setBounds(200, 290, 50, 40);
+        jButton_p51a4.setBounds(200, 190, 50, 40);
 
         jButton_p52a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p52a4.setText("52");
@@ -1986,7 +791,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel_segunda.add(jButton_p52a4);
-        jButton_p52a4.setBounds(250, 290, 50, 40);
+        jButton_p52a4.setBounds(250, 190, 50, 40);
 
         jButton_p53a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p53a4.setText("53");
@@ -1994,7 +799,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p53a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p53a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p53a4);
-        jButton_p53a4.setBounds(300, 290, 50, 40);
+        jButton_p53a4.setBounds(300, 190, 50, 40);
 
         jButton_p54a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p54a4.setText("54");
@@ -2002,7 +807,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p54a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p54a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p54a4);
-        jButton_p54a4.setBounds(350, 290, 50, 40);
+        jButton_p54a4.setBounds(350, 190, 50, 40);
 
         jButton_p55a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p55a4.setText("55");
@@ -2010,7 +815,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p55a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p55a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p55a4);
-        jButton_p55a4.setBounds(400, 290, 50, 40);
+        jButton_p55a4.setBounds(400, 190, 50, 40);
 
         jButton_p56a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p56a4.setText("56");
@@ -2018,7 +823,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p56a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p56a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p56a4);
-        jButton_p56a4.setBounds(450, 290, 50, 40);
+        jButton_p56a4.setBounds(450, 190, 50, 40);
 
         jButton_p57a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p57a4.setText("57");
@@ -2026,7 +831,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p57a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p57a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p57a4);
-        jButton_p57a4.setBounds(500, 290, 50, 40);
+        jButton_p57a4.setBounds(500, 190, 50, 40);
 
         jButton_p58a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p58a4.setText("58");
@@ -2034,7 +839,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p58a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p58a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p58a4);
-        jButton_p58a4.setBounds(550, 290, 50, 40);
+        jButton_p58a4.setBounds(550, 190, 50, 40);
 
         jButton_p59a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p59a4.setText("59");
@@ -2042,7 +847,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p59a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p59a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p59a4);
-        jButton_p59a4.setBounds(600, 290, 50, 40);
+        jButton_p59a4.setBounds(600, 190, 50, 40);
 
         jButton_p60a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p60a4.setText("60");
@@ -2055,7 +860,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel_segunda.add(jButton_p60a4);
-        jButton_p60a4.setBounds(650, 290, 50, 40);
+        jButton_p60a4.setBounds(650, 190, 50, 40);
 
         jButton_p61a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p61a4.setText("61");
@@ -2063,7 +868,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p61a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p61a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p61a4);
-        jButton_p61a4.setBounds(100, 330, 50, 40);
+        jButton_p61a4.setBounds(100, 230, 50, 40);
 
         jButton_p62a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p62a4.setText("62");
@@ -2071,7 +876,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p62a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p62a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p62a4);
-        jButton_p62a4.setBounds(150, 330, 50, 40);
+        jButton_p62a4.setBounds(150, 230, 50, 40);
 
         jButton_p63a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p63a4.setText("63");
@@ -2084,7 +889,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel_segunda.add(jButton_p63a4);
-        jButton_p63a4.setBounds(200, 330, 50, 40);
+        jButton_p63a4.setBounds(200, 230, 50, 40);
 
         jButton_p64a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p64a4.setText("64");
@@ -2092,7 +897,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p64a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p64a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p64a4);
-        jButton_p64a4.setBounds(250, 330, 50, 40);
+        jButton_p64a4.setBounds(250, 230, 50, 40);
 
         jButton_p65a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p65a4.setText("65");
@@ -2100,7 +905,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p65a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p65a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p65a4);
-        jButton_p65a4.setBounds(300, 330, 50, 40);
+        jButton_p65a4.setBounds(300, 230, 50, 40);
 
         jButton_p66a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p66a4.setText("66");
@@ -2108,311 +913,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p66a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p66a4.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_segunda.add(jButton_p66a4);
-        jButton_p66a4.setBounds(350, 330, 50, 40);
-
-        jButton_p67a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p67a4.setText("67");
-        jButton_p67a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p67a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p67a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p67a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p67a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p67a4);
-        jButton_p67a4.setBounds(400, 330, 50, 40);
-
-        jButton_p68a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p68a4.setText("68");
-        jButton_p68a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p68a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p68a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p68a4);
-        jButton_p68a4.setBounds(450, 330, 50, 40);
-
-        jButton_p69a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p69a4.setText("69");
-        jButton_p69a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p69a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p69a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p69a4);
-        jButton_p69a4.setBounds(500, 330, 50, 40);
-
-        jButton_p70a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p70a4.setText("70");
-        jButton_p70a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p70a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p70a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p70a4);
-        jButton_p70a4.setBounds(550, 330, 50, 40);
-
-        jButton_p71a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p71a4.setText("71");
-        jButton_p71a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p71a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p71a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p71a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p71a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p71a4);
-        jButton_p71a4.setBounds(600, 330, 50, 40);
-
-        jButton_p72a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p72a4.setText("72");
-        jButton_p72a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p72a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p72a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p72a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p72a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p72a4);
-        jButton_p72a4.setBounds(650, 330, 50, 40);
-
-        jButton_p73a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p73a4.setText("73");
-        jButton_p73a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p73a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p73a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p73a4);
-        jButton_p73a4.setBounds(100, 370, 50, 40);
-
-        jButton_p74a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p74a4.setText("74");
-        jButton_p74a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p74a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p74a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p74a4);
-        jButton_p74a4.setBounds(150, 370, 50, 40);
-
-        jButton_p75a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p75a4.setText("75");
-        jButton_p75a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p75a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p75a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p75a4);
-        jButton_p75a4.setBounds(200, 370, 50, 40);
-
-        jButton_p76a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p76a4.setText("76");
-        jButton_p76a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p76a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p76a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p76a4);
-        jButton_p76a4.setBounds(250, 370, 50, 40);
-
-        jButton_p77a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p77a4.setText("77");
-        jButton_p77a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p77a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p77a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p77a4);
-        jButton_p77a4.setBounds(300, 370, 50, 40);
-
-        jButton_p78a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p78a4.setText("78");
-        jButton_p78a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p78a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p78a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p78a4);
-        jButton_p78a4.setBounds(350, 370, 50, 40);
-
-        jButton_p79a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p79a4.setText("79");
-        jButton_p79a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p79a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p79a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p79a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p79a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p79a4);
-        jButton_p79a4.setBounds(400, 370, 50, 40);
-
-        jButton_p80a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p80a4.setText("80");
-        jButton_p80a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p80a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p80a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p80a4);
-        jButton_p80a4.setBounds(450, 370, 50, 40);
-
-        jButton_p81a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p81a4.setText("81");
-        jButton_p81a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p81a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p81a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p81a4);
-        jButton_p81a4.setBounds(500, 370, 50, 40);
-
-        jButton_p82a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p82a4.setText("82");
-        jButton_p82a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p82a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p82a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p82a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p82a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p82a4);
-        jButton_p82a4.setBounds(550, 370, 50, 40);
-
-        jButton_p83a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p83a4.setText("83");
-        jButton_p83a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p83a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p83a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p83a4);
-        jButton_p83a4.setBounds(600, 370, 50, 40);
-
-        jButton_p84a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p84a4.setText("84");
-        jButton_p84a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p84a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p84a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p84a4);
-        jButton_p84a4.setBounds(650, 370, 50, 40);
-
-        jButton_p85a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p85a4.setText("85");
-        jButton_p85a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p85a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p85a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p85a4);
-        jButton_p85a4.setBounds(100, 410, 50, 40);
-
-        jButton_p86a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p86a4.setText("86");
-        jButton_p86a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p86a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p86a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p86a4);
-        jButton_p86a4.setBounds(150, 410, 50, 40);
-
-        jButton_p87a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p87a4.setText("87");
-        jButton_p87a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p87a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p87a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p87a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p87a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p87a4);
-        jButton_p87a4.setBounds(200, 410, 50, 40);
-
-        jButton_p88a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p88a4.setText("88");
-        jButton_p88a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p88a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p88a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p88a4);
-        jButton_p88a4.setBounds(250, 410, 50, 40);
-
-        jButton_p89a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p89a4.setText("89");
-        jButton_p89a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p89a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p89a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p89a4);
-        jButton_p89a4.setBounds(300, 410, 50, 40);
-
-        jButton_p90a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p90a4.setText("90");
-        jButton_p90a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p90a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p90a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p90a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p90a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p90a4);
-        jButton_p90a4.setBounds(350, 410, 50, 40);
-
-        jButton_p91a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p91a4.setText("91");
-        jButton_p91a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p91a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p91a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p91a4);
-        jButton_p91a4.setBounds(400, 410, 50, 40);
-
-        jButton_p92a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p92a4.setText("92");
-        jButton_p92a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p92a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p92a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p92a4);
-        jButton_p92a4.setBounds(450, 410, 50, 40);
-
-        jButton_p93a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p93a4.setText("93");
-        jButton_p93a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p93a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p93a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p93a4);
-        jButton_p93a4.setBounds(500, 410, 50, 40);
-
-        jButton_p94a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p94a4.setText("94");
-        jButton_p94a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p94a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p94a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p94a4);
-        jButton_p94a4.setBounds(550, 410, 50, 40);
-
-        jButton_p95a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p95a4.setText("95");
-        jButton_p95a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p95a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p95a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p95a4);
-        jButton_p95a4.setBounds(600, 410, 50, 40);
-
-        jButton_p96a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p96a4.setText("96");
-        jButton_p96a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p96a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p96a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p96a4);
-        jButton_p96a4.setBounds(650, 410, 50, 40);
-
-        jButton_p97a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p97a4.setText("97");
-        jButton_p97a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p97a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p97a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p97a4);
-        jButton_p97a4.setBounds(100, 450, 50, 40);
-
-        jButton_p98a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p98a4.setText("98");
-        jButton_p98a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p98a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p98a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p98a4);
-        jButton_p98a4.setBounds(150, 450, 50, 40);
-
-        jButton_p99a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p99a4.setText("99");
-        jButton_p99a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p99a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p99a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p99a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p99a4ActionPerformed(evt);
-            }
-        });
-        jPanel_segunda.add(jButton_p99a4);
-        jButton_p99a4.setBounds(200, 450, 50, 40);
+        jButton_p66a4.setBounds(350, 230, 50, 40);
 
         jLabel5.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jLabel5.setText("seleccione la posicion de ubicacion");
@@ -2423,699 +924,6 @@ public class Inicio extends javax.swing.JFrame {
 
         jPanel_tercera.setBackground(new java.awt.Color(102, 102, 102));
         jPanel_tercera.setLayout(null);
-
-        jButton_p1a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p1a2.setText("1");
-        jButton_p1a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p1a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p1a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p1a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p1a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p1a2);
-        jButton_p1a2.setBounds(100, 130, 50, 40);
-
-        jButton_p2a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p2a2.setText("2");
-        jButton_p2a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p2a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p2a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p2a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p2a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p2a2);
-        jButton_p2a2.setBounds(150, 130, 50, 40);
-
-        jButton_p3a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p3a2.setText("3");
-        jButton_p3a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p3a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p3a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p3a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p3a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p3a2);
-        jButton_p3a2.setBounds(200, 130, 50, 40);
-
-        jButton_p4a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p4a2.setText("4");
-        jButton_p4a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p4a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p4a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p4a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p4a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p4a2);
-        jButton_p4a2.setBounds(250, 130, 50, 40);
-
-        jButton_p5a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p5a2.setText("5");
-        jButton_p5a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p5a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p5a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p5a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p5a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p5a2);
-        jButton_p5a2.setBounds(300, 130, 50, 40);
-
-        jButton_p6a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p6a2.setText("6");
-        jButton_p6a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p6a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p6a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p6a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p6a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p6a2);
-        jButton_p6a2.setBounds(350, 130, 50, 40);
-
-        jButton_p7a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p7a2.setText("7");
-        jButton_p7a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p7a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p7a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p7a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p7a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p7a2);
-        jButton_p7a2.setBounds(400, 130, 50, 40);
-
-        jButton_p8a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p8a2.setText("8");
-        jButton_p8a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p8a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p8a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p8a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p8a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p8a2);
-        jButton_p8a2.setBounds(450, 130, 50, 40);
-
-        jButton_p9a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p9a4.setText("9");
-        jButton_p9a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p9a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p9a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p9a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p9a4ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p9a4);
-        jButton_p9a4.setBounds(500, 130, 50, 40);
-
-        jButton_p10a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p10a2.setText("10");
-        jButton_p10a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p10a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p10a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p10a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p10a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p10a2);
-        jButton_p10a2.setBounds(550, 130, 50, 40);
-
-        jButton_p11a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p11a2.setText("11");
-        jButton_p11a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p11a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p11a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p11a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p11a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p11a2);
-        jButton_p11a2.setBounds(600, 130, 50, 40);
-
-        jButton_p12a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p12a2.setText("12");
-        jButton_p12a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p12a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p12a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p12a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p12a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p12a2);
-        jButton_p12a2.setBounds(650, 130, 50, 40);
-
-        jButton_p13a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p13a2.setText("13");
-        jButton_p13a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p13a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p13a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p13a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p13a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p13a2);
-        jButton_p13a2.setBounds(100, 170, 50, 40);
-
-        jButton_p14a4.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p14a4.setText("14");
-        jButton_p14a4.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p14a4.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p14a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p14a4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p14a4ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p14a4);
-        jButton_p14a4.setBounds(150, 170, 50, 40);
-
-        jButton_p15a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p15a2.setText("15");
-        jButton_p15a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p15a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p15a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p15a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p15a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p15a2);
-        jButton_p15a2.setBounds(200, 170, 50, 40);
-
-        jButton_p16a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p16a2.setText("16");
-        jButton_p16a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p16a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p16a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p16a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p16a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p16a2);
-        jButton_p16a2.setBounds(250, 170, 50, 40);
-
-        jButton_p17a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p17a2.setText("17");
-        jButton_p17a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p17a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p17a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p17a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p17a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p17a2);
-        jButton_p17a2.setBounds(300, 170, 50, 40);
-
-        jButton_p18a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p18a2.setText("18");
-        jButton_p18a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p18a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p18a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p18a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p18a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p18a2);
-        jButton_p18a2.setBounds(350, 170, 50, 40);
-
-        jButton_p19a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p19a2.setText("19");
-        jButton_p19a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p19a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p19a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p19a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p19a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p19a2);
-        jButton_p19a2.setBounds(400, 170, 50, 40);
-
-        jButton_p20a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p20a2.setText("20");
-        jButton_p20a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p20a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p20a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p20a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p20a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p20a2);
-        jButton_p20a2.setBounds(450, 170, 50, 40);
-
-        jButton_p21a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p21a2.setText("21");
-        jButton_p21a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p21a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p21a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p21a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p21a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p21a2);
-        jButton_p21a2.setBounds(500, 170, 50, 40);
-
-        jButton_p22a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p22a2.setText("22");
-        jButton_p22a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p22a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p22a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p22a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p22a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p22a2);
-        jButton_p22a2.setBounds(550, 170, 50, 40);
-
-        jButton_p23a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p23a2.setText("23");
-        jButton_p23a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p23a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p23a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p23a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p23a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p23a2);
-        jButton_p23a2.setBounds(600, 170, 50, 40);
-
-        jButton_p24a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p24a2.setText("24");
-        jButton_p24a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p24a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p24a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p24a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p24a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p24a2);
-        jButton_p24a2.setBounds(650, 170, 50, 40);
-
-        jButton_p25a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p25a2.setText("25");
-        jButton_p25a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p25a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p25a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p25a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p25a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p25a2);
-        jButton_p25a2.setBounds(100, 210, 50, 40);
-
-        jButton_p26a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p26a2.setText("26");
-        jButton_p26a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p26a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p26a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p26a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p26a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p26a2);
-        jButton_p26a2.setBounds(150, 210, 50, 40);
-
-        jButton_p27a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p27a2.setText("27");
-        jButton_p27a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p27a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p27a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p27a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p27a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p27a2);
-        jButton_p27a2.setBounds(200, 210, 50, 40);
-
-        jButton_p28a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p28a2.setText("28");
-        jButton_p28a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p28a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p28a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p28a2);
-        jButton_p28a2.setBounds(250, 210, 50, 40);
-
-        jButton_p29a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p29a2.setText("29");
-        jButton_p29a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p29a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p29a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p29a2);
-        jButton_p29a2.setBounds(300, 210, 50, 40);
-
-        jButton_p30a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p30a2.setText("30");
-        jButton_p30a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p30a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p30a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p30a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p30a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p30a2);
-        jButton_p30a2.setBounds(350, 210, 50, 40);
-
-        jButton_p31a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p31a2.setText("31");
-        jButton_p31a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p31a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p31a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p31a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p31a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p31a2);
-        jButton_p31a2.setBounds(400, 210, 50, 40);
-
-        jButton_p32a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p32a2.setText("32");
-        jButton_p32a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p32a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p32a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p32a2);
-        jButton_p32a2.setBounds(450, 210, 50, 40);
-
-        jButton_p33a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p33a2.setText("33");
-        jButton_p33a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p33a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p33a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p33a2);
-        jButton_p33a2.setBounds(500, 210, 50, 40);
-
-        jButton_p34a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p34a2.setText("34");
-        jButton_p34a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p34a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p34a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p34a2);
-        jButton_p34a2.setBounds(550, 210, 50, 40);
-
-        jButton_p35a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p35a2.setText("35");
-        jButton_p35a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p35a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p35a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p35a2);
-        jButton_p35a2.setBounds(600, 210, 50, 40);
-
-        jButton_p36a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p36a2.setText("36");
-        jButton_p36a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p36a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p36a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p36a2);
-        jButton_p36a2.setBounds(650, 210, 50, 40);
-
-        jButton_p37a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p37a2.setText("37");
-        jButton_p37a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p37a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p37a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p37a2);
-        jButton_p37a2.setBounds(100, 250, 50, 40);
-
-        jButton_p38a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p38a2.setText("38");
-        jButton_p38a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p38a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p38a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p38a2);
-        jButton_p38a2.setBounds(150, 250, 50, 40);
-
-        jButton_p39a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p39a2.setText("39");
-        jButton_p39a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p39a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p39a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p39a2);
-        jButton_p39a2.setBounds(200, 250, 50, 40);
-
-        jButton_p40a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p40a2.setText("40");
-        jButton_p40a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p40a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p40a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p40a2);
-        jButton_p40a2.setBounds(250, 250, 50, 40);
-
-        jButton_p41a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p41a2.setText("41");
-        jButton_p41a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p41a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p41a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p41a2);
-        jButton_p41a2.setBounds(300, 250, 50, 40);
-
-        jButton_p42a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p42a2.setText("42");
-        jButton_p42a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p42a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p42a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p42a2);
-        jButton_p42a2.setBounds(350, 250, 50, 40);
-
-        jButton_p43a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p43a2.setText("43");
-        jButton_p43a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p43a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p43a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p43a2);
-        jButton_p43a2.setBounds(400, 250, 50, 40);
-
-        jButton_p44a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p44a2.setText("44");
-        jButton_p44a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p44a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p44a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p44a2);
-        jButton_p44a2.setBounds(450, 250, 50, 40);
-
-        jButton_p45a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p45a2.setText("45");
-        jButton_p45a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p45a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p45a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p45a2);
-        jButton_p45a2.setBounds(500, 250, 50, 40);
-
-        jButton_p46a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p46a2.setText("46");
-        jButton_p46a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p46a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p46a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p46a2);
-        jButton_p46a2.setBounds(550, 250, 50, 40);
-
-        jButton_p47a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p47a2.setText("47");
-        jButton_p47a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p47a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p47a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p47a2);
-        jButton_p47a2.setBounds(600, 250, 50, 40);
-
-        jButton_p48a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p48a2.setText("48");
-        jButton_p48a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p48a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p48a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p48a2);
-        jButton_p48a2.setBounds(650, 250, 50, 40);
-
-        jButton_p49a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p49a2.setText("49");
-        jButton_p49a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p49a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p49a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p49a2);
-        jButton_p49a2.setBounds(100, 290, 50, 40);
-
-        jButton_p50a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p50a2.setText("50");
-        jButton_p50a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p50a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p50a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p50a2);
-        jButton_p50a2.setBounds(150, 290, 50, 40);
-
-        jButton_p51a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p51a2.setText("51");
-        jButton_p51a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p51a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p51a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p51a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p51a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p51a2);
-        jButton_p51a2.setBounds(200, 290, 50, 40);
-
-        jButton_p52a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p52a2.setText("52");
-        jButton_p52a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p52a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p52a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p52a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p52a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p52a2);
-        jButton_p52a2.setBounds(250, 290, 50, 40);
-
-        jButton_p53a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p53a2.setText("53");
-        jButton_p53a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p53a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p53a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p53a2);
-        jButton_p53a2.setBounds(300, 290, 50, 40);
-
-        jButton_p54a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p54a2.setText("54");
-        jButton_p54a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p54a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p54a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p54a2);
-        jButton_p54a2.setBounds(350, 290, 50, 40);
-
-        jButton_p55a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p55a2.setText("55");
-        jButton_p55a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p55a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p55a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p55a2);
-        jButton_p55a2.setBounds(400, 290, 50, 40);
-
-        jButton_p56a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p56a2.setText("56");
-        jButton_p56a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p56a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p56a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p56a2);
-        jButton_p56a2.setBounds(450, 290, 50, 40);
-
-        jButton_p57a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p57a2.setText("57");
-        jButton_p57a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p57a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p57a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p57a2);
-        jButton_p57a2.setBounds(500, 290, 50, 40);
-
-        jButton_p58a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p58a2.setText("58");
-        jButton_p58a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p58a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p58a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p58a2);
-        jButton_p58a2.setBounds(550, 290, 50, 40);
-
-        jButton_p59a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p59a2.setText("59");
-        jButton_p59a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p59a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p59a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p59a2);
-        jButton_p59a2.setBounds(600, 290, 50, 40);
-
-        jButton_p60a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p60a2.setText("60");
-        jButton_p60a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p60a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p60a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p60a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p60a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p60a2);
-        jButton_p60a2.setBounds(650, 290, 50, 40);
-
-        jButton_p61a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p61a2.setText("61");
-        jButton_p61a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p61a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p61a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p61a2);
-        jButton_p61a2.setBounds(100, 330, 50, 40);
-
-        jButton_p62a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p62a2.setText("62");
-        jButton_p62a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p62a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p62a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p62a2);
-        jButton_p62a2.setBounds(150, 330, 50, 40);
-
-        jButton_p63a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p63a2.setText("63");
-        jButton_p63a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p63a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p63a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jButton_p63a2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_p63a2ActionPerformed(evt);
-            }
-        });
-        jPanel_tercera.add(jButton_p63a2);
-        jButton_p63a2.setBounds(200, 330, 50, 40);
-
-        jButton_p64a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p64a2.setText("64");
-        jButton_p64a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p64a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p64a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p64a2);
-        jButton_p64a2.setBounds(250, 330, 50, 40);
-
-        jButton_p65a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p65a2.setText("65");
-        jButton_p65a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p65a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p65a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p65a2);
-        jButton_p65a2.setBounds(300, 330, 50, 40);
-
-        jButton_p66a2.setBackground(new java.awt.Color(204, 255, 255));
-        jButton_p66a2.setText("66");
-        jButton_p66a2.setMaximumSize(new java.awt.Dimension(50, 40));
-        jButton_p66a2.setMinimumSize(new java.awt.Dimension(50, 40));
-        jButton_p66a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p66a2);
-        jButton_p66a2.setBounds(350, 330, 50, 40);
 
         jButton_p67a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p67a2.setText("67");
@@ -3128,7 +936,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel_tercera.add(jButton_p67a2);
-        jButton_p67a2.setBounds(400, 330, 50, 40);
+        jButton_p67a2.setBounds(400, 130, 50, 40);
 
         jButton_p68a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p68a2.setText("68");
@@ -3136,7 +944,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p68a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p68a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p68a2);
-        jButton_p68a2.setBounds(450, 330, 50, 40);
+        jButton_p68a2.setBounds(450, 130, 50, 40);
 
         jButton_p69a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p69a2.setText("69");
@@ -3144,7 +952,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p69a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p69a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p69a2);
-        jButton_p69a2.setBounds(500, 330, 50, 40);
+        jButton_p69a2.setBounds(500, 130, 50, 40);
 
         jButton_p70a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p70a2.setText("70");
@@ -3152,7 +960,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p70a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p70a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p70a2);
-        jButton_p70a2.setBounds(550, 330, 50, 40);
+        jButton_p70a2.setBounds(550, 130, 50, 40);
 
         jButton_p71a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p71a2.setText("71");
@@ -3165,7 +973,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel_tercera.add(jButton_p71a2);
-        jButton_p71a2.setBounds(600, 330, 50, 40);
+        jButton_p71a2.setBounds(600, 130, 50, 40);
 
         jButton_p72a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p72a2.setText("72");
@@ -3178,7 +986,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel_tercera.add(jButton_p72a2);
-        jButton_p72a2.setBounds(650, 330, 50, 40);
+        jButton_p72a2.setBounds(650, 130, 50, 40);
 
         jButton_p73a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p73a2.setText("73");
@@ -3186,7 +994,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p73a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p73a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p73a2);
-        jButton_p73a2.setBounds(100, 370, 50, 40);
+        jButton_p73a2.setBounds(100, 170, 50, 40);
 
         jButton_p74a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p74a2.setText("74");
@@ -3194,7 +1002,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p74a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p74a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p74a2);
-        jButton_p74a2.setBounds(150, 370, 50, 40);
+        jButton_p74a2.setBounds(150, 170, 50, 40);
 
         jButton_p75a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p75a2.setText("75");
@@ -3202,7 +1010,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p75a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p75a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p75a2);
-        jButton_p75a2.setBounds(200, 370, 50, 40);
+        jButton_p75a2.setBounds(200, 170, 50, 40);
 
         jButton_p76a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p76a2.setText("76");
@@ -3210,7 +1018,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p76a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p76a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p76a2);
-        jButton_p76a2.setBounds(250, 370, 50, 40);
+        jButton_p76a2.setBounds(250, 170, 50, 40);
 
         jButton_p77a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p77a2.setText("77");
@@ -3218,7 +1026,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p77a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p77a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p77a2);
-        jButton_p77a2.setBounds(300, 370, 50, 40);
+        jButton_p77a2.setBounds(300, 170, 50, 40);
 
         jButton_p78a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p78a2.setText("78");
@@ -3226,7 +1034,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p78a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p78a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p78a2);
-        jButton_p78a2.setBounds(350, 370, 50, 40);
+        jButton_p78a2.setBounds(350, 170, 50, 40);
 
         jButton_p79a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p79a2.setText("79");
@@ -3239,7 +1047,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel_tercera.add(jButton_p79a2);
-        jButton_p79a2.setBounds(400, 370, 50, 40);
+        jButton_p79a2.setBounds(400, 170, 50, 40);
 
         jButton_p80a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p80a2.setText("80");
@@ -3247,7 +1055,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p80a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p80a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p80a2);
-        jButton_p80a2.setBounds(450, 370, 50, 40);
+        jButton_p80a2.setBounds(450, 170, 50, 40);
 
         jButton_p81a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p81a2.setText("81");
@@ -3255,7 +1063,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p81a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p81a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p81a2);
-        jButton_p81a2.setBounds(500, 370, 50, 40);
+        jButton_p81a2.setBounds(500, 170, 50, 40);
 
         jButton_p82a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p82a2.setText("82");
@@ -3268,7 +1076,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel_tercera.add(jButton_p82a2);
-        jButton_p82a2.setBounds(550, 370, 50, 40);
+        jButton_p82a2.setBounds(550, 170, 50, 40);
 
         jButton_p83a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p83a2.setText("83");
@@ -3276,7 +1084,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p83a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p83a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p83a2);
-        jButton_p83a2.setBounds(600, 370, 50, 40);
+        jButton_p83a2.setBounds(600, 170, 50, 40);
 
         jButton_p84a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p84a2.setText("84");
@@ -3284,7 +1092,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p84a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p84a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p84a2);
-        jButton_p84a2.setBounds(650, 370, 50, 40);
+        jButton_p84a2.setBounds(650, 170, 50, 40);
 
         jButton_p85a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p85a2.setText("85");
@@ -3292,7 +1100,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p85a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p85a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p85a2);
-        jButton_p85a2.setBounds(100, 410, 50, 40);
+        jButton_p85a2.setBounds(100, 210, 50, 40);
 
         jButton_p86a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p86a2.setText("86");
@@ -3300,7 +1108,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p86a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p86a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p86a2);
-        jButton_p86a2.setBounds(150, 410, 50, 40);
+        jButton_p86a2.setBounds(150, 210, 50, 40);
 
         jButton_p87a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p87a2.setText("87");
@@ -3313,7 +1121,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel_tercera.add(jButton_p87a2);
-        jButton_p87a2.setBounds(200, 410, 50, 40);
+        jButton_p87a2.setBounds(200, 210, 50, 40);
 
         jButton_p88a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p88a2.setText("88");
@@ -3321,7 +1129,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p88a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p88a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p88a2);
-        jButton_p88a2.setBounds(250, 410, 50, 40);
+        jButton_p88a2.setBounds(250, 210, 50, 40);
 
         jButton_p89a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p89a2.setText("89");
@@ -3329,7 +1137,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p89a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p89a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p89a2);
-        jButton_p89a2.setBounds(300, 410, 50, 40);
+        jButton_p89a2.setBounds(300, 210, 50, 40);
 
         jButton_p90a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p90a2.setText("90");
@@ -3342,7 +1150,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel_tercera.add(jButton_p90a2);
-        jButton_p90a2.setBounds(350, 410, 50, 40);
+        jButton_p90a2.setBounds(350, 210, 50, 40);
 
         jButton_p91a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p91a2.setText("91");
@@ -3350,7 +1158,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p91a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p91a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p91a2);
-        jButton_p91a2.setBounds(400, 410, 50, 40);
+        jButton_p91a2.setBounds(400, 210, 50, 40);
 
         jButton_p92a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p92a2.setText("92");
@@ -3358,7 +1166,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p92a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p92a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p92a2);
-        jButton_p92a2.setBounds(450, 410, 50, 40);
+        jButton_p92a2.setBounds(450, 210, 50, 40);
 
         jButton_p93a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p93a2.setText("93");
@@ -3366,7 +1174,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p93a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p93a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p93a2);
-        jButton_p93a2.setBounds(500, 410, 50, 40);
+        jButton_p93a2.setBounds(500, 210, 50, 40);
 
         jButton_p94a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p94a2.setText("94");
@@ -3374,7 +1182,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p94a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p94a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p94a2);
-        jButton_p94a2.setBounds(550, 410, 50, 40);
+        jButton_p94a2.setBounds(550, 210, 50, 40);
 
         jButton_p95a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p95a2.setText("95");
@@ -3382,7 +1190,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p95a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p95a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p95a2);
-        jButton_p95a2.setBounds(600, 410, 50, 40);
+        jButton_p95a2.setBounds(600, 210, 50, 40);
 
         jButton_p96a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p96a2.setText("96");
@@ -3390,7 +1198,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p96a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p96a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p96a2);
-        jButton_p96a2.setBounds(650, 410, 50, 40);
+        jButton_p96a2.setBounds(650, 210, 50, 40);
 
         jButton_p97a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p97a2.setText("97");
@@ -3398,7 +1206,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p97a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p97a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p97a2);
-        jButton_p97a2.setBounds(100, 450, 50, 40);
+        jButton_p97a2.setBounds(100, 250, 50, 40);
 
         jButton_p98a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p98a2.setText("98");
@@ -3406,7 +1214,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p98a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p98a2.setPreferredSize(new java.awt.Dimension(50, 40));
         jPanel_tercera.add(jButton_p98a2);
-        jButton_p98a2.setBounds(150, 450, 50, 40);
+        jButton_p98a2.setBounds(150, 250, 50, 40);
 
         jButton_p99a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p99a2.setText("99");
@@ -3419,7 +1227,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
         jPanel_tercera.add(jButton_p99a2);
-        jButton_p99a2.setBounds(200, 450, 50, 40);
+        jButton_p99a2.setBounds(200, 250, 50, 40);
 
         jLabel6.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jLabel6.setText("seleccione la posicion de ubicacion");
@@ -3476,6 +1284,7 @@ public class Inicio extends javax.swing.JFrame {
         }else{
             ubicacion.setVisible(true);
             ubicacion.placa_res(tx_placa.getText());
+            ubicacion.desactivar();
         }
     
     
@@ -3597,170 +1406,6 @@ public class Inicio extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton_p31a3ActionPerformed
 
-    private void jButton_p51a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p51a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p51a3ActionPerformed
-
-    private void jButton_p52a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p52a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p52a3ActionPerformed
-
-    private void jButton_p60a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p60a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p60a3ActionPerformed
-
-    private void jButton_p63a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p63a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p63a3ActionPerformed
-
-    private void jButton_p67a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p67a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p67a3ActionPerformed
-
-    private void jButton_p71a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p71a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p71a3ActionPerformed
-
-    private void jButton_p72a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p72a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p72a3ActionPerformed
-
-    private void jButton_p79a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p79a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p79a3ActionPerformed
-
-    private void jButton_p82a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p82a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p82a3ActionPerformed
-
-    private void jButton_p87a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p87a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p87a3ActionPerformed
-
-    private void jButton_p90a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p90a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p90a3ActionPerformed
-
-    private void jButton_p99a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p99a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p99a3ActionPerformed
-
-    private void jButton_p1a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p1a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p1a4ActionPerformed
-
-    private void jButton_p2a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p2a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p2a4ActionPerformed
-
-    private void jButton_p3a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p3a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p3a4ActionPerformed
-
-    private void jButton_p4a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p4a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p4a4ActionPerformed
-
-    private void jButton_p5a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p5a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p5a4ActionPerformed
-
-    private void jButton_p6a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p6a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p6a4ActionPerformed
-
-    private void jButton_p7a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p7a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p7a4ActionPerformed
-
-    private void jButton_p8a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p8a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p8a4ActionPerformed
-
-    private void jButton_p9a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p9a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p9a3ActionPerformed
-
-    private void jButton_p10a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p10a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p10a4ActionPerformed
-
-    private void jButton_p11a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p11a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p11a4ActionPerformed
-
-    private void jButton_p12a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p12a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p12a4ActionPerformed
-
-    private void jButton_p13a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p13a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p13a4ActionPerformed
-
-    private void jButton_p14a3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p14a3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p14a3ActionPerformed
-
-    private void jButton_p15a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p15a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p15a4ActionPerformed
-
-    private void jButton_p16a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p16a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p16a4ActionPerformed
-
-    private void jButton_p17a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p17a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p17a4ActionPerformed
-
-    private void jButton_p18a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p18a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p18a4ActionPerformed
-
-    private void jButton_p19a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p19a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p19a4ActionPerformed
-
-    private void jButton_p20a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p20a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p20a4ActionPerformed
-
-    private void jButton_p21a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p21a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p21a4ActionPerformed
-
-    private void jButton_p22a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p22a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p22a4ActionPerformed
-
-    private void jButton_p23a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p23a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p23a4ActionPerformed
-
-    private void jButton_p24a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p24a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p24a4ActionPerformed
-
-    private void jButton_p25a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p25a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p25a4ActionPerformed
-
-    private void jButton_p26a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p26a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p26a4ActionPerformed
-
-    private void jButton_p27a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p27a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p27a4ActionPerformed
-
-    private void jButton_p30a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p30a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p30a4ActionPerformed
-
-    private void jButton_p31a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p31a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p31a4ActionPerformed
-
     private void jButton_p51a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p51a4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton_p51a4ActionPerformed
@@ -3777,201 +1422,37 @@ public class Inicio extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton_p63a4ActionPerformed
 
-    private void jButton_p67a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p67a4ActionPerformed
+    private void jButton_p99a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p99a2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p67a4ActionPerformed
-
-    private void jButton_p71a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p71a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p71a4ActionPerformed
-
-    private void jButton_p72a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p72a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p72a4ActionPerformed
-
-    private void jButton_p79a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p79a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p79a4ActionPerformed
-
-    private void jButton_p82a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p82a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p82a4ActionPerformed
-
-    private void jButton_p87a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p87a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p87a4ActionPerformed
-
-    private void jButton_p90a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p90a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p90a4ActionPerformed
-
-    private void jButton_p99a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p99a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p99a4ActionPerformed
-
-    private void jButton_p1a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p1a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p1a2ActionPerformed
-
-    private void jButton_p2a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p2a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p2a2ActionPerformed
-
-    private void jButton_p3a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p3a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p3a2ActionPerformed
-
-    private void jButton_p4a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p4a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p4a2ActionPerformed
-
-    private void jButton_p5a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p5a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p5a2ActionPerformed
-
-    private void jButton_p6a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p6a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p6a2ActionPerformed
-
-    private void jButton_p7a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p7a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p7a2ActionPerformed
-
-    private void jButton_p8a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p8a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p8a2ActionPerformed
-
-    private void jButton_p9a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p9a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p9a4ActionPerformed
-
-    private void jButton_p10a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p10a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p10a2ActionPerformed
-
-    private void jButton_p11a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p11a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p11a2ActionPerformed
-
-    private void jButton_p12a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p12a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p12a2ActionPerformed
-
-    private void jButton_p13a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p13a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p13a2ActionPerformed
-
-    private void jButton_p14a4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p14a4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p14a4ActionPerformed
-
-    private void jButton_p15a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p15a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p15a2ActionPerformed
-
-    private void jButton_p16a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p16a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p16a2ActionPerformed
-
-    private void jButton_p17a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p17a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p17a2ActionPerformed
-
-    private void jButton_p18a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p18a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p18a2ActionPerformed
-
-    private void jButton_p19a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p19a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p19a2ActionPerformed
-
-    private void jButton_p20a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p20a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p20a2ActionPerformed
-
-    private void jButton_p21a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p21a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p21a2ActionPerformed
-
-    private void jButton_p22a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p22a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p22a2ActionPerformed
-
-    private void jButton_p23a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p23a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p23a2ActionPerformed
-
-    private void jButton_p24a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p24a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p24a2ActionPerformed
-
-    private void jButton_p25a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p25a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p25a2ActionPerformed
-
-    private void jButton_p26a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p26a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p26a2ActionPerformed
-
-    private void jButton_p27a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p27a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p27a2ActionPerformed
-
-    private void jButton_p30a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p30a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p30a2ActionPerformed
-
-    private void jButton_p31a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p31a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p31a2ActionPerformed
-
-    private void jButton_p51a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p51a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p51a2ActionPerformed
-
-    private void jButton_p52a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p52a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p52a2ActionPerformed
-
-    private void jButton_p60a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p60a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p60a2ActionPerformed
-
-    private void jButton_p63a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p63a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p63a2ActionPerformed
-
-    private void jButton_p67a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p67a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p67a2ActionPerformed
-
-    private void jButton_p71a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p71a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p71a2ActionPerformed
-
-    private void jButton_p72a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p72a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p72a2ActionPerformed
-
-    private void jButton_p79a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p79a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p79a2ActionPerformed
-
-    private void jButton_p82a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p82a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p82a2ActionPerformed
-
-    private void jButton_p87a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p87a2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p87a2ActionPerformed
+    }//GEN-LAST:event_jButton_p99a2ActionPerformed
 
     private void jButton_p90a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p90a2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton_p90a2ActionPerformed
 
-    private void jButton_p99a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p99a2ActionPerformed
+    private void jButton_p87a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p87a2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_p99a2ActionPerformed
+    }//GEN-LAST:event_jButton_p87a2ActionPerformed
+
+    private void jButton_p82a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p82a2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_p82a2ActionPerformed
+
+    private void jButton_p79a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p79a2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_p79a2ActionPerformed
+
+    private void jButton_p72a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p72a2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_p72a2ActionPerformed
+
+    private void jButton_p71a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p71a2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_p71a2ActionPerformed
+
+    private void jButton_p67a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p67a2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_p67a2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -4010,303 +1491,105 @@ public class Inicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bn_registrar;
-    private javax.swing.JButton jButton_p10a2;
     private javax.swing.JButton jButton_p10a3;
-    private javax.swing.JButton jButton_p10a4;
-    private javax.swing.JButton jButton_p11a2;
     private javax.swing.JButton jButton_p11a3;
-    private javax.swing.JButton jButton_p11a4;
-    private javax.swing.JButton jButton_p12a2;
     private javax.swing.JButton jButton_p12a3;
-    private javax.swing.JButton jButton_p12a4;
-    private javax.swing.JButton jButton_p13a2;
     private javax.swing.JButton jButton_p13a3;
-    private javax.swing.JButton jButton_p13a4;
     private javax.swing.JButton jButton_p14a2;
-    private javax.swing.JButton jButton_p14a3;
-    private javax.swing.JButton jButton_p14a4;
-    private javax.swing.JButton jButton_p15a2;
     private javax.swing.JButton jButton_p15a3;
-    private javax.swing.JButton jButton_p15a4;
-    private javax.swing.JButton jButton_p16a2;
     private javax.swing.JButton jButton_p16a3;
-    private javax.swing.JButton jButton_p16a4;
-    private javax.swing.JButton jButton_p17a2;
     private javax.swing.JButton jButton_p17a3;
-    private javax.swing.JButton jButton_p17a4;
-    private javax.swing.JButton jButton_p18a2;
     private javax.swing.JButton jButton_p18a3;
-    private javax.swing.JButton jButton_p18a4;
-    private javax.swing.JButton jButton_p19a2;
     private javax.swing.JButton jButton_p19a3;
-    private javax.swing.JButton jButton_p19a4;
-    private javax.swing.JButton jButton_p1a2;
     private javax.swing.JButton jButton_p1a3;
-    private javax.swing.JButton jButton_p1a4;
-    private javax.swing.JButton jButton_p20a2;
     private javax.swing.JButton jButton_p20a3;
-    private javax.swing.JButton jButton_p20a4;
-    private javax.swing.JButton jButton_p21a2;
     private javax.swing.JButton jButton_p21a3;
-    private javax.swing.JButton jButton_p21a4;
-    private javax.swing.JButton jButton_p22a2;
     private javax.swing.JButton jButton_p22a3;
-    private javax.swing.JButton jButton_p22a4;
-    private javax.swing.JButton jButton_p23a2;
     private javax.swing.JButton jButton_p23a3;
-    private javax.swing.JButton jButton_p23a4;
-    private javax.swing.JButton jButton_p24a2;
     private javax.swing.JButton jButton_p24a3;
-    private javax.swing.JButton jButton_p24a4;
-    private javax.swing.JButton jButton_p25a2;
     private javax.swing.JButton jButton_p25a3;
-    private javax.swing.JButton jButton_p25a4;
-    private javax.swing.JButton jButton_p26a2;
     private javax.swing.JButton jButton_p26a3;
-    private javax.swing.JButton jButton_p26a4;
-    private javax.swing.JButton jButton_p27a2;
     private javax.swing.JButton jButton_p27a3;
-    private javax.swing.JButton jButton_p27a4;
-    private javax.swing.JButton jButton_p28a2;
     private javax.swing.JButton jButton_p28a3;
-    private javax.swing.JButton jButton_p28a4;
-    private javax.swing.JButton jButton_p29a2;
     private javax.swing.JButton jButton_p29a3;
-    private javax.swing.JButton jButton_p29a4;
-    private javax.swing.JButton jButton_p2a2;
     private javax.swing.JButton jButton_p2a3;
-    private javax.swing.JButton jButton_p2a4;
-    private javax.swing.JButton jButton_p30a2;
     private javax.swing.JButton jButton_p30a3;
-    private javax.swing.JButton jButton_p30a4;
-    private javax.swing.JButton jButton_p31a2;
     private javax.swing.JButton jButton_p31a3;
-    private javax.swing.JButton jButton_p31a4;
-    private javax.swing.JButton jButton_p32a2;
     private javax.swing.JButton jButton_p32a3;
-    private javax.swing.JButton jButton_p32a4;
-    private javax.swing.JButton jButton_p33a2;
     private javax.swing.JButton jButton_p33a3;
-    private javax.swing.JButton jButton_p33a4;
-    private javax.swing.JButton jButton_p34a2;
-    private javax.swing.JButton jButton_p34a3;
     private javax.swing.JButton jButton_p34a4;
-    private javax.swing.JButton jButton_p35a2;
-    private javax.swing.JButton jButton_p35a3;
     private javax.swing.JButton jButton_p35a4;
-    private javax.swing.JButton jButton_p36a2;
-    private javax.swing.JButton jButton_p36a3;
     private javax.swing.JButton jButton_p36a4;
-    private javax.swing.JButton jButton_p37a2;
-    private javax.swing.JButton jButton_p37a3;
     private javax.swing.JButton jButton_p37a4;
-    private javax.swing.JButton jButton_p38a2;
-    private javax.swing.JButton jButton_p38a3;
     private javax.swing.JButton jButton_p38a4;
-    private javax.swing.JButton jButton_p39a2;
-    private javax.swing.JButton jButton_p39a3;
     private javax.swing.JButton jButton_p39a4;
-    private javax.swing.JButton jButton_p3a2;
     private javax.swing.JButton jButton_p3a3;
-    private javax.swing.JButton jButton_p3a4;
-    private javax.swing.JButton jButton_p40a2;
-    private javax.swing.JButton jButton_p40a3;
     private javax.swing.JButton jButton_p40a4;
-    private javax.swing.JButton jButton_p41a2;
-    private javax.swing.JButton jButton_p41a3;
     private javax.swing.JButton jButton_p41a4;
-    private javax.swing.JButton jButton_p42a2;
-    private javax.swing.JButton jButton_p42a3;
     private javax.swing.JButton jButton_p42a4;
-    private javax.swing.JButton jButton_p43a2;
-    private javax.swing.JButton jButton_p43a3;
     private javax.swing.JButton jButton_p43a4;
-    private javax.swing.JButton jButton_p44a2;
-    private javax.swing.JButton jButton_p44a3;
     private javax.swing.JButton jButton_p44a4;
-    private javax.swing.JButton jButton_p45a2;
-    private javax.swing.JButton jButton_p45a3;
     private javax.swing.JButton jButton_p45a4;
-    private javax.swing.JButton jButton_p46a2;
-    private javax.swing.JButton jButton_p46a3;
     private javax.swing.JButton jButton_p46a4;
-    private javax.swing.JButton jButton_p47a2;
-    private javax.swing.JButton jButton_p47a3;
     private javax.swing.JButton jButton_p47a4;
-    private javax.swing.JButton jButton_p48a2;
-    private javax.swing.JButton jButton_p48a3;
     private javax.swing.JButton jButton_p48a4;
-    private javax.swing.JButton jButton_p49a2;
-    private javax.swing.JButton jButton_p49a3;
     private javax.swing.JButton jButton_p49a4;
-    private javax.swing.JButton jButton_p4a2;
     private javax.swing.JButton jButton_p4a3;
-    private javax.swing.JButton jButton_p4a4;
-    private javax.swing.JButton jButton_p50a2;
-    private javax.swing.JButton jButton_p50a3;
     private javax.swing.JButton jButton_p50a4;
-    private javax.swing.JButton jButton_p51a2;
-    private javax.swing.JButton jButton_p51a3;
     private javax.swing.JButton jButton_p51a4;
-    private javax.swing.JButton jButton_p52a2;
-    private javax.swing.JButton jButton_p52a3;
     private javax.swing.JButton jButton_p52a4;
-    private javax.swing.JButton jButton_p53a2;
-    private javax.swing.JButton jButton_p53a3;
     private javax.swing.JButton jButton_p53a4;
-    private javax.swing.JButton jButton_p54a2;
-    private javax.swing.JButton jButton_p54a3;
     private javax.swing.JButton jButton_p54a4;
-    private javax.swing.JButton jButton_p55a2;
-    private javax.swing.JButton jButton_p55a3;
     private javax.swing.JButton jButton_p55a4;
-    private javax.swing.JButton jButton_p56a2;
-    private javax.swing.JButton jButton_p56a3;
     private javax.swing.JButton jButton_p56a4;
-    private javax.swing.JButton jButton_p57a2;
-    private javax.swing.JButton jButton_p57a3;
     private javax.swing.JButton jButton_p57a4;
-    private javax.swing.JButton jButton_p58a2;
-    private javax.swing.JButton jButton_p58a3;
     private javax.swing.JButton jButton_p58a4;
-    private javax.swing.JButton jButton_p59a2;
-    private javax.swing.JButton jButton_p59a3;
     private javax.swing.JButton jButton_p59a4;
-    private javax.swing.JButton jButton_p5a2;
     private javax.swing.JButton jButton_p5a3;
-    private javax.swing.JButton jButton_p5a4;
-    private javax.swing.JButton jButton_p60a2;
-    private javax.swing.JButton jButton_p60a3;
     private javax.swing.JButton jButton_p60a4;
-    private javax.swing.JButton jButton_p61a2;
-    private javax.swing.JButton jButton_p61a3;
     private javax.swing.JButton jButton_p61a4;
-    private javax.swing.JButton jButton_p62a2;
-    private javax.swing.JButton jButton_p62a3;
     private javax.swing.JButton jButton_p62a4;
-    private javax.swing.JButton jButton_p63a2;
-    private javax.swing.JButton jButton_p63a3;
     private javax.swing.JButton jButton_p63a4;
-    private javax.swing.JButton jButton_p64a2;
-    private javax.swing.JButton jButton_p64a3;
     private javax.swing.JButton jButton_p64a4;
-    private javax.swing.JButton jButton_p65a2;
-    private javax.swing.JButton jButton_p65a3;
     private javax.swing.JButton jButton_p65a4;
-    private javax.swing.JButton jButton_p66a2;
-    private javax.swing.JButton jButton_p66a3;
     private javax.swing.JButton jButton_p66a4;
     private javax.swing.JButton jButton_p67a2;
-    private javax.swing.JButton jButton_p67a3;
-    private javax.swing.JButton jButton_p67a4;
     private javax.swing.JButton jButton_p68a2;
-    private javax.swing.JButton jButton_p68a3;
-    private javax.swing.JButton jButton_p68a4;
     private javax.swing.JButton jButton_p69a2;
-    private javax.swing.JButton jButton_p69a3;
-    private javax.swing.JButton jButton_p69a4;
-    private javax.swing.JButton jButton_p6a2;
     private javax.swing.JButton jButton_p6a3;
-    private javax.swing.JButton jButton_p6a4;
     private javax.swing.JButton jButton_p70a2;
-    private javax.swing.JButton jButton_p70a3;
-    private javax.swing.JButton jButton_p70a4;
     private javax.swing.JButton jButton_p71a2;
-    private javax.swing.JButton jButton_p71a3;
-    private javax.swing.JButton jButton_p71a4;
     private javax.swing.JButton jButton_p72a2;
-    private javax.swing.JButton jButton_p72a3;
-    private javax.swing.JButton jButton_p72a4;
     private javax.swing.JButton jButton_p73a2;
-    private javax.swing.JButton jButton_p73a3;
-    private javax.swing.JButton jButton_p73a4;
     private javax.swing.JButton jButton_p74a2;
-    private javax.swing.JButton jButton_p74a3;
-    private javax.swing.JButton jButton_p74a4;
     private javax.swing.JButton jButton_p75a2;
-    private javax.swing.JButton jButton_p75a3;
-    private javax.swing.JButton jButton_p75a4;
     private javax.swing.JButton jButton_p76a2;
-    private javax.swing.JButton jButton_p76a3;
-    private javax.swing.JButton jButton_p76a4;
     private javax.swing.JButton jButton_p77a2;
-    private javax.swing.JButton jButton_p77a3;
-    private javax.swing.JButton jButton_p77a4;
     private javax.swing.JButton jButton_p78a2;
-    private javax.swing.JButton jButton_p78a3;
-    private javax.swing.JButton jButton_p78a4;
     private javax.swing.JButton jButton_p79a2;
-    private javax.swing.JButton jButton_p79a3;
-    private javax.swing.JButton jButton_p79a4;
-    private javax.swing.JButton jButton_p7a2;
     private javax.swing.JButton jButton_p7a3;
-    private javax.swing.JButton jButton_p7a4;
     private javax.swing.JButton jButton_p80a2;
-    private javax.swing.JButton jButton_p80a3;
-    private javax.swing.JButton jButton_p80a4;
     private javax.swing.JButton jButton_p81a2;
-    private javax.swing.JButton jButton_p81a3;
-    private javax.swing.JButton jButton_p81a4;
     private javax.swing.JButton jButton_p82a2;
-    private javax.swing.JButton jButton_p82a3;
-    private javax.swing.JButton jButton_p82a4;
     private javax.swing.JButton jButton_p83a2;
-    private javax.swing.JButton jButton_p83a3;
-    private javax.swing.JButton jButton_p83a4;
     private javax.swing.JButton jButton_p84a2;
-    private javax.swing.JButton jButton_p84a3;
-    private javax.swing.JButton jButton_p84a4;
     private javax.swing.JButton jButton_p85a2;
-    private javax.swing.JButton jButton_p85a3;
-    private javax.swing.JButton jButton_p85a4;
     private javax.swing.JButton jButton_p86a2;
-    private javax.swing.JButton jButton_p86a3;
-    private javax.swing.JButton jButton_p86a4;
     private javax.swing.JButton jButton_p87a2;
-    private javax.swing.JButton jButton_p87a3;
-    private javax.swing.JButton jButton_p87a4;
     private javax.swing.JButton jButton_p88a2;
-    private javax.swing.JButton jButton_p88a3;
-    private javax.swing.JButton jButton_p88a4;
     private javax.swing.JButton jButton_p89a2;
-    private javax.swing.JButton jButton_p89a3;
-    private javax.swing.JButton jButton_p89a4;
-    private javax.swing.JButton jButton_p8a2;
     private javax.swing.JButton jButton_p8a3;
-    private javax.swing.JButton jButton_p8a4;
     private javax.swing.JButton jButton_p90a2;
-    private javax.swing.JButton jButton_p90a3;
-    private javax.swing.JButton jButton_p90a4;
     private javax.swing.JButton jButton_p91a2;
-    private javax.swing.JButton jButton_p91a3;
-    private javax.swing.JButton jButton_p91a4;
     private javax.swing.JButton jButton_p92a2;
-    private javax.swing.JButton jButton_p92a3;
-    private javax.swing.JButton jButton_p92a4;
     private javax.swing.JButton jButton_p93a2;
-    private javax.swing.JButton jButton_p93a3;
-    private javax.swing.JButton jButton_p93a4;
     private javax.swing.JButton jButton_p94a2;
-    private javax.swing.JButton jButton_p94a3;
-    private javax.swing.JButton jButton_p94a4;
     private javax.swing.JButton jButton_p95a2;
-    private javax.swing.JButton jButton_p95a3;
-    private javax.swing.JButton jButton_p95a4;
     private javax.swing.JButton jButton_p96a2;
-    private javax.swing.JButton jButton_p96a3;
-    private javax.swing.JButton jButton_p96a4;
     private javax.swing.JButton jButton_p97a2;
-    private javax.swing.JButton jButton_p97a3;
-    private javax.swing.JButton jButton_p97a4;
     private javax.swing.JButton jButton_p98a2;
-    private javax.swing.JButton jButton_p98a3;
-    private javax.swing.JButton jButton_p98a4;
     private javax.swing.JButton jButton_p99a2;
-    private javax.swing.JButton jButton_p99a3;
-    private javax.swing.JButton jButton_p99a4;
     private javax.swing.JButton jButton_p9a2;
-    private javax.swing.JButton jButton_p9a3;
-    private javax.swing.JButton jButton_p9a4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
