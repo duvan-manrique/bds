@@ -38,7 +38,8 @@ public class Ubicacion extends javax.swing.JFrame {
 
         
         registro.consultar(tabla, "select * from historico;");
-        int columnas=tabla.getHeight();
+        int columnas=tabla.getRowCount();
+        
         for(int y=0;y<columnas;y++){
            int u =  (int) tabla.getValueAt(y, 3);
            System.out.println(u);
