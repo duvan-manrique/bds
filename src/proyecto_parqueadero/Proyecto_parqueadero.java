@@ -5,6 +5,8 @@
  */
 package proyecto_parqueadero;
 
+import java.time.LocalTime;
+
 /**
  *
  * @author home
@@ -18,6 +20,17 @@ public class Proyecto_parqueadero {
         acceso acceso1 = new acceso();
         acceso1.setVisible(true);
         
+        /**
+         * Tutorial de horas
+         */
+        
+        // Hora actual
+        //LocalTime horaActual = LocalTime.now();
+        // La hora, los minutos, segundos, lo trabaja en hora militar
+        //System.out.println("Hora: "+horaActual.getHour());
+        //System.out.println("Minutos: "+horaActual.getMinute());
+        // Como se enviaria a base de datos?
+        //System.out.println(horaActual.toString());
         
     }
     

@@ -34,14 +34,18 @@ public class Ubicacion extends javax.swing.JFrame {
     }
     JTable tabla;
     public void desactivar(){
-        
+        // umm
 
         
-        registro.consultar(tabla, "select * from historico;");
-        int columnas=tabla.getRowCount();
+        tabla = registro.consultar("select posicion from historico where hora_salida is null;");
+        // Ya trae la tabla pero con ello si funcionara esto
+        //System.err.println("Cuantos datos: "+tabla.getRowCount());
         
-        for(int y=0;y<columnas;y++){
-           int u =  (int) tabla.getValueAt(y, 3);
+        // En el for se dañan no se depronto sea por la forma como traigo el valor de la posicion
+        // Que es lo que se quiere hacer en el for? lo que deseo es traer los valores de la variable posicion 
+        // de los que la hora_salida es = 0, uum
+        for(int y=0;y<tabla.getRowCount();y++){
+           int u =  (int) tabla.getValueAt(y, 0);
            System.out.println(u);
         }
         
@@ -51,7 +55,7 @@ public class Ubicacion extends javax.swing.JFrame {
         //Calendar c2 = new GregorianCalendar();
         //Date date = new Date();
         //date=null;
-        
+        // desde donde se inicia el programa? la clase principal? si
         String fecha_entrada = (Integer.toString(c1.get(Calendar.DATE))+"-"+Integer.toString(c1.get(Calendar.MONTH))+"-"+Integer.toString(c1.get(Calendar.YEAR)));
         String fecha_salida = (Integer.toString(c1.get(Calendar.DATE))+"-"+Integer.toString(c1.get(Calendar.MONTH))+"-"+Integer.toString(c1.get(Calendar.YEAR)));
         String hora_entrada= (Integer.toString(c1.get(Calendar.HOUR)));

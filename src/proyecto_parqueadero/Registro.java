@@ -247,14 +247,10 @@ String IND_NR="";
     }
     
      
-    public void consultar(JTable tabla, String script){
+    public JTable consultar(String script){
         Statement codigoSQL = null;
         ResultSet resultados = null;
         try{
-            
-            DefaultTableModel t = new DefaultTableModel();
-            tabla.setModel(t);
-             
             //Connection conexion = obtenerConexion(usuario, contrasena);
             
             codigoSQL = con.createStatement();
@@ -264,7 +260,7 @@ String IND_NR="";
             
             int numeroColumnas = datos.getColumnCount();
             
-            
+            DefaultTableModel t = new DefaultTableModel();
             for(int i = 1; i <= numeroColumnas; i++){
                 t.addColumn(datos.getColumnLabel(i));
             }
@@ -275,22 +271,21 @@ String IND_NR="";
                 for(int i = 0; i < numeroColumnas ;i++){
                     
                     f[i] = resultados.getObject(i+1);
-//                    Es por que: mmmm pos toco mirarlo d enuevo :'v
-//                    para recorrer el "resultados.getObject(i)" dice que desde 1: entonces -> 1,2,3,4,5,6
-//                    y para recorrer el "Object [] f" como es array hay que recorrerlo desde 0: entoces -> 0,1,2,3,4,5
                 }
                 t.addRow(f);
-                
+                //lo raro es que al ingresar como admin y contrase;a admin en la vista de ver clientes que llama el mismo metodo no hay ningun prblema
             }
-//           si lo quiere como lo tenia solo se cambia esto
-//            hay ta rata :V la f es earray aun no entiendo bien lo de las tablas como asi? es que me confundi en los indices pense que era aca el i+1
             
             codigoSQL.close();
             resultados.close();
-            //obtenerConexion(usuario, contrasena).close();
-        }catch(Exception ex){
-            JOptionPane.showMessageDialog(null, ex);
             
+            return new JTable(t);
+            //obtenerConexion(usuario, contrasena).close(); esto va en comentario? si bueno
+        }catch(Exception ex){
+            //JOptionPane.showMessageDialog(null, ex);
+            System.out.println("Error al consultar");
+            System.out.println(ex.getMessage());
+            return null;
         }
     }
   

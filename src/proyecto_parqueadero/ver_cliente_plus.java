@@ -19,7 +19,7 @@ public class ver_cliente_plus extends javax.swing.JFrame {
         initComponents();
         registro =registro1;
         
-        registro.consultar(tabla_clientes_plus, "select * from registro;");
+        tabla_clientes_plus = registro.consultar("select * from registro;");
     }
 
     /**
@@ -52,15 +52,23 @@ public class ver_cliente_plus extends javax.swing.JFrame {
 
         tabla_clientes_plus.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "cedula", "nombre completo", "residencia", "numero de celular", "modelo", "placa", "marca", "tio de vehiculo", "fecha inicio", "fecha final"
+                "placa", "nombre completo", "residencia", "numero de celular", "modelo", "marca"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, true, true, false, true, true
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         tabla_clientes_plus.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tabla_clientes.setViewportView(tabla_clientes_plus);
 

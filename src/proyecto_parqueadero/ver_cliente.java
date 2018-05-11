@@ -20,7 +20,7 @@ public class ver_cliente extends javax.swing.JFrame {
         
         registro =registro1;
         
-        registro.consultar(tabla_cliente, "select * from historico;");
+        tabla_cliente = registro.consultar("select * from historico;");// no se que paso pero hay aparecia la tabla 
     }
 
     /**
