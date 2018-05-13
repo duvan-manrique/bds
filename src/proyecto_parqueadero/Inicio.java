@@ -5,9 +5,12 @@
  */
 package proyecto_parqueadero;
 
+import java.awt.Color;
 import java.sql.Connection;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
+import javax.swing.JTable;
+import javax.swing.table.TableModel;
 
 
 /**
@@ -22,9 +25,43 @@ public class Inicio extends javax.swing.JFrame {
      */
     Registro registro;
      public Inicio(Registro registro1) {
+    
        registro = registro1;
         initComponents();
+             desactivar();
+        
     } 
+     
+public void desactivar(){
+        JTable tabla;        
+        tabla = registro.consultar("select posicion from historico where hora_salida is null;");
+
+        for(int y=0;y<tabla.getRowCount();y++){
+           int u =  (int) tabla.getValueAt(y, 0);
+           System.err.println("hola "+u);
+           if(u<=33){
+               u--;
+               jPanel_primer1.getComponent(u).setEnabled(false);
+               jPanel_primer1.getComponent(u).setBackground(Color.red);
+               
+           }else if(u<=66){
+               
+                u=66-u;
+               jPanel_segunda2.getComponent(u).setEnabled(false);
+               jPanel_segunda2.getComponent(u).setBackground(Color.red);
+               
+               
+           }else if(u<=99){
+              u=99-u;
+               jPanel_tercera3.getComponent(u).setEnabled(false);
+               jPanel_tercera3.getComponent(u).setBackground(Color.red);
+               
+           }
+           
+          
+        }
+        
+    }
      Ubicacion ubicacion;
   public void resivir_ubicacion(Ubicacion ubicacion1){
       ubicacion = ubicacion1;
@@ -40,12 +77,13 @@ public class Inicio extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTabbedPane_principal = new javax.swing.JTabbedPane();
+        jTabbedPane_principal1 = new javax.swing.JTabbedPane();
         jPanel_inicio = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         tx_placa = new javax.swing.JTextField();
         bn_registrar = new javax.swing.JButton();
-        jPanel_primer = new javax.swing.JPanel();
+        bn_salir = new javax.swing.JButton();
+        jPanel_primer1 = new javax.swing.JPanel();
         jButton_p1a3 = new javax.swing.JButton();
         jButton_p2a3 = new javax.swing.JButton();
         jButton_p3a3 = new javax.swing.JButton();
@@ -80,7 +118,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p32a3 = new javax.swing.JButton();
         jButton_p33a3 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        jPanel_segunda = new javax.swing.JPanel();
+        jPanel_segunda2 = new javax.swing.JPanel();
         jButton_p34a4 = new javax.swing.JButton();
         jButton_p35a4 = new javax.swing.JButton();
         jButton_p36a4 = new javax.swing.JButton();
@@ -115,7 +153,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p65a4 = new javax.swing.JButton();
         jButton_p66a4 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        jPanel_tercera = new javax.swing.JPanel();
+        jPanel_tercera3 = new javax.swing.JPanel();
         jButton_p67a2 = new javax.swing.JButton();
         jButton_p68a2 = new javax.swing.JButton();
         jButton_p69a2 = new javax.swing.JButton();
@@ -155,8 +193,8 @@ public class Inicio extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("aplicativo de parqueadero");
 
-        jTabbedPane_principal.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTabbedPane_principal.setFont(new java.awt.Font("Bookman Old Style", 0, 18)); // NOI18N
+        jTabbedPane_principal1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTabbedPane_principal1.setFont(new java.awt.Font("Bookman Old Style", 0, 18)); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Bookman Old Style", 0, 24)); // NOI18N
         jLabel2.setText("INGRESE SU PLACA ");
@@ -175,21 +213,32 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        bn_salir.setFont(new java.awt.Font("Bookman Old Style", 0, 18)); // NOI18N
+        bn_salir.setText("sacar veiculo");
+        bn_salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bn_salirActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel_inicioLayout = new javax.swing.GroupLayout(jPanel_inicio);
         jPanel_inicio.setLayout(jPanel_inicioLayout);
         jPanel_inicioLayout.setHorizontalGroup(
             jPanel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_inicioLayout.createSequentialGroup()
-                .addContainerGap(275, Short.MAX_VALUE)
+                .addContainerGap(283, Short.MAX_VALUE)
                 .addGroup(jPanel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
                     .addGroup(jPanel_inicioLayout.createSequentialGroup()
                         .addGap(48, 48, 48)
-                        .addComponent(tx_placa, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel_inicioLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(bn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(tx_placa, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(269, 269, 269))
+            .addGroup(jPanel_inicioLayout.createSequentialGroup()
+                .addGap(191, 191, 191)
+                .addComponent(bn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(bn_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel_inicioLayout.setVerticalGroup(
             jPanel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -199,16 +248,18 @@ public class Inicio extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(tx_placa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(bn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(222, Short.MAX_VALUE))
+                .addGroup(jPanel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(bn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bn_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(229, Short.MAX_VALUE))
         );
 
-        jTabbedPane_principal.addTab("inicio", jPanel_inicio);
+        jTabbedPane_principal1.addTab("inicio", jPanel_inicio);
 
-        jPanel_primer.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel_primer.setMaximumSize(new java.awt.Dimension(801, 471));
-        jPanel_primer.setMinimumSize(new java.awt.Dimension(801, 471));
-        jPanel_primer.setLayout(null);
+        jPanel_primer1.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel_primer1.setMaximumSize(new java.awt.Dimension(801, 471));
+        jPanel_primer1.setMinimumSize(new java.awt.Dimension(801, 471));
+        jPanel_primer1.setLayout(null);
 
         jButton_p1a3.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p1a3.setText("1");
@@ -220,7 +271,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p1a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p1a3);
+        jPanel_primer1.add(jButton_p1a3);
         jButton_p1a3.setBounds(100, 130, 50, 40);
 
         jButton_p2a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -233,7 +284,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p2a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p2a3);
+        jPanel_primer1.add(jButton_p2a3);
         jButton_p2a3.setBounds(150, 130, 50, 40);
 
         jButton_p3a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -246,7 +297,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p3a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p3a3);
+        jPanel_primer1.add(jButton_p3a3);
         jButton_p3a3.setBounds(200, 130, 50, 40);
 
         jButton_p4a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -259,7 +310,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p4a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p4a3);
+        jPanel_primer1.add(jButton_p4a3);
         jButton_p4a3.setBounds(250, 130, 50, 40);
 
         jButton_p5a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -272,7 +323,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p5a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p5a3);
+        jPanel_primer1.add(jButton_p5a3);
         jButton_p5a3.setBounds(300, 130, 50, 40);
 
         jButton_p6a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -285,7 +336,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p6a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p6a3);
+        jPanel_primer1.add(jButton_p6a3);
         jButton_p6a3.setBounds(350, 130, 50, 40);
 
         jButton_p7a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -298,7 +349,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p7a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p7a3);
+        jPanel_primer1.add(jButton_p7a3);
         jButton_p7a3.setBounds(400, 130, 50, 40);
 
         jButton_p8a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -311,7 +362,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p8a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p8a3);
+        jPanel_primer1.add(jButton_p8a3);
         jButton_p8a3.setBounds(450, 130, 50, 40);
 
         jButton_p9a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -324,7 +375,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p9a2ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p9a2);
+        jPanel_primer1.add(jButton_p9a2);
         jButton_p9a2.setBounds(500, 130, 50, 40);
 
         jButton_p10a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -337,7 +388,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p10a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p10a3);
+        jPanel_primer1.add(jButton_p10a3);
         jButton_p10a3.setBounds(550, 130, 50, 40);
 
         jButton_p11a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -350,7 +401,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p11a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p11a3);
+        jPanel_primer1.add(jButton_p11a3);
         jButton_p11a3.setBounds(600, 130, 50, 40);
 
         jButton_p12a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -363,7 +414,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p12a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p12a3);
+        jPanel_primer1.add(jButton_p12a3);
         jButton_p12a3.setBounds(650, 130, 50, 40);
 
         jButton_p13a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -376,7 +427,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p13a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p13a3);
+        jPanel_primer1.add(jButton_p13a3);
         jButton_p13a3.setBounds(100, 170, 50, 40);
 
         jButton_p14a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -389,7 +440,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p14a2ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p14a2);
+        jPanel_primer1.add(jButton_p14a2);
         jButton_p14a2.setBounds(150, 170, 50, 40);
 
         jButton_p15a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -402,7 +453,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p15a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p15a3);
+        jPanel_primer1.add(jButton_p15a3);
         jButton_p15a3.setBounds(200, 170, 50, 40);
 
         jButton_p16a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -415,7 +466,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p16a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p16a3);
+        jPanel_primer1.add(jButton_p16a3);
         jButton_p16a3.setBounds(250, 170, 50, 40);
 
         jButton_p17a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -428,7 +479,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p17a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p17a3);
+        jPanel_primer1.add(jButton_p17a3);
         jButton_p17a3.setBounds(300, 170, 50, 40);
 
         jButton_p18a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -441,7 +492,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p18a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p18a3);
+        jPanel_primer1.add(jButton_p18a3);
         jButton_p18a3.setBounds(350, 170, 50, 40);
 
         jButton_p19a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -454,7 +505,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p19a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p19a3);
+        jPanel_primer1.add(jButton_p19a3);
         jButton_p19a3.setBounds(400, 170, 50, 40);
 
         jButton_p20a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -467,7 +518,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p20a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p20a3);
+        jPanel_primer1.add(jButton_p20a3);
         jButton_p20a3.setBounds(450, 170, 50, 40);
 
         jButton_p21a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -480,7 +531,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p21a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p21a3);
+        jPanel_primer1.add(jButton_p21a3);
         jButton_p21a3.setBounds(500, 170, 50, 40);
 
         jButton_p22a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -493,7 +544,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p22a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p22a3);
+        jPanel_primer1.add(jButton_p22a3);
         jButton_p22a3.setBounds(550, 170, 50, 40);
 
         jButton_p23a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -506,7 +557,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p23a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p23a3);
+        jPanel_primer1.add(jButton_p23a3);
         jButton_p23a3.setBounds(600, 170, 50, 40);
 
         jButton_p24a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -519,7 +570,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p24a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p24a3);
+        jPanel_primer1.add(jButton_p24a3);
         jButton_p24a3.setBounds(650, 170, 50, 40);
 
         jButton_p25a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -532,7 +583,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p25a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p25a3);
+        jPanel_primer1.add(jButton_p25a3);
         jButton_p25a3.setBounds(100, 210, 50, 40);
 
         jButton_p26a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -545,7 +596,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p26a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p26a3);
+        jPanel_primer1.add(jButton_p26a3);
         jButton_p26a3.setBounds(150, 210, 50, 40);
 
         jButton_p27a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -558,7 +609,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p27a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p27a3);
+        jPanel_primer1.add(jButton_p27a3);
         jButton_p27a3.setBounds(200, 210, 50, 40);
 
         jButton_p28a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -566,7 +617,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p28a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p28a3.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p28a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p28a3);
+        jPanel_primer1.add(jButton_p28a3);
         jButton_p28a3.setBounds(250, 210, 50, 40);
 
         jButton_p29a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -574,7 +625,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p29a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p29a3.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p29a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p29a3);
+        jPanel_primer1.add(jButton_p29a3);
         jButton_p29a3.setBounds(300, 210, 50, 40);
 
         jButton_p30a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -587,7 +638,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p30a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p30a3);
+        jPanel_primer1.add(jButton_p30a3);
         jButton_p30a3.setBounds(350, 210, 50, 40);
 
         jButton_p31a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -600,7 +651,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p31a3ActionPerformed(evt);
             }
         });
-        jPanel_primer.add(jButton_p31a3);
+        jPanel_primer1.add(jButton_p31a3);
         jButton_p31a3.setBounds(400, 210, 50, 40);
 
         jButton_p32a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -608,7 +659,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p32a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p32a3.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p32a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p32a3);
+        jPanel_primer1.add(jButton_p32a3);
         jButton_p32a3.setBounds(450, 210, 50, 40);
 
         jButton_p33a3.setBackground(new java.awt.Color(204, 255, 255));
@@ -616,27 +667,27 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p33a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p33a3.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p33a3.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_primer.add(jButton_p33a3);
+        jPanel_primer1.add(jButton_p33a3);
         jButton_p33a3.setBounds(500, 210, 50, 40);
 
         jLabel4.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jLabel4.setText("seleccione la posicion de ubicacion");
-        jPanel_primer.add(jLabel4);
+        jPanel_primer1.add(jLabel4);
         jLabel4.setBounds(170, 30, 460, 70);
 
-        jTabbedPane_principal.addTab("primer planta", jPanel_primer);
+        jTabbedPane_principal1.addTab("primer planta", jPanel_primer1);
 
-        jPanel_segunda.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel_segunda.setMaximumSize(new java.awt.Dimension(801, 529));
-        jPanel_segunda.setMinimumSize(new java.awt.Dimension(801, 529));
-        jPanel_segunda.setLayout(null);
+        jPanel_segunda2.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel_segunda2.setMaximumSize(new java.awt.Dimension(801, 529));
+        jPanel_segunda2.setMinimumSize(new java.awt.Dimension(801, 529));
+        jPanel_segunda2.setLayout(null);
 
         jButton_p34a4.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p34a4.setText("34");
         jButton_p34a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p34a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p34a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p34a4);
+        jPanel_segunda2.add(jButton_p34a4);
         jButton_p34a4.setBounds(550, 110, 50, 40);
 
         jButton_p35a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -644,7 +695,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p35a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p35a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p35a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p35a4);
+        jPanel_segunda2.add(jButton_p35a4);
         jButton_p35a4.setBounds(600, 110, 50, 40);
 
         jButton_p36a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -652,7 +703,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p36a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p36a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p36a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p36a4);
+        jPanel_segunda2.add(jButton_p36a4);
         jButton_p36a4.setBounds(650, 110, 50, 40);
 
         jButton_p37a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -660,7 +711,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p37a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p37a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p37a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p37a4);
+        jPanel_segunda2.add(jButton_p37a4);
         jButton_p37a4.setBounds(100, 150, 50, 40);
 
         jButton_p38a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -668,7 +719,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p38a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p38a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p38a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p38a4);
+        jPanel_segunda2.add(jButton_p38a4);
         jButton_p38a4.setBounds(150, 150, 50, 40);
 
         jButton_p39a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -676,7 +727,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p39a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p39a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p39a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p39a4);
+        jPanel_segunda2.add(jButton_p39a4);
         jButton_p39a4.setBounds(200, 150, 50, 40);
 
         jButton_p40a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -684,7 +735,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p40a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p40a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p40a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p40a4);
+        jPanel_segunda2.add(jButton_p40a4);
         jButton_p40a4.setBounds(250, 150, 50, 40);
 
         jButton_p41a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -692,7 +743,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p41a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p41a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p41a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p41a4);
+        jPanel_segunda2.add(jButton_p41a4);
         jButton_p41a4.setBounds(300, 150, 50, 40);
 
         jButton_p42a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -700,7 +751,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p42a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p42a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p42a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p42a4);
+        jPanel_segunda2.add(jButton_p42a4);
         jButton_p42a4.setBounds(350, 150, 50, 40);
 
         jButton_p43a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -708,7 +759,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p43a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p43a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p43a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p43a4);
+        jPanel_segunda2.add(jButton_p43a4);
         jButton_p43a4.setBounds(400, 150, 50, 40);
 
         jButton_p44a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -716,7 +767,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p44a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p44a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p44a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p44a4);
+        jPanel_segunda2.add(jButton_p44a4);
         jButton_p44a4.setBounds(450, 150, 50, 40);
 
         jButton_p45a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -724,7 +775,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p45a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p45a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p45a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p45a4);
+        jPanel_segunda2.add(jButton_p45a4);
         jButton_p45a4.setBounds(500, 150, 50, 40);
 
         jButton_p46a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -732,7 +783,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p46a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p46a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p46a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p46a4);
+        jPanel_segunda2.add(jButton_p46a4);
         jButton_p46a4.setBounds(550, 150, 50, 40);
 
         jButton_p47a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -740,7 +791,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p47a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p47a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p47a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p47a4);
+        jPanel_segunda2.add(jButton_p47a4);
         jButton_p47a4.setBounds(600, 150, 50, 40);
 
         jButton_p48a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -748,7 +799,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p48a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p48a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p48a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p48a4);
+        jPanel_segunda2.add(jButton_p48a4);
         jButton_p48a4.setBounds(650, 150, 50, 40);
 
         jButton_p49a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -756,7 +807,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p49a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p49a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p49a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p49a4);
+        jPanel_segunda2.add(jButton_p49a4);
         jButton_p49a4.setBounds(100, 190, 50, 40);
 
         jButton_p50a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -764,7 +815,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p50a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p50a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p50a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p50a4);
+        jPanel_segunda2.add(jButton_p50a4);
         jButton_p50a4.setBounds(150, 190, 50, 40);
 
         jButton_p51a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -777,7 +828,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p51a4ActionPerformed(evt);
             }
         });
-        jPanel_segunda.add(jButton_p51a4);
+        jPanel_segunda2.add(jButton_p51a4);
         jButton_p51a4.setBounds(200, 190, 50, 40);
 
         jButton_p52a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -790,7 +841,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p52a4ActionPerformed(evt);
             }
         });
-        jPanel_segunda.add(jButton_p52a4);
+        jPanel_segunda2.add(jButton_p52a4);
         jButton_p52a4.setBounds(250, 190, 50, 40);
 
         jButton_p53a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -798,7 +849,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p53a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p53a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p53a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p53a4);
+        jPanel_segunda2.add(jButton_p53a4);
         jButton_p53a4.setBounds(300, 190, 50, 40);
 
         jButton_p54a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -806,7 +857,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p54a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p54a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p54a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p54a4);
+        jPanel_segunda2.add(jButton_p54a4);
         jButton_p54a4.setBounds(350, 190, 50, 40);
 
         jButton_p55a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -814,7 +865,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p55a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p55a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p55a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p55a4);
+        jPanel_segunda2.add(jButton_p55a4);
         jButton_p55a4.setBounds(400, 190, 50, 40);
 
         jButton_p56a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -822,7 +873,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p56a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p56a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p56a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p56a4);
+        jPanel_segunda2.add(jButton_p56a4);
         jButton_p56a4.setBounds(450, 190, 50, 40);
 
         jButton_p57a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -830,7 +881,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p57a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p57a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p57a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p57a4);
+        jPanel_segunda2.add(jButton_p57a4);
         jButton_p57a4.setBounds(500, 190, 50, 40);
 
         jButton_p58a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -838,7 +889,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p58a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p58a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p58a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p58a4);
+        jPanel_segunda2.add(jButton_p58a4);
         jButton_p58a4.setBounds(550, 190, 50, 40);
 
         jButton_p59a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -846,7 +897,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p59a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p59a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p59a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p59a4);
+        jPanel_segunda2.add(jButton_p59a4);
         jButton_p59a4.setBounds(600, 190, 50, 40);
 
         jButton_p60a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -859,7 +910,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p60a4ActionPerformed(evt);
             }
         });
-        jPanel_segunda.add(jButton_p60a4);
+        jPanel_segunda2.add(jButton_p60a4);
         jButton_p60a4.setBounds(650, 190, 50, 40);
 
         jButton_p61a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -867,7 +918,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p61a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p61a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p61a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p61a4);
+        jPanel_segunda2.add(jButton_p61a4);
         jButton_p61a4.setBounds(100, 230, 50, 40);
 
         jButton_p62a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -875,7 +926,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p62a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p62a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p62a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p62a4);
+        jPanel_segunda2.add(jButton_p62a4);
         jButton_p62a4.setBounds(150, 230, 50, 40);
 
         jButton_p63a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -888,7 +939,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p63a4ActionPerformed(evt);
             }
         });
-        jPanel_segunda.add(jButton_p63a4);
+        jPanel_segunda2.add(jButton_p63a4);
         jButton_p63a4.setBounds(200, 230, 50, 40);
 
         jButton_p64a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -896,7 +947,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p64a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p64a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p64a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p64a4);
+        jPanel_segunda2.add(jButton_p64a4);
         jButton_p64a4.setBounds(250, 230, 50, 40);
 
         jButton_p65a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -904,7 +955,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p65a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p65a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p65a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p65a4);
+        jPanel_segunda2.add(jButton_p65a4);
         jButton_p65a4.setBounds(300, 230, 50, 40);
 
         jButton_p66a4.setBackground(new java.awt.Color(204, 255, 255));
@@ -912,18 +963,18 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p66a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p66a4.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p66a4.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_segunda.add(jButton_p66a4);
+        jPanel_segunda2.add(jButton_p66a4);
         jButton_p66a4.setBounds(350, 230, 50, 40);
 
         jLabel5.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jLabel5.setText("seleccione la posicion de ubicacion");
-        jPanel_segunda.add(jLabel5);
+        jPanel_segunda2.add(jLabel5);
         jLabel5.setBounds(170, 30, 460, 70);
 
-        jTabbedPane_principal.addTab("segunda planta", jPanel_segunda);
+        jTabbedPane_principal1.addTab("segunda planta", jPanel_segunda2);
 
-        jPanel_tercera.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel_tercera.setLayout(null);
+        jPanel_tercera3.setBackground(new java.awt.Color(102, 102, 102));
+        jPanel_tercera3.setLayout(null);
 
         jButton_p67a2.setBackground(new java.awt.Color(204, 255, 255));
         jButton_p67a2.setText("67");
@@ -935,7 +986,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p67a2ActionPerformed(evt);
             }
         });
-        jPanel_tercera.add(jButton_p67a2);
+        jPanel_tercera3.add(jButton_p67a2);
         jButton_p67a2.setBounds(400, 130, 50, 40);
 
         jButton_p68a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -943,7 +994,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p68a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p68a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p68a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p68a2);
+        jPanel_tercera3.add(jButton_p68a2);
         jButton_p68a2.setBounds(450, 130, 50, 40);
 
         jButton_p69a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -951,7 +1002,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p69a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p69a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p69a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p69a2);
+        jPanel_tercera3.add(jButton_p69a2);
         jButton_p69a2.setBounds(500, 130, 50, 40);
 
         jButton_p70a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -959,7 +1010,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p70a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p70a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p70a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p70a2);
+        jPanel_tercera3.add(jButton_p70a2);
         jButton_p70a2.setBounds(550, 130, 50, 40);
 
         jButton_p71a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -972,7 +1023,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p71a2ActionPerformed(evt);
             }
         });
-        jPanel_tercera.add(jButton_p71a2);
+        jPanel_tercera3.add(jButton_p71a2);
         jButton_p71a2.setBounds(600, 130, 50, 40);
 
         jButton_p72a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -985,7 +1036,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p72a2ActionPerformed(evt);
             }
         });
-        jPanel_tercera.add(jButton_p72a2);
+        jPanel_tercera3.add(jButton_p72a2);
         jButton_p72a2.setBounds(650, 130, 50, 40);
 
         jButton_p73a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -993,7 +1044,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p73a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p73a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p73a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p73a2);
+        jPanel_tercera3.add(jButton_p73a2);
         jButton_p73a2.setBounds(100, 170, 50, 40);
 
         jButton_p74a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1001,7 +1052,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p74a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p74a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p74a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p74a2);
+        jPanel_tercera3.add(jButton_p74a2);
         jButton_p74a2.setBounds(150, 170, 50, 40);
 
         jButton_p75a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1009,7 +1060,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p75a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p75a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p75a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p75a2);
+        jPanel_tercera3.add(jButton_p75a2);
         jButton_p75a2.setBounds(200, 170, 50, 40);
 
         jButton_p76a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1017,7 +1068,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p76a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p76a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p76a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p76a2);
+        jPanel_tercera3.add(jButton_p76a2);
         jButton_p76a2.setBounds(250, 170, 50, 40);
 
         jButton_p77a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1025,7 +1076,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p77a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p77a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p77a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p77a2);
+        jPanel_tercera3.add(jButton_p77a2);
         jButton_p77a2.setBounds(300, 170, 50, 40);
 
         jButton_p78a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1033,7 +1084,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p78a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p78a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p78a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p78a2);
+        jPanel_tercera3.add(jButton_p78a2);
         jButton_p78a2.setBounds(350, 170, 50, 40);
 
         jButton_p79a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1046,7 +1097,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p79a2ActionPerformed(evt);
             }
         });
-        jPanel_tercera.add(jButton_p79a2);
+        jPanel_tercera3.add(jButton_p79a2);
         jButton_p79a2.setBounds(400, 170, 50, 40);
 
         jButton_p80a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1054,7 +1105,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p80a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p80a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p80a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p80a2);
+        jPanel_tercera3.add(jButton_p80a2);
         jButton_p80a2.setBounds(450, 170, 50, 40);
 
         jButton_p81a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1062,7 +1113,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p81a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p81a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p81a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p81a2);
+        jPanel_tercera3.add(jButton_p81a2);
         jButton_p81a2.setBounds(500, 170, 50, 40);
 
         jButton_p82a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1075,7 +1126,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p82a2ActionPerformed(evt);
             }
         });
-        jPanel_tercera.add(jButton_p82a2);
+        jPanel_tercera3.add(jButton_p82a2);
         jButton_p82a2.setBounds(550, 170, 50, 40);
 
         jButton_p83a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1083,7 +1134,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p83a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p83a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p83a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p83a2);
+        jPanel_tercera3.add(jButton_p83a2);
         jButton_p83a2.setBounds(600, 170, 50, 40);
 
         jButton_p84a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1091,7 +1142,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p84a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p84a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p84a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p84a2);
+        jPanel_tercera3.add(jButton_p84a2);
         jButton_p84a2.setBounds(650, 170, 50, 40);
 
         jButton_p85a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1099,7 +1150,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p85a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p85a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p85a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p85a2);
+        jPanel_tercera3.add(jButton_p85a2);
         jButton_p85a2.setBounds(100, 210, 50, 40);
 
         jButton_p86a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1107,7 +1158,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p86a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p86a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p86a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p86a2);
+        jPanel_tercera3.add(jButton_p86a2);
         jButton_p86a2.setBounds(150, 210, 50, 40);
 
         jButton_p87a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1120,7 +1171,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p87a2ActionPerformed(evt);
             }
         });
-        jPanel_tercera.add(jButton_p87a2);
+        jPanel_tercera3.add(jButton_p87a2);
         jButton_p87a2.setBounds(200, 210, 50, 40);
 
         jButton_p88a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1128,7 +1179,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p88a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p88a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p88a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p88a2);
+        jPanel_tercera3.add(jButton_p88a2);
         jButton_p88a2.setBounds(250, 210, 50, 40);
 
         jButton_p89a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1136,7 +1187,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p89a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p89a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p89a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p89a2);
+        jPanel_tercera3.add(jButton_p89a2);
         jButton_p89a2.setBounds(300, 210, 50, 40);
 
         jButton_p90a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1149,7 +1200,7 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p90a2ActionPerformed(evt);
             }
         });
-        jPanel_tercera.add(jButton_p90a2);
+        jPanel_tercera3.add(jButton_p90a2);
         jButton_p90a2.setBounds(350, 210, 50, 40);
 
         jButton_p91a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1157,7 +1208,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p91a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p91a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p91a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p91a2);
+        jPanel_tercera3.add(jButton_p91a2);
         jButton_p91a2.setBounds(400, 210, 50, 40);
 
         jButton_p92a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1165,7 +1216,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p92a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p92a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p92a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p92a2);
+        jPanel_tercera3.add(jButton_p92a2);
         jButton_p92a2.setBounds(450, 210, 50, 40);
 
         jButton_p93a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1173,7 +1224,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p93a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p93a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p93a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p93a2);
+        jPanel_tercera3.add(jButton_p93a2);
         jButton_p93a2.setBounds(500, 210, 50, 40);
 
         jButton_p94a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1181,7 +1232,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p94a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p94a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p94a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p94a2);
+        jPanel_tercera3.add(jButton_p94a2);
         jButton_p94a2.setBounds(550, 210, 50, 40);
 
         jButton_p95a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1189,7 +1240,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p95a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p95a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p95a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p95a2);
+        jPanel_tercera3.add(jButton_p95a2);
         jButton_p95a2.setBounds(600, 210, 50, 40);
 
         jButton_p96a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1197,7 +1248,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p96a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p96a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p96a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p96a2);
+        jPanel_tercera3.add(jButton_p96a2);
         jButton_p96a2.setBounds(650, 210, 50, 40);
 
         jButton_p97a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1205,7 +1256,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p97a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p97a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p97a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p97a2);
+        jPanel_tercera3.add(jButton_p97a2);
         jButton_p97a2.setBounds(100, 250, 50, 40);
 
         jButton_p98a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1213,7 +1264,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton_p98a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p98a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p98a2.setPreferredSize(new java.awt.Dimension(50, 40));
-        jPanel_tercera.add(jButton_p98a2);
+        jPanel_tercera3.add(jButton_p98a2);
         jButton_p98a2.setBounds(150, 250, 50, 40);
 
         jButton_p99a2.setBackground(new java.awt.Color(204, 255, 255));
@@ -1226,15 +1277,15 @@ public class Inicio extends javax.swing.JFrame {
                 jButton_p99a2ActionPerformed(evt);
             }
         });
-        jPanel_tercera.add(jButton_p99a2);
+        jPanel_tercera3.add(jButton_p99a2);
         jButton_p99a2.setBounds(200, 250, 50, 40);
 
         jLabel6.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jLabel6.setText("seleccione la posicion de ubicacion");
-        jPanel_tercera.add(jLabel6);
+        jPanel_tercera3.add(jLabel6);
         jLabel6.setBounds(170, 30, 460, 70);
 
-        jTabbedPane_principal.addTab("tercera planta", jPanel_tercera);
+        jTabbedPane_principal1.addTab("tercera planta", jPanel_tercera3);
 
         jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jLabel1.setText("CONTROL DE PARQUEADERO");
@@ -1244,7 +1295,7 @@ public class Inicio extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addComponent(jTabbedPane_principal, javax.swing.GroupLayout.PREFERRED_SIZE, 806, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jTabbedPane_principal1, javax.swing.GroupLayout.PREFERRED_SIZE, 806, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(176, 176, 176)
@@ -1256,7 +1307,7 @@ public class Inicio extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
-                .addComponent(jTabbedPane_principal, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jTabbedPane_principal1, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1278,15 +1329,26 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_tx_placaActionPerformed
 
     private void bn_registrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_registrarActionPerformed
-    
+
         if(EMPTY.equals(tx_placa.getText().trim())){
             JOptionPane.showMessageDialog(null, "ingrese la placa");
         }else{
-            ubicacion.setVisible(true);
-            ubicacion.placa_res(tx_placa.getText());
-            ubicacion.desactivar();
+                    String placa_el =tx_placa.getText();
+                String script= String.format("select * from historico where placa='%s' and hora_salida is null",placa_el);
+                TableModel tabla =registro.consultar(script).getModel();
+
+                if((0==tabla.getRowCount())){
+                    ubicacion.setVisible(true);
+                    ubicacion.placa_res(tx_placa.getText(),this);
+                    ubicacion.desactivar();
+
+                }else{
+                    JOptionPane.showMessageDialog(null, "ya existe la placa");
+                }
+
+               
+
         }
-    
     
     }//GEN-LAST:event_bn_registrarActionPerformed
 
@@ -1454,6 +1516,10 @@ public class Inicio extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton_p67a2ActionPerformed
 
+    private void bn_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_salirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bn_salirActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1491,6 +1557,7 @@ public class Inicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bn_registrar;
+    private javax.swing.JButton bn_salir;
     private javax.swing.JButton jButton_p10a3;
     private javax.swing.JButton jButton_p11a3;
     private javax.swing.JButton jButton_p12a3;
@@ -1597,10 +1664,10 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel_inicio;
-    private javax.swing.JPanel jPanel_primer;
-    private javax.swing.JPanel jPanel_segunda;
-    private javax.swing.JPanel jPanel_tercera;
-    private javax.swing.JTabbedPane jTabbedPane_principal;
+    private javax.swing.JPanel jPanel_primer1;
+    private javax.swing.JPanel jPanel_segunda2;
+    private javax.swing.JPanel jPanel_tercera3;
+    private javax.swing.JTabbedPane jTabbedPane_principal1;
     private javax.swing.JTextField tx_placa;
     // End of variables declaration//GEN-END:variables
 }

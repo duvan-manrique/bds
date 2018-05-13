@@ -17,12 +17,16 @@ public class ver_cliente extends javax.swing.JFrame {
      * Creates new form ver_cliente
      */
     Registro registro;
+    admindentro admin;
     public ver_cliente(Registro registro1) {
         initComponents();
         
         registro =registro1;
         TableModel tabla = registro.consultar("select * from historico;").getModel();
         tabla_cliente.setModel(tabla);
+    }
+    public void resibir_admin(admindentro admin1){
+        admin=admin1;
     }
 
     /**
@@ -34,6 +38,7 @@ public class ver_cliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -41,7 +46,19 @@ public class ver_cliente extends javax.swing.JFrame {
         tabla_cliente = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(731, 510));
+        setMinimumSize(new java.awt.Dimension(731, 510));
+        setPreferredSize(new java.awt.Dimension(731, 510));
         getContentPane().setLayout(null);
+
+        jButton1.setText("salir");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(0, 260, 57, 25);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Business-Restaurant.png"))); // NOI18N
@@ -55,7 +72,7 @@ public class ver_cliente extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 600, 290);
+        jLabel1.setBounds(0, 0, 720, 290);
 
         tabla_cliente.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -75,6 +92,11 @@ public class ver_cliente extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.dispose();
+        admin.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -112,6 +134,7 @@ public class ver_cliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

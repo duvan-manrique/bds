@@ -5,6 +5,7 @@
  */
 package proyecto_parqueadero;
 
+import java.awt.Color;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableModel;
 
@@ -19,10 +20,12 @@ public class editar_cliente extends javax.swing.JFrame {
      */
     Registro registro;
     admindentro admin;
-    String  IND_NR=" ";
+    String  IND_NR="";
     public editar_cliente(Registro registro1) {
         initComponents();
         registro=registro1;
+        tx_placa.setEditable(false);
+        tx_placa.setBackground(Color.white);
     }
 public void resibir(admindentro admin1){
         admin=admin1;
@@ -58,6 +61,7 @@ public void resibir(admindentro admin1){
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         bn_editarcliente = new javax.swing.JButton();
+        jButton_cancelar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -73,7 +77,7 @@ public void resibir(admindentro admin1){
         getContentPane().add(jLabel4);
         jLabel4.setBounds(50, 100, 210, 20);
         getContentPane().add(tx_residencia);
-        tx_residencia.setBounds(150, 300, 100, 20);
+        tx_residencia.setBounds(110, 270, 100, 20);
 
         tx_nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,60 +85,60 @@ public void resibir(admindentro admin1){
             }
         });
         getContentPane().add(tx_nombre);
-        tx_nombre.setBounds(160, 270, 170, 20);
+        tx_nombre.setBounds(140, 240, 170, 20);
 
         jLabel5.setBackground(new java.awt.Color(255, 0, 0));
         jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Nombre Completo");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(10, 260, 150, 30);
+        jLabel5.setBounds(0, 230, 150, 30);
 
         jLabel6.setBackground(new java.awt.Color(255, 0, 0));
         jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Residencia");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(30, 290, 110, 30);
+        jLabel6.setBounds(10, 260, 110, 30);
 
         jLabel11.setBackground(new java.awt.Color(255, 0, 0));
         jLabel11.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Numero celular");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(30, 320, 130, 30);
+        jLabel11.setBounds(10, 290, 130, 30);
 
         jLabel7.setBackground(new java.awt.Color(255, 0, 0));
         jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("modelo");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(270, 300, 100, 20);
+        jLabel7.setBounds(250, 300, 100, 20);
 
         jLabel8.setBackground(new java.awt.Color(255, 0, 0));
         jLabel8.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("placa");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(270, 330, 90, 20);
+        jLabel8.setBounds(250, 270, 90, 20);
 
         jLabel9.setBackground(new java.awt.Color(255, 0, 0));
         jLabel9.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("marca ");
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(430, 280, 90, 20);
+        jLabel9.setBounds(430, 270, 90, 20);
 
         jLabel10.setBackground(new java.awt.Color(0, 0, 204));
         jLabel10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Informacion del auto");
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(450, 240, 160, 40);
+        jLabel10.setBounds(430, 230, 160, 40);
         getContentPane().add(tx_placa);
-        tx_placa.setBounds(320, 340, 100, 20);
+        tx_placa.setBounds(300, 270, 100, 20);
         getContentPane().add(tx_modelo);
-        tx_modelo.setBounds(330, 300, 100, 20);
+        tx_modelo.setBounds(310, 300, 100, 20);
 
         tx_marca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,7 +146,7 @@ public void resibir(admindentro admin1){
             }
         });
         getContentPane().add(tx_marca);
-        tx_marca.setBounds(480, 280, 100, 20);
+        tx_marca.setBounds(480, 270, 100, 20);
 
         bn_buscarcliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/buscarClienteIcon.jpg"))); // NOI18N
         bn_buscarcliente.setText("buscar");
@@ -156,9 +160,9 @@ public void resibir(admindentro admin1){
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "automovil", "motocicleta", "cicla" }));
         getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(480, 310, 100, 20);
+        jComboBox1.setBounds(480, 300, 100, 20);
         getContentPane().add(tx_celular);
-        tx_celular.setBounds(150, 330, 100, 20);
+        tx_celular.setBounds(140, 300, 100, 20);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -188,6 +192,15 @@ public void resibir(admindentro admin1){
         getContentPane().add(bn_editarcliente);
         bn_editarcliente.setBounds(430, 340, 160, 60);
 
+        jButton_cancelar.setText("Cancelar");
+        jButton_cancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_cancelarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton_cancelar);
+        jButton_cancelar.setBounds(240, 350, 110, 25);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 0, 620, 410);
@@ -196,30 +209,37 @@ public void resibir(admindentro admin1){
     }// </editor-fold>//GEN-END:initComponents
 
     private void bn_editarclienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_editarclienteActionPerformed
-           String sPlaca = tx_placa.getText();     
-           String sNombre =tx_nombre.getText();
-           String srecidencia =tx_residencia.getText();
-           String scelular =tx_celular.getText();
-           String smarca =tx_marca.getText();
-           String smodelo =tx_modelo.getText();
            
-           String qrq ="update registro set (placa, nombre_completo, residencia, num_celular, modelo, marca ) values ('"+sPlaca+"','"+sNombre+"','"+srecidencia+"',"+scelular+",'"+smodelo+"','"+smarca+"')";
+           String sPlaca = tx_placa.getText().trim();     
+           String sNombre =tx_nombre.getText().trim();
+           String srecidencia =tx_residencia.getText().trim();
+           String scelular =tx_celular.getText().trim();
+           String smarca =tx_marca.getText().trim();
+           String smodelo =tx_modelo.getText().trim();
+           
+           if(!((IND_NR.equals(tx_placa.getText().trim()))&(IND_NR.equals(tx_nombre.getText().trim()))&(IND_NR.equals(tx_residencia.getText().trim()))&(IND_NR.equals(tx_celular.getText().trim()))&(IND_NR.equals(tx_marca.getText().trim()))&(IND_NR.equals(tx_modelo.getText().trim())))){
+               String qrq ="update registro set  nombre_completo='"+sNombre+"', residencia='"+srecidencia+"', num_celular="+scelular+", modelo='"+smodelo+"', marca='"+smarca+"'where placa='"+sPlaca+"'";
         
-        try{
-               
-               registro.eliminar(qrq);
-               JOptionPane.showMessageDialog(null, "Registro grabado satisfactoriamente");
-               admin.setVisible(true);
-               this.dispose();
-                tx_nombre.setText(IND_NR);
-                tx_residencia.setText(IND_NR);
-                tx_celular.setText(IND_NR);
-                tx_marca.setText(IND_NR);
-                tx_modelo.setText(IND_NR);
-               
-           }catch(Exception e){
-               System.out.println("error al grabar "+e.getMessage());
+                try{
+
+                       registro.eliminar(qrq);
+                       JOptionPane.showMessageDialog(null, "Registro grabado satisfactoriamente");
+                       admin.setVisible(true);
+                       this.dispose();
+                        tx_nombre.setText(IND_NR);
+                        tx_residencia.setText(IND_NR);
+                        tx_celular.setText(IND_NR);
+                        tx_marca.setText(IND_NR);
+                        tx_modelo.setText(IND_NR);
+
+                   }catch(Exception e){
+                       System.out.println("error al grabar "+e.getMessage());
+                   }
+           }else{
+               JOptionPane.showMessageDialog(null, "llene todos los campos");
            }
+           
+           
     }//GEN-LAST:event_bn_editarclienteActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -238,7 +258,7 @@ public void resibir(admindentro admin1){
         String placa_el =jTextField1.getText();
         String script= String.format("select * from registro where placa='%s'",placa_el);
         TableModel tabla =registro.consultar(script).getModel();
-        if((tabla != null)){
+        if(!(0==tabla.getRowCount())){
            tx_placa.setText(tabla.getValueAt(0, 0).toString());
            tx_nombre.setText(tabla.getValueAt(0, 1).toString());
            tx_residencia.setText(tabla.getValueAt(0, 2).toString());
@@ -251,6 +271,16 @@ public void resibir(admindentro admin1){
         }
             
     }//GEN-LAST:event_bn_buscarclienteActionPerformed
+
+    private void jButton_cancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_cancelarActionPerformed
+                tx_nombre.setText(IND_NR);
+                tx_residencia.setText(IND_NR);
+                tx_celular.setText(IND_NR);
+                tx_marca.setText(IND_NR);
+                tx_modelo.setText(IND_NR);
+                admin.setVisible(true);
+                this.dispose();
+    }//GEN-LAST:event_jButton_cancelarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -290,6 +320,7 @@ public void resibir(admindentro admin1){
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bn_buscarcliente;
     private javax.swing.JButton bn_editarcliente;
+    private javax.swing.JButton jButton_cancelar;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;

@@ -35,6 +35,7 @@ public class eliminar_cliente extends javax.swing.JFrame {
 
         bn_eliminarcliente = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -54,7 +55,7 @@ public class eliminar_cliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(bn_eliminarcliente);
-        bn_eliminarcliente.setBounds(220, 290, 160, 60);
+        bn_eliminarcliente.setBounds(220, 291, 160, 59);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,6 +64,15 @@ public class eliminar_cliente extends javax.swing.JFrame {
         });
         getContentPane().add(jTextField1);
         jTextField1.setBounds(290, 130, 130, 22);
+
+        jButton1.setText("cancelar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(30, 350, 100, 25);
 
         jLabel4.setBackground(new java.awt.Color(255, 0, 0));
         jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
@@ -98,6 +108,11 @@ public class eliminar_cliente extends javax.swing.JFrame {
         this.dispose();
         admin.setVisible(true);
     }//GEN-LAST:event_bn_eliminarclienteActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        admin.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -136,6 +151,7 @@ public class eliminar_cliente extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bn_eliminarcliente;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -12,6 +12,7 @@ import java.time.LocalTime;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JTable;
 
@@ -28,34 +29,48 @@ public class Ubicacion extends javax.swing.JFrame {
     public Ubicacion(Registro registro1) {
         initComponents();
         registro = registro1;
+        desactivar();
     }
     String placa;
-    public void placa_res(String placa1){
+    Inicio inicio;
+    public void placa_res(String placa1 , Inicio inicio1 ){
          placa= placa1;
+         inicio=inicio1;
          
     }
-    JTable tabla;
+    
     public void desactivar(){
-        // umm
-
-        
+        JTable tabla;        
         tabla = registro.consultar("select posicion from historico where hora_salida is null;");
-        // Ya trae la tabla pero con ello si funcionara esto
-        //System.err.println("Cuantos datos: "+tabla.getRowCount());
-        
-        // En el for se dañan no se depronto sea por la forma como traigo el valor de la posicion
-        // Que es lo que se quiere hacer en el for? lo que deseo es traer los valores de la variable posicion 
-        // de los que la hora_salida es = 0, uum
+
         for(int y=0;y<tabla.getRowCount();y++){
            int u =  (int) tabla.getValueAt(y, 0);
-           System.out.println(u);
+           System.err.println("hola "+u);
+           if(u<=33){
+               u--;
+               jPanel_primer.getComponent(u).setEnabled(false);
+               jPanel_primer.getComponent(u).setBackground(Color.red);
+               
+           }else if(u<=66){
+               u=66-u;
+               jPanel_segunda.getComponent(u).setEnabled(false);
+               jPanel_segunda.getComponent(u).setBackground(Color.red);
+               
+               
+           }else if(u<=99){
+               u=99-u;
+               jPanel_tercera.getComponent(u).setEnabled(false);
+               jPanel_tercera.getComponent(u).setBackground(Color.red);
+               
+           }
+           
+          
         }
         
     }
     public void inscribir(int index){
         Calendar c1 = Calendar.getInstance();
         LocalTime horaActual = LocalTime.now();
-        
         //Calendar c2 = new GregorianCalendar();
         //Date date = new Date();
         //date=null;
@@ -557,6 +572,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p28a.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p28a.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p28a.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p28a.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p28aActionPerformed(evt);
+            }
+        });
         jPanel_primer.add(jButton_p28a);
         jButton_p28a.setBounds(250, 210, 50, 40);
 
@@ -565,6 +585,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p29a.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p29a.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p29a.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p29a.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p29aActionPerformed(evt);
+            }
+        });
         jPanel_primer.add(jButton_p29a);
         jButton_p29a.setBounds(300, 210, 50, 40);
 
@@ -599,6 +624,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p32a.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p32a.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p32a.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p32a.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p32aActionPerformed(evt);
+            }
+        });
         jPanel_primer.add(jButton_p32a);
         jButton_p32a.setBounds(450, 210, 50, 40);
 
@@ -607,6 +637,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p33a.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p33a.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p33a.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p33a.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p33aActionPerformed(evt);
+            }
+        });
         jPanel_primer.add(jButton_p33a);
         jButton_p33a.setBounds(500, 210, 50, 40);
 
@@ -627,6 +662,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p34a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p34a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p34a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p34a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p34a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p34a1);
         jButton_p34a1.setBounds(560, 100, 50, 40);
 
@@ -635,6 +675,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p35a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p35a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p35a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p35a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p35a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p35a1);
         jButton_p35a1.setBounds(610, 100, 50, 40);
 
@@ -643,6 +688,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p36a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p36a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p36a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p36a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p36a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p36a1);
         jButton_p36a1.setBounds(660, 100, 50, 40);
 
@@ -651,6 +701,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p37a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p37a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p37a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p37a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p37a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p37a1);
         jButton_p37a1.setBounds(110, 140, 50, 40);
 
@@ -659,6 +714,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p38a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p38a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p38a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p38a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p38a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p38a1);
         jButton_p38a1.setBounds(160, 140, 50, 40);
 
@@ -667,6 +727,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p39a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p39a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p39a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p39a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p39a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p39a1);
         jButton_p39a1.setBounds(210, 140, 50, 40);
 
@@ -675,6 +740,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p40a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p40a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p40a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p40a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p40a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p40a1);
         jButton_p40a1.setBounds(260, 140, 50, 40);
 
@@ -683,6 +753,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p41a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p41a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p41a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p41a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p41a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p41a1);
         jButton_p41a1.setBounds(310, 140, 50, 40);
 
@@ -691,6 +766,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p42a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p42a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p42a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p42a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p42a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p42a1);
         jButton_p42a1.setBounds(360, 140, 50, 40);
 
@@ -699,6 +779,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p43a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p43a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p43a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p43a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p43a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p43a1);
         jButton_p43a1.setBounds(410, 140, 50, 40);
 
@@ -707,6 +792,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p44a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p44a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p44a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p44a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p44a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p44a1);
         jButton_p44a1.setBounds(460, 140, 50, 40);
 
@@ -715,6 +805,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p45a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p45a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p45a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p45a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p45a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p45a1);
         jButton_p45a1.setBounds(510, 140, 50, 40);
 
@@ -723,6 +818,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p46a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p46a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p46a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p46a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p46a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p46a1);
         jButton_p46a1.setBounds(560, 140, 50, 40);
 
@@ -731,6 +831,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p47a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p47a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p47a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p47a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p47a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p47a1);
         jButton_p47a1.setBounds(610, 140, 50, 40);
 
@@ -739,6 +844,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p48a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p48a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p48a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p48a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p48a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p48a1);
         jButton_p48a1.setBounds(660, 140, 50, 40);
 
@@ -747,6 +857,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p49a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p49a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p49a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p49a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p49a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p49a1);
         jButton_p49a1.setBounds(110, 180, 50, 40);
 
@@ -755,6 +870,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p50a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p50a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p50a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p50a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p50a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p50a1);
         jButton_p50a1.setBounds(160, 180, 50, 40);
 
@@ -789,6 +909,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p53a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p53a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p53a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p53a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p53a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p53a1);
         jButton_p53a1.setBounds(310, 180, 50, 40);
 
@@ -797,6 +922,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p54a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p54a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p54a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p54a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p54a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p54a1);
         jButton_p54a1.setBounds(360, 180, 50, 40);
 
@@ -805,6 +935,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p55a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p55a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p55a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p55a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p55a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p55a1);
         jButton_p55a1.setBounds(410, 180, 50, 40);
 
@@ -813,6 +948,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p56a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p56a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p56a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p56a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p56a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p56a1);
         jButton_p56a1.setBounds(460, 180, 50, 40);
 
@@ -821,6 +961,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p57a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p57a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p57a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p57a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p57a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p57a1);
         jButton_p57a1.setBounds(510, 180, 50, 40);
 
@@ -829,6 +974,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p58a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p58a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p58a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p58a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p58a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p58a1);
         jButton_p58a1.setBounds(560, 180, 50, 40);
 
@@ -837,6 +987,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p59a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p59a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p59a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p59a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p59a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p59a1);
         jButton_p59a1.setBounds(610, 180, 50, 40);
 
@@ -858,6 +1013,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p61a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p61a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p61a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p61a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p61a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p61a1);
         jButton_p61a1.setBounds(110, 220, 50, 40);
 
@@ -866,6 +1026,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p62a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p62a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p62a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p62a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p62a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p62a1);
         jButton_p62a1.setBounds(160, 220, 50, 40);
 
@@ -887,6 +1052,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p64a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p64a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p64a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p64a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p64a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p64a1);
         jButton_p64a1.setBounds(260, 220, 50, 40);
 
@@ -895,6 +1065,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p65a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p65a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p65a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p65a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p65a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p65a1);
         jButton_p65a1.setBounds(310, 220, 50, 40);
 
@@ -903,6 +1078,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p66a1.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p66a1.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p66a1.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p66a1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p66a1ActionPerformed(evt);
+            }
+        });
         jPanel_segunda.add(jButton_p66a1);
         jButton_p66a1.setBounds(360, 220, 50, 40);
 
@@ -934,6 +1114,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p68a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p68a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p68a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p68a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p68a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p68a2);
         jButton_p68a2.setBounds(440, 150, 50, 40);
 
@@ -942,6 +1127,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p69a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p69a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p69a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p69a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p69a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p69a2);
         jButton_p69a2.setBounds(490, 150, 50, 40);
 
@@ -950,6 +1140,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p70a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p70a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p70a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p70a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p70a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p70a2);
         jButton_p70a2.setBounds(540, 150, 50, 40);
 
@@ -984,6 +1179,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p73a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p73a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p73a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p73a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p73a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p73a2);
         jButton_p73a2.setBounds(90, 190, 50, 40);
 
@@ -992,6 +1192,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p74a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p74a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p74a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p74a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p74a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p74a2);
         jButton_p74a2.setBounds(140, 190, 50, 40);
 
@@ -1000,6 +1205,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p75a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p75a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p75a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p75a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p75a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p75a2);
         jButton_p75a2.setBounds(190, 190, 50, 40);
 
@@ -1008,6 +1218,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p76a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p76a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p76a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p76a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p76a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p76a2);
         jButton_p76a2.setBounds(240, 190, 50, 40);
 
@@ -1016,6 +1231,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p77a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p77a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p77a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p77a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p77a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p77a2);
         jButton_p77a2.setBounds(290, 190, 50, 40);
 
@@ -1024,6 +1244,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p78a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p78a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p78a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p78a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p78a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p78a2);
         jButton_p78a2.setBounds(340, 190, 50, 40);
 
@@ -1045,6 +1270,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p80a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p80a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p80a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p80a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p80a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p80a2);
         jButton_p80a2.setBounds(440, 190, 50, 40);
 
@@ -1053,6 +1283,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p81a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p81a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p81a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p81a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p81a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p81a2);
         jButton_p81a2.setBounds(490, 190, 50, 40);
 
@@ -1074,6 +1309,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p83a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p83a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p83a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p83a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p83a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p83a2);
         jButton_p83a2.setBounds(590, 190, 50, 40);
 
@@ -1082,6 +1322,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p84a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p84a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p84a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p84a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p84a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p84a2);
         jButton_p84a2.setBounds(640, 190, 50, 40);
 
@@ -1090,6 +1335,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p85a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p85a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p85a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p85a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p85a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p85a2);
         jButton_p85a2.setBounds(90, 230, 50, 40);
 
@@ -1098,6 +1348,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p86a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p86a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p86a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p86a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p86a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p86a2);
         jButton_p86a2.setBounds(140, 230, 50, 40);
 
@@ -1119,6 +1374,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p88a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p88a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p88a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p88a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p88a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p88a2);
         jButton_p88a2.setBounds(240, 230, 50, 40);
 
@@ -1127,6 +1387,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p89a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p89a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p89a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p89a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p89a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p89a2);
         jButton_p89a2.setBounds(290, 230, 50, 40);
 
@@ -1148,6 +1413,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p91a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p91a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p91a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p91a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p91a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p91a2);
         jButton_p91a2.setBounds(390, 230, 50, 40);
 
@@ -1156,6 +1426,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p92a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p92a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p92a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p92a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p92a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p92a2);
         jButton_p92a2.setBounds(440, 230, 50, 40);
 
@@ -1164,6 +1439,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p93a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p93a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p93a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p93a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p93a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p93a2);
         jButton_p93a2.setBounds(490, 230, 50, 40);
 
@@ -1172,6 +1452,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p94a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p94a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p94a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p94a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p94a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p94a2);
         jButton_p94a2.setBounds(540, 230, 50, 40);
 
@@ -1180,6 +1465,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p95a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p95a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p95a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p95a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p95a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p95a2);
         jButton_p95a2.setBounds(590, 230, 50, 40);
 
@@ -1188,6 +1478,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p96a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p96a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p96a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p96a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p96a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p96a2);
         jButton_p96a2.setBounds(640, 230, 50, 40);
 
@@ -1196,6 +1491,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p97a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p97a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p97a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p97a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p97a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p97a2);
         jButton_p97a2.setBounds(90, 270, 50, 40);
 
@@ -1204,6 +1504,11 @@ public class Ubicacion extends javax.swing.JFrame {
         jButton_p98a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p98a2.setMinimumSize(new java.awt.Dimension(50, 40));
         jButton_p98a2.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton_p98a2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_p98a2ActionPerformed(evt);
+            }
+        });
         jPanel_tercera.add(jButton_p98a2);
         jButton_p98a2.setBounds(140, 270, 50, 40);
 
@@ -1257,168 +1562,696 @@ public class Ubicacion extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton_p30aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p30aActionPerformed
-        
+    inscribir(30);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p30aActionPerformed
 
     private void jButton_p31aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p31aActionPerformed
-        // TODO add your handling code here:
+      inscribir(31);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p31aActionPerformed
 
     private void jButton_p16aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p16aActionPerformed
-      
+      inscribir(16);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p16aActionPerformed
 
     private void jButton_p8aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p8aActionPerformed
         inscribir(8);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p8aActionPerformed
 
     private void jButton_p10aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p10aActionPerformed
-        
+        inscribir(10);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p10aActionPerformed
 
     private void jButton_p2aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p2aActionPerformed
     inscribir(2);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p2aActionPerformed
 
     private void jButton_p1aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p1aActionPerformed
      inscribir(1);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p1aActionPerformed
 
     private void jButton_p3aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p3aActionPerformed
     inscribir(3);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p3aActionPerformed
 
     private void jButton_p6aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p6aActionPerformed
        inscribir(6);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p6aActionPerformed
 
     private void jButton_p9aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p9aActionPerformed
-        
+        inscribir(9);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p9aActionPerformed
 
     private void jButton_p14aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p14aActionPerformed
-       
+       inscribir(14);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p14aActionPerformed
 
     private void jButton_p26aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p26aActionPerformed
-        
+        inscribir(26);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p26aActionPerformed
 
     private void jButton_p4aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p4aActionPerformed
        inscribir(4);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p4aActionPerformed
 
     private void jButton_p5aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p5aActionPerformed
        inscribir(5);
+     this.dispose();
+     inicio.setVisible(true);
     }//GEN-LAST:event_jButton_p5aActionPerformed
 
     private void jButton_p7aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p7aActionPerformed
         inscribir(7);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p7aActionPerformed
 
     private void jButton_p11aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p11aActionPerformed
-       
+       inscribir(11);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p11aActionPerformed
 
     private void jButton_p12aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p12aActionPerformed
-        
+        inscribir(12);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p12aActionPerformed
 
     private void jButton_p13aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p13aActionPerformed
-        
+        inscribir(13);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p13aActionPerformed
 
     private void jButton_p15aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p15aActionPerformed
-        
+        inscribir(15);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p15aActionPerformed
 
     private void jButton_p17aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p17aActionPerformed
-        
+        inscribir(17);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p17aActionPerformed
 
     private void jButton_p18aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p18aActionPerformed
-        
+        inscribir(18);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p18aActionPerformed
 
     private void jButton_p19aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p19aActionPerformed
-        
+        inscribir(19);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p19aActionPerformed
 
     private void jButton_p20aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p20aActionPerformed
-        
+        inscribir(20);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p20aActionPerformed
 
     private void jButton_p21aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p21aActionPerformed
-        
+        inscribir(21);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p21aActionPerformed
 
     private void jButton_p22aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p22aActionPerformed
-       
+       inscribir(22);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p22aActionPerformed
 
     private void jButton_p23aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p23aActionPerformed
-       
+       inscribir(23);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p23aActionPerformed
 
     private void jButton_p24aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p24aActionPerformed
-       
+       inscribir(24);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p24aActionPerformed
 
     private void jButton_p25aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p25aActionPerformed
-        
+        inscribir(25);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p25aActionPerformed
 
     private void jButton_p27aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p27aActionPerformed
-       
+       inscribir(27);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p27aActionPerformed
 
     private void jButton_p67a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p67a2ActionPerformed
-        // TODO add your handling code here:
+     inscribir(67);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p67a2ActionPerformed
 
     private void jButton_p71a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p71a2ActionPerformed
-        // TODO add your handling code here:
+       inscribir(71);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p71a2ActionPerformed
 
     private void jButton_p72a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p72a2ActionPerformed
-        // TODO add your handling code here:
+        inscribir(72);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p72a2ActionPerformed
 
     private void jButton_p79a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p79a2ActionPerformed
-        // TODO add your handling code here:
+        inscribir(79);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p79a2ActionPerformed
 
     private void jButton_p82a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p82a2ActionPerformed
-        // TODO add your handling code here:
+        inscribir(82);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p82a2ActionPerformed
 
     private void jButton_p87a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p87a2ActionPerformed
-        // TODO add your handling code here:
+        inscribir(87);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p87a2ActionPerformed
 
     private void jButton_p90a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p90a2ActionPerformed
-        // TODO add your handling code here:
+        inscribir(90);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p90a2ActionPerformed
 
     private void jButton_p99a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p99a2ActionPerformed
-        // TODO add your handling code here:
+        inscribir(99);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p99a2ActionPerformed
 
     private void jButton_p51a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p51a1ActionPerformed
-        // TODO add your handling code here:
+        inscribir(51);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p51a1ActionPerformed
 
     private void jButton_p52a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p52a1ActionPerformed
-        // TODO add your handling code here:
+        inscribir(52);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p52a1ActionPerformed
 
     private void jButton_p60a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p60a1ActionPerformed
-        // TODO add your handling code here:
+        inscribir(60);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p60a1ActionPerformed
 
     private void jButton_p63a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p63a1ActionPerformed
-        // TODO add your handling code here:
+        inscribir(63);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
     }//GEN-LAST:event_jButton_p63a1ActionPerformed
+
+    private void jButton_p28aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p28aActionPerformed
+       inscribir(28);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p28aActionPerformed
+
+    private void jButton_p29aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p29aActionPerformed
+       inscribir(29);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p29aActionPerformed
+
+    private void jButton_p32aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p32aActionPerformed
+        inscribir(32);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p32aActionPerformed
+
+    private void jButton_p33aActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p33aActionPerformed
+       inscribir(33);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p33aActionPerformed
+
+    private void jButton_p34a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p34a1ActionPerformed
+        inscribir(34);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p34a1ActionPerformed
+
+    private void jButton_p35a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p35a1ActionPerformed
+        inscribir(35);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p35a1ActionPerformed
+
+    private void jButton_p36a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p36a1ActionPerformed
+        inscribir(36);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p36a1ActionPerformed
+
+    private void jButton_p37a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p37a1ActionPerformed
+        inscribir(37);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p37a1ActionPerformed
+
+    private void jButton_p38a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p38a1ActionPerformed
+        inscribir(38);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p38a1ActionPerformed
+
+    private void jButton_p39a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p39a1ActionPerformed
+        inscribir(39);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p39a1ActionPerformed
+
+    private void jButton_p40a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p40a1ActionPerformed
+        inscribir(40);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p40a1ActionPerformed
+
+    private void jButton_p41a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p41a1ActionPerformed
+        inscribir(41);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p41a1ActionPerformed
+
+    private void jButton_p42a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p42a1ActionPerformed
+        inscribir(42);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p42a1ActionPerformed
+
+    private void jButton_p43a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p43a1ActionPerformed
+        inscribir(43);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p43a1ActionPerformed
+
+    private void jButton_p44a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p44a1ActionPerformed
+        inscribir(44);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p44a1ActionPerformed
+
+    private void jButton_p45a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p45a1ActionPerformed
+        inscribir(45);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p45a1ActionPerformed
+
+    private void jButton_p46a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p46a1ActionPerformed
+        inscribir(46);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p46a1ActionPerformed
+
+    private void jButton_p47a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p47a1ActionPerformed
+        inscribir(47);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p47a1ActionPerformed
+
+    private void jButton_p48a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p48a1ActionPerformed
+        inscribir(48);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p48a1ActionPerformed
+
+    private void jButton_p49a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p49a1ActionPerformed
+        inscribir(49);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p49a1ActionPerformed
+
+    private void jButton_p50a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p50a1ActionPerformed
+        inscribir(50);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p50a1ActionPerformed
+
+    private void jButton_p53a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p53a1ActionPerformed
+        inscribir(53);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p53a1ActionPerformed
+
+    private void jButton_p54a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p54a1ActionPerformed
+        inscribir(54);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p54a1ActionPerformed
+
+    private void jButton_p55a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p55a1ActionPerformed
+        inscribir(55);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p55a1ActionPerformed
+
+    private void jButton_p56a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p56a1ActionPerformed
+        inscribir(56);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p56a1ActionPerformed
+
+    private void jButton_p57a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p57a1ActionPerformed
+        inscribir(57);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p57a1ActionPerformed
+
+    private void jButton_p58a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p58a1ActionPerformed
+        inscribir(58);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p58a1ActionPerformed
+
+    private void jButton_p59a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p59a1ActionPerformed
+        inscribir(59);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p59a1ActionPerformed
+
+    private void jButton_p61a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p61a1ActionPerformed
+        inscribir(61);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p61a1ActionPerformed
+
+    private void jButton_p62a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p62a1ActionPerformed
+        inscribir(62);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p62a1ActionPerformed
+
+    private void jButton_p64a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p64a1ActionPerformed
+        inscribir(64);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p64a1ActionPerformed
+
+    private void jButton_p65a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p65a1ActionPerformed
+        inscribir(65);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p65a1ActionPerformed
+
+    private void jButton_p66a1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p66a1ActionPerformed
+        inscribir(66);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p66a1ActionPerformed
+
+    private void jButton_p68a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p68a2ActionPerformed
+        inscribir(68);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p68a2ActionPerformed
+
+    private void jButton_p69a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p69a2ActionPerformed
+        inscribir(69);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p69a2ActionPerformed
+
+    private void jButton_p70a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p70a2ActionPerformed
+        inscribir(70);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p70a2ActionPerformed
+
+    private void jButton_p73a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p73a2ActionPerformed
+        inscribir(73);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p73a2ActionPerformed
+
+    private void jButton_p74a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p74a2ActionPerformed
+        inscribir(74);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p74a2ActionPerformed
+
+    private void jButton_p75a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p75a2ActionPerformed
+        inscribir(75);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p75a2ActionPerformed
+
+    private void jButton_p76a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p76a2ActionPerformed
+        inscribir(76);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p76a2ActionPerformed
+
+    private void jButton_p77a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p77a2ActionPerformed
+        inscribir(77);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p77a2ActionPerformed
+
+    private void jButton_p78a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p78a2ActionPerformed
+        inscribir(78);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p78a2ActionPerformed
+
+    private void jButton_p80a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p80a2ActionPerformed
+        inscribir(80);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p80a2ActionPerformed
+
+    private void jButton_p81a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p81a2ActionPerformed
+        inscribir(81);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p81a2ActionPerformed
+
+    private void jButton_p83a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p83a2ActionPerformed
+        inscribir(83);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p83a2ActionPerformed
+
+    private void jButton_p84a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p84a2ActionPerformed
+        inscribir(84);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p84a2ActionPerformed
+
+    private void jButton_p85a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p85a2ActionPerformed
+        inscribir(85);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p85a2ActionPerformed
+
+    private void jButton_p86a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p86a2ActionPerformed
+        inscribir(86);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p86a2ActionPerformed
+
+    private void jButton_p88a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p88a2ActionPerformed
+        inscribir(88);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p88a2ActionPerformed
+
+    private void jButton_p89a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p89a2ActionPerformed
+        inscribir(89);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p89a2ActionPerformed
+
+    private void jButton_p91a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p91a2ActionPerformed
+        inscribir(91);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p91a2ActionPerformed
+
+    private void jButton_p92a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p92a2ActionPerformed
+        inscribir(92);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p92a2ActionPerformed
+
+    private void jButton_p93a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p93a2ActionPerformed
+        inscribir(93);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p93a2ActionPerformed
+
+    private void jButton_p94a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p94a2ActionPerformed
+        inscribir(94);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p94a2ActionPerformed
+
+    private void jButton_p95a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p95a2ActionPerformed
+        inscribir(95);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p95a2ActionPerformed
+
+    private void jButton_p96a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p96a2ActionPerformed
+        inscribir(96);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p96a2ActionPerformed
+
+    private void jButton_p97a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p97a2ActionPerformed
+        inscribir(97);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p97a2ActionPerformed
+
+    private void jButton_p98a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p98a2ActionPerformed
+        inscribir(98);
+     this.dispose();
+     inicio.setVisible(true);
+     inicio.desactivar();
+    }//GEN-LAST:event_jButton_p98a2ActionPerformed
 
     /**
      * @param args the command line arguments
