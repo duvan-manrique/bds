@@ -101,18 +101,34 @@ String IND_NR="";
                 tx_marcaActionPerformed(evt);
             }
         });
+        tx_marca.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_marcaKeyTyped(evt);
+            }
+        });
         getContentPane().add(tx_marca);
-        tx_marca.setBounds(490, 110, 100, 22);
+        tx_marca.setBounds(490, 110, 100, 20);
 
         jLabel7.setText("modelo");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(290, 120, 42, 16);
+        jLabel7.setBounds(290, 120, 34, 14);
 
         jLabel4.setText("cc");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(40, 190, 20, 16);
+        jLabel4.setBounds(40, 190, 20, 14);
+
+        tx_celular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tx_celularActionPerformed(evt);
+            }
+        });
+        tx_celular.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_celularKeyTyped(evt);
+            }
+        });
         getContentPane().add(tx_celular);
-        tx_celular.setBounds(120, 150, 100, 22);
+        tx_celular.setBounds(120, 150, 100, 20);
 
         jLabel1.setFont(new java.awt.Font("Bookman Old Style", 1, 24)); // NOI18N
         jLabel1.setText("BIENVENIDO AL REGISTRO");
@@ -121,20 +137,37 @@ String IND_NR="";
 
         jLabel3.setText("Residencia");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(40, 120, 61, 16);
+        jLabel3.setBounds(40, 120, 51, 14);
+
+        tx_modelo.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_modeloKeyTyped(evt);
+            }
+        });
         getContentPane().add(tx_modelo);
-        tx_modelo.setBounds(330, 110, 100, 22);
+        tx_modelo.setBounds(330, 110, 100, 20);
 
         jLabel5.setFont(new java.awt.Font("Lucida Handwriting", 1, 11)); // NOI18N
         jLabel5.setText("Informacion del auto");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(370, 70, 180, 30);
+
+        tx_residencia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tx_residenciaActionPerformed(evt);
+            }
+        });
+        tx_residencia.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_residenciaKeyTyped(evt);
+            }
+        });
         getContentPane().add(tx_residencia);
-        tx_residencia.setBounds(120, 120, 100, 22);
+        tx_residencia.setBounds(120, 120, 100, 20);
 
         jLabel2.setText("Nombre Completo");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(40, 90, 103, 16);
+        jLabel2.setBounds(40, 90, 85, 14);
 
         bn_cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/descarga.jpg"))); // NOI18N
         bn_cancelar.setText("calcelar");
@@ -148,27 +181,44 @@ String IND_NR="";
 
         jLabel6.setText("marca ");
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(450, 110, 40, 16);
+        jLabel6.setBounds(450, 110, 32, 14);
+
+        tx_cedula.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_cedulaKeyTyped(evt);
+            }
+        });
         getContentPane().add(tx_cedula);
-        tx_cedula.setBounds(60, 180, 110, 22);
+        tx_cedula.setBounds(60, 180, 110, 20);
+
+        tx_placa.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_placaKeyTyped(evt);
+            }
+        });
         getContentPane().add(tx_placa);
-        tx_placa.setBounds(330, 140, 100, 22);
+        tx_placa.setBounds(330, 140, 100, 20);
 
         jLabel8.setText("placa");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(290, 140, 30, 16);
+        jLabel8.setBounds(290, 140, 25, 14);
 
         tx_nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tx_nombreActionPerformed(evt);
             }
         });
+        tx_nombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_nombreKeyTyped(evt);
+            }
+        });
         getContentPane().add(tx_nombre);
-        tx_nombre.setBounds(140, 80, 170, 22);
+        tx_nombre.setBounds(140, 80, 170, 20);
 
         jLabel11.setText("Numero celular");
         getContentPane().add(jLabel11);
-        jLabel11.setBounds(40, 150, 87, 16);
+        jLabel11.setBounds(40, 150, 71, 14);
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         getContentPane().add(jLabel10);
@@ -176,7 +226,7 @@ String IND_NR="";
 
         jComboBox_tipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "automovil", "motocicleta", "cicla" }));
         getContentPane().add(jComboBox_tipo);
-        jComboBox_tipo.setBounds(490, 140, 100, 22);
+        jComboBox_tipo.setBounds(490, 140, 100, 20);
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
         getContentPane().add(jLabel9);
@@ -295,6 +345,63 @@ String IND_NR="";
     private void tx_marcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_marcaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tx_marcaActionPerformed
+
+    private void tx_residenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_residenciaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tx_residenciaActionPerformed
+
+    private void tx_celularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_celularActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tx_celularActionPerformed
+
+    private void tx_celularKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_celularKeyTyped
+        char c = evt.getKeyChar();
+        if(c < '0' || c > '9'){
+            evt.consume();
+        }
+    }//GEN-LAST:event_tx_celularKeyTyped
+
+    private void tx_modeloKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_modeloKeyTyped
+        char c = evt.getKeyChar();
+        if(( c < 'a' || c > 'z') && (c < 'A' || c > 'Z')){
+            evt.consume();
+        }
+    }//GEN-LAST:event_tx_modeloKeyTyped
+
+    private void tx_marcaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_marcaKeyTyped
+        char c = evt.getKeyChar();
+        if(( c < 'a' || c > 'z') && (c < 'A' || c > 'Z')){
+            evt.consume();
+        }
+    }//GEN-LAST:event_tx_marcaKeyTyped
+
+    private void tx_placaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_placaKeyTyped
+      char c = evt.getKeyChar();
+        if(( c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < '0' || c > '9')){
+            evt.consume();
+        }
+    }//GEN-LAST:event_tx_placaKeyTyped
+
+    private void tx_nombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_nombreKeyTyped
+       char c = evt.getKeyChar();
+        if(( c < 'a' || c > 'z') && (c < 'A' || c > 'Z')){
+            evt.consume();
+        }
+    }//GEN-LAST:event_tx_nombreKeyTyped
+
+    private void tx_residenciaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_residenciaKeyTyped
+//       char c = evt.getKeyChar();
+//        if(( c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < '0' || c > '9') && (c == '#' || c == '-')){
+//            evt.consume();
+//        }
+    }//GEN-LAST:event_tx_residenciaKeyTyped
+
+    private void tx_cedulaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_cedulaKeyTyped
+        char c = evt.getKeyChar();
+        if(c < '0' || c > '9'){
+            evt.consume();
+        }
+    }//GEN-LAST:event_tx_cedulaKeyTyped
 
     /**
      * @param args the command line arguments

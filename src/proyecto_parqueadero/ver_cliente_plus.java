@@ -18,12 +18,16 @@ public class ver_cliente_plus extends javax.swing.JFrame {
      * Creates new form ver_cliente_plus
      */
     Registro registro;
+    admindentro admin;
     public ver_cliente_plus(Registro registro1) {
         initComponents();
         registro =registro1;
         TableModel tabla = registro.consultar("select * from registro;").getModel();
         tabla_clientes_plus.setModel(tabla);
        // System.err.println(tabla_clientes_plus);
+    }
+    public void resibir_admin(admindentro admin1){
+        admin=admin1;
     }
 
     /**
@@ -40,6 +44,7 @@ public class ver_cliente_plus extends javax.swing.JFrame {
         tabla_clientes = new javax.swing.JScrollPane();
         tabla_clientes_plus = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(777, 485));
@@ -78,8 +83,22 @@ public class ver_cliente_plus extends javax.swing.JFrame {
         getContentPane().add(jLabel1);
         jLabel1.setBounds(-20, -100, 610, 420);
 
+        jButton1.setText("Salir");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(580, 160, 120, 23);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.dispose();
+        admin.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
     //BaseDatos register = new BaseDatos();
     /**
      * @param args the command line arguments
@@ -117,6 +136,7 @@ public class ver_cliente_plus extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

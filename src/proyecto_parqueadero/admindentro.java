@@ -88,6 +88,11 @@ public class admindentro extends javax.swing.JFrame {
 
         tx_cajadeldia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/gana-dinero-android.jpg"))); // NOI18N
         tx_cajadeldia.setText("caja del dia");
+        tx_cajadeldia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tx_cajadeldiaActionPerformed(evt);
+            }
+        });
         getContentPane().add(tx_cajadeldia);
         tx_cajadeldia.setBounds(380, 340, 160, 60);
 
@@ -149,6 +154,10 @@ public class admindentro extends javax.swing.JFrame {
        eliminar.resibir(this);
        this.dispose();
     }//GEN-LAST:event_bn_eliminarclienteActionPerformed
+
+    private void tx_cajadeldiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_cajadeldiaActionPerformed
+        
+    }//GEN-LAST:event_tx_cajadeldiaActionPerformed
 
     /**
      * @param args the command line arguments

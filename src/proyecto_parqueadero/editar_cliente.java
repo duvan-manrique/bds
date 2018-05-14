@@ -76,12 +76,23 @@ public void resibir(admindentro admin1){
         jLabel4.setText("buscar cliente por la cedula ");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(50, 100, 210, 20);
+
+        tx_residencia.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_residenciaKeyTyped(evt);
+            }
+        });
         getContentPane().add(tx_residencia);
         tx_residencia.setBounds(110, 270, 100, 20);
 
         tx_nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tx_nombreActionPerformed(evt);
+            }
+        });
+        tx_nombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_nombreKeyTyped(evt);
             }
         });
         getContentPane().add(tx_nombre);
@@ -135,14 +146,31 @@ public void resibir(admindentro admin1){
         jLabel10.setText("Informacion del auto");
         getContentPane().add(jLabel10);
         jLabel10.setBounds(430, 230, 160, 40);
+
+        tx_placa.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_placaKeyTyped(evt);
+            }
+        });
         getContentPane().add(tx_placa);
         tx_placa.setBounds(300, 270, 100, 20);
+
+        tx_modelo.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_modeloKeyTyped(evt);
+            }
+        });
         getContentPane().add(tx_modelo);
         tx_modelo.setBounds(310, 300, 100, 20);
 
         tx_marca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tx_marcaActionPerformed(evt);
+            }
+        });
+        tx_marca.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_marcaKeyTyped(evt);
             }
         });
         getContentPane().add(tx_marca);
@@ -161,6 +189,12 @@ public void resibir(admindentro admin1){
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "automovil", "motocicleta", "cicla" }));
         getContentPane().add(jComboBox1);
         jComboBox1.setBounds(480, 300, 100, 20);
+
+        tx_celular.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tx_celularKeyTyped(evt);
+            }
+        });
         getContentPane().add(tx_celular);
         tx_celular.setBounds(140, 300, 100, 20);
 
@@ -169,8 +203,13 @@ public void resibir(admindentro admin1){
                 jTextField1ActionPerformed(evt);
             }
         });
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextField1KeyTyped(evt);
+            }
+        });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(250, 100, 90, 22);
+        jTextField1.setBounds(250, 100, 90, 20);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         getContentPane().add(jLabel2);
@@ -199,7 +238,7 @@ public void resibir(admindentro admin1){
             }
         });
         getContentPane().add(jButton_cancelar);
-        jButton_cancelar.setBounds(240, 350, 110, 25);
+        jButton_cancelar.setBounds(240, 350, 110, 23);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -281,6 +320,52 @@ public void resibir(admindentro admin1){
                 admin.setVisible(true);
                 this.dispose();
     }//GEN-LAST:event_jButton_cancelarActionPerformed
+
+    private void tx_nombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_nombreKeyTyped
+        char c = evt.getKeyChar();
+        if(( c < 'a' || c > 'z') && (c < 'A' || c > 'Z')){
+            evt.consume();
+        }
+    }//GEN-LAST:event_tx_nombreKeyTyped
+
+    private void tx_residenciaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_residenciaKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tx_residenciaKeyTyped
+
+    private void tx_celularKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_celularKeyTyped
+        char c = evt.getKeyChar();
+        if(c < '0' || c > '9'){
+            evt.consume();
+        }
+    }//GEN-LAST:event_tx_celularKeyTyped
+
+    private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
+        char c = evt.getKeyChar();
+        if(c < '0' || c > '9'){
+            evt.consume();
+        }
+    }//GEN-LAST:event_jTextField1KeyTyped
+
+    private void tx_placaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_placaKeyTyped
+        char c = evt.getKeyChar();
+        if(( c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < '0' || c > '9')){
+            evt.consume();
+        }
+    }//GEN-LAST:event_tx_placaKeyTyped
+
+    private void tx_modeloKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_modeloKeyTyped
+        char c = evt.getKeyChar();
+        if(( c < 'a' || c > 'z') && (c < 'A' || c > 'Z')){
+            evt.consume();
+        }
+    }//GEN-LAST:event_tx_modeloKeyTyped
+
+    private void tx_marcaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tx_marcaKeyTyped
+       char c = evt.getKeyChar();
+        if(( c < 'a' || c > 'z') && (c < 'A' || c > 'Z')){
+            evt.consume();
+        }
+    }//GEN-LAST:event_tx_marcaKeyTyped
 
     /**
      * @param args the command line arguments
