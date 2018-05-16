@@ -8,6 +8,8 @@ package proyecto_parqueadero;
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.Statement;
+import java.time.LocalTime;
+import java.util.Calendar;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.TableModel;
@@ -1517,7 +1519,40 @@ public void desactivar(){
     }//GEN-LAST:event_jButton_p67a2ActionPerformed
 
     private void bn_salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_salirActionPerformed
-        // TODO add your handling code here:
+        if(EMPTY.equals(tx_placa.getText().trim())){
+            JOptionPane.showMessageDialog(null, "ingrese la placa");
+        }else{
+            String placa_el =tx_placa.getText();
+            String script= String.format("select * from historico where placa='%s'",placa_el);
+            TableModel tabla =registro.consultar(script).getModel();
+            if(!(0==tabla.getRowCount())){
+             tx_placa.setText(EMPTY);
+             System.err.println("sacar");
+             Calendar c1 = Calendar.getInstance();
+             LocalTime horaActual = LocalTime.now();
+             String fecha_salida = (Integer.toString(c1.get(Calendar.DATE))+"-"+Integer.toString(c1.get(Calendar.MONTH))+"-"+Integer.toString(c1.get(Calendar.YEAR)));
+             String hora_salida= (""+horaActual.getHour()+":"+horaActual.getMinute());
+             
+             
+             String qrq ="update historico set  fecha_salida='"+fecha_salida+"', hora_salida='"+hora_salida+"'where placa='"+placa_el+"';";
+        
+                try{
+
+                       registro.eliminar(qrq);
+                       JOptionPane.showMessageDialog(null, "Registro grabado satisfactoriamente");
+                       
+                       
+
+                   }catch(Exception e){
+                       System.out.println("error al sacar "+e.getMessage());
+                   }
+             
+            }else{
+                JOptionPane.showMessageDialog(null, "no encontrado");
+            }
+        }
+        
+        
     }//GEN-LAST:event_bn_salirActionPerformed
 
     /**

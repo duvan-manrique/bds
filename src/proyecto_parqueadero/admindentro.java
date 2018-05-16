@@ -157,7 +157,11 @@ public class admindentro extends javax.swing.JFrame {
     }//GEN-LAST:event_bn_eliminarclienteActionPerformed
 
     private void tx_cajadeldiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tx_cajadeldiaActionPerformed
-        
+    Calcular_caja caja = new Calcular_caja(registro);
+    caja.resibir(this);
+    caja.setVisible(true);
+    this.dispose();
+    
     }//GEN-LAST:event_tx_cajadeldiaActionPerformed
 
     /**

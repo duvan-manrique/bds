@@ -209,7 +209,7 @@ public void resibir(admindentro admin1){
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(250, 100, 90, 20);
+        jTextField1.setBounds(250, 100, 90, 22);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         getContentPane().add(jLabel2);
@@ -238,7 +238,7 @@ public void resibir(admindentro admin1){
             }
         });
         getContentPane().add(jButton_cancelar);
-        jButton_cancelar.setBounds(240, 350, 110, 23);
+        jButton_cancelar.setBounds(240, 350, 110, 25);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
         getContentPane().add(jLabel1);

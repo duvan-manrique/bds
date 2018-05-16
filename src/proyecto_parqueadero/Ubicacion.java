@@ -76,9 +76,9 @@ public class Ubicacion extends javax.swing.JFrame {
         //date=null;
         // desde donde se inicia el programa? la clase principal? si
         String fecha_entrada = (Integer.toString(c1.get(Calendar.DATE))+"-"+Integer.toString(c1.get(Calendar.MONTH))+"-"+Integer.toString(c1.get(Calendar.YEAR)));
-        String fecha_salida = (Integer.toString(c1.get(Calendar.DATE))+"-"+Integer.toString(c1.get(Calendar.MONTH))+"-"+Integer.toString(c1.get(Calendar.YEAR)));
+        
         String hora_entrada= (""+horaActual.getHour()+":"+horaActual.getMinute());
-        String hora_salida= (Integer.toString(c1.get(Calendar.HOUR)));
+        
        String query = String.format("INSERT INTO historico( placa, posicion, fecha_entrada, hora_entrada) values ('"+placa+"',"+index+",'"+fecha_entrada+"','"+hora_entrada+"')");
        registro.eliminar(query);
        
