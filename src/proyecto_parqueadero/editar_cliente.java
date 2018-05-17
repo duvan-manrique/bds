@@ -73,7 +73,7 @@ public void resibir(admindentro admin1){
 
         jLabel4.setBackground(new java.awt.Color(255, 0, 0));
         jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel4.setText("buscar cliente por la cedula ");
+        jLabel4.setText("buscar cliente por la placa");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(50, 100, 210, 20);
 
@@ -209,7 +209,7 @@ public void resibir(admindentro admin1){
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(250, 100, 90, 22);
+        jTextField1.setBounds(250, 100, 90, 20);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Parking_Logo.png"))); // NOI18N
         getContentPane().add(jLabel2);
@@ -238,7 +238,7 @@ public void resibir(admindentro admin1){
             }
         });
         getContentPane().add(jButton_cancelar);
-        jButton_cancelar.setBounds(240, 350, 110, 25);
+        jButton_cancelar.setBounds(240, 350, 110, 23);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/articulo-parqueadero.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -341,7 +341,7 @@ public void resibir(admindentro admin1){
 
     private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
         char c = evt.getKeyChar();
-        if(c < '0' || c > '9'){
+        if(( c < 'a' || c > 'z') && (c < 'A' || c > 'Z') && (c < '0' || c > '9')){
             evt.consume();
         }
     }//GEN-LAST:event_jTextField1KeyTyped

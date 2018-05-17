@@ -20,7 +20,8 @@ import javax.swing.table.TableModel;
  * @author home
  */
 public class Inicio extends javax.swing.JFrame {
-   
+    
+    
     private final String EMPTY = new String () ;
     /**
      * Creates new form Inicio
@@ -33,6 +34,7 @@ public class Inicio extends javax.swing.JFrame {
              desactivar();
         
     } 
+     
      
 public void desactivar(){
         JTable tabla;        
@@ -65,6 +67,7 @@ public void desactivar(){
         
     }
      Ubicacion ubicacion;
+     
   public void resivir_ubicacion(Ubicacion ubicacion1){
       ubicacion = ubicacion1;
   }
@@ -85,7 +88,6 @@ public void desactivar(){
         tx_placa = new javax.swing.JTextField();
         bn_registrar = new javax.swing.JButton();
         bn_salir = new javax.swing.JButton();
-        bn_regresar = new javax.swing.JButton();
         jPanel_primer1 = new javax.swing.JPanel();
         jButton_p1a3 = new javax.swing.JButton();
         jButton_p2a3 = new javax.swing.JButton();
@@ -224,14 +226,6 @@ public void desactivar(){
             }
         });
 
-        bn_regresar.setFont(new java.awt.Font("Bookman Old Style", 0, 18)); // NOI18N
-        bn_regresar.setText("VOLVER");
-        bn_regresar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bn_regresarActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel_inicioLayout = new javax.swing.GroupLayout(jPanel_inicio);
         jPanel_inicio.setLayout(jPanel_inicioLayout);
         jPanel_inicioLayout.setHorizontalGroup(
@@ -245,15 +239,10 @@ public void desactivar(){
                         .addComponent(tx_placa, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(269, 269, 269))
             .addGroup(jPanel_inicioLayout.createSequentialGroup()
-                .addGroup(jPanel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel_inicioLayout.createSequentialGroup()
-                        .addGap(191, 191, 191)
-                        .addComponent(bn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(bn_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel_inicioLayout.createSequentialGroup()
-                        .addGap(287, 287, 287)
-                        .addComponent(bn_regresar, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(191, 191, 191)
+                .addComponent(bn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(bn_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel_inicioLayout.setVerticalGroup(
@@ -267,9 +256,7 @@ public void desactivar(){
                 .addGroup(jPanel_inicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bn_registrar, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bn_salir, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addComponent(bn_regresar, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(139, Short.MAX_VALUE))
+                .addContainerGap(233, Short.MAX_VALUE))
         );
 
         jTabbedPane_principal1.addTab("inicio", jPanel_inicio);
@@ -1571,10 +1558,6 @@ public void desactivar(){
         
     }//GEN-LAST:event_bn_salirActionPerformed
 
-    private void bn_regresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bn_regresarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bn_regresarActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -1612,7 +1595,6 @@ public void desactivar(){
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bn_registrar;
-    private javax.swing.JButton bn_regresar;
     private javax.swing.JButton bn_salir;
     private javax.swing.JButton jButton_p10a3;
     private javax.swing.JButton jButton_p11a3;
