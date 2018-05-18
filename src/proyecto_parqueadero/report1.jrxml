@@ -13,8 +13,8 @@
 			<style mode="Opaque" backcolor="#F0EFEF"/>
 		</conditionalStyle>
 	</style>
-	<queryString language="SQL">
-		<![CDATA[select * from historico]]>
+	<queryString>
+		<![CDATA[select * from factura]]>
 	</queryString>
 	<field name="ident" class="java.lang.Integer"/>
 	<field name="placa" class="java.lang.String"/>
@@ -23,6 +23,7 @@
 	<field name="fecha_salida" class="java.sql.Date"/>
 	<field name="hora_entrada" class="java.sql.Time"/>
 	<field name="hora_salida" class="java.sql.Time"/>
+	<field name="pago" class="java.lang.Double"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>

@@ -15,7 +15,7 @@ import javax.swing.JTable;
 import javax.swing.table.TableModel;
 
 
-/**
+/** 
  *
  * @author home
  */
@@ -39,6 +39,32 @@ public class Inicio extends javax.swing.JFrame {
 public void desactivar(){
         JTable tabla;        
         tabla = registro.consultar("select posicion from historico where hora_salida is null;");
+        for(int y = 1;y<100;y++){
+            int u=y;
+              if(u<=33){
+               u--;
+               System.err.println(u);
+               jPanel_primer1.getComponent(u).setEnabled(true);
+               jPanel_primer1.getComponent(u).setBackground(Color.GREEN.brighter());
+               
+           }else if(u<=66){
+               
+                u=66-u;
+                
+               
+               jPanel_segunda2.getComponent(u).setEnabled(true);
+               jPanel_segunda2.getComponent(u).setBackground(Color.GREEN);
+               
+               
+           }else if(u<=99){
+              u=99-u;
+              
+              
+              jPanel_tercera3.getComponent(u).setEnabled(true);
+               jPanel_tercera3.getComponent(u).setBackground(Color.GREEN);
+               
+           }
+        }
 
         for(int y=0;y<tabla.getRowCount();y++){
            int u =  (int) tabla.getValueAt(y, 0);
@@ -51,12 +77,14 @@ public void desactivar(){
            }else if(u<=66){
                
                 u=66-u;
+                u=32-u;
                jPanel_segunda2.getComponent(u).setEnabled(false);
                jPanel_segunda2.getComponent(u).setBackground(Color.red);
                
                
            }else if(u<=99){
               u=99-u;
+              u=32-u;
                jPanel_tercera3.getComponent(u).setEnabled(false);
                jPanel_tercera3.getComponent(u).setBackground(Color.red);
                
@@ -267,6 +295,7 @@ public void desactivar(){
         jPanel_primer1.setLayout(null);
 
         jButton_p1a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p1a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p1a3.setText("1");
         jButton_p1a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p1a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -280,6 +309,7 @@ public void desactivar(){
         jButton_p1a3.setBounds(100, 130, 50, 40);
 
         jButton_p2a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p2a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p2a3.setText("2");
         jButton_p2a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p2a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -293,6 +323,7 @@ public void desactivar(){
         jButton_p2a3.setBounds(150, 130, 50, 40);
 
         jButton_p3a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p3a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p3a3.setText("3");
         jButton_p3a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p3a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -306,6 +337,7 @@ public void desactivar(){
         jButton_p3a3.setBounds(200, 130, 50, 40);
 
         jButton_p4a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p4a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p4a3.setText("4");
         jButton_p4a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p4a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -319,6 +351,7 @@ public void desactivar(){
         jButton_p4a3.setBounds(250, 130, 50, 40);
 
         jButton_p5a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p5a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p5a3.setText("5");
         jButton_p5a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p5a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -332,6 +365,7 @@ public void desactivar(){
         jButton_p5a3.setBounds(300, 130, 50, 40);
 
         jButton_p6a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p6a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p6a3.setText("6");
         jButton_p6a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p6a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -345,6 +379,7 @@ public void desactivar(){
         jButton_p6a3.setBounds(350, 130, 50, 40);
 
         jButton_p7a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p7a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p7a3.setText("7");
         jButton_p7a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p7a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -358,6 +393,7 @@ public void desactivar(){
         jButton_p7a3.setBounds(400, 130, 50, 40);
 
         jButton_p8a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p8a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p8a3.setText("8");
         jButton_p8a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p8a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -371,6 +407,7 @@ public void desactivar(){
         jButton_p8a3.setBounds(450, 130, 50, 40);
 
         jButton_p9a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p9a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p9a2.setText("9");
         jButton_p9a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p9a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -384,6 +421,7 @@ public void desactivar(){
         jButton_p9a2.setBounds(500, 130, 50, 40);
 
         jButton_p10a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p10a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p10a3.setText("10");
         jButton_p10a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p10a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -397,6 +435,7 @@ public void desactivar(){
         jButton_p10a3.setBounds(550, 130, 50, 40);
 
         jButton_p11a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p11a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p11a3.setText("11");
         jButton_p11a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p11a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -410,6 +449,7 @@ public void desactivar(){
         jButton_p11a3.setBounds(600, 130, 50, 40);
 
         jButton_p12a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p12a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p12a3.setText("12");
         jButton_p12a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p12a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -423,6 +463,7 @@ public void desactivar(){
         jButton_p12a3.setBounds(650, 130, 50, 40);
 
         jButton_p13a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p13a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p13a3.setText("13");
         jButton_p13a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p13a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -436,6 +477,7 @@ public void desactivar(){
         jButton_p13a3.setBounds(100, 170, 50, 40);
 
         jButton_p14a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p14a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p14a2.setText("14");
         jButton_p14a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p14a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -449,6 +491,7 @@ public void desactivar(){
         jButton_p14a2.setBounds(150, 170, 50, 40);
 
         jButton_p15a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p15a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p15a3.setText("15");
         jButton_p15a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p15a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -462,6 +505,7 @@ public void desactivar(){
         jButton_p15a3.setBounds(200, 170, 50, 40);
 
         jButton_p16a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p16a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p16a3.setText("16");
         jButton_p16a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p16a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -475,6 +519,7 @@ public void desactivar(){
         jButton_p16a3.setBounds(250, 170, 50, 40);
 
         jButton_p17a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p17a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p17a3.setText("17");
         jButton_p17a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p17a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -488,6 +533,7 @@ public void desactivar(){
         jButton_p17a3.setBounds(300, 170, 50, 40);
 
         jButton_p18a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p18a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p18a3.setText("18");
         jButton_p18a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p18a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -501,6 +547,7 @@ public void desactivar(){
         jButton_p18a3.setBounds(350, 170, 50, 40);
 
         jButton_p19a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p19a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p19a3.setText("19");
         jButton_p19a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p19a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -514,6 +561,7 @@ public void desactivar(){
         jButton_p19a3.setBounds(400, 170, 50, 40);
 
         jButton_p20a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p20a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p20a3.setText("20");
         jButton_p20a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p20a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -527,6 +575,7 @@ public void desactivar(){
         jButton_p20a3.setBounds(450, 170, 50, 40);
 
         jButton_p21a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p21a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p21a3.setText("21");
         jButton_p21a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p21a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -540,6 +589,7 @@ public void desactivar(){
         jButton_p21a3.setBounds(500, 170, 50, 40);
 
         jButton_p22a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p22a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p22a3.setText("22");
         jButton_p22a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p22a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -553,6 +603,7 @@ public void desactivar(){
         jButton_p22a3.setBounds(550, 170, 50, 40);
 
         jButton_p23a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p23a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p23a3.setText("23");
         jButton_p23a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p23a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -566,6 +617,7 @@ public void desactivar(){
         jButton_p23a3.setBounds(600, 170, 50, 40);
 
         jButton_p24a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p24a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p24a3.setText("24");
         jButton_p24a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p24a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -579,6 +631,7 @@ public void desactivar(){
         jButton_p24a3.setBounds(650, 170, 50, 40);
 
         jButton_p25a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p25a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p25a3.setText("25");
         jButton_p25a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p25a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -592,6 +645,7 @@ public void desactivar(){
         jButton_p25a3.setBounds(100, 210, 50, 40);
 
         jButton_p26a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p26a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p26a3.setText("26");
         jButton_p26a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p26a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -605,6 +659,7 @@ public void desactivar(){
         jButton_p26a3.setBounds(150, 210, 50, 40);
 
         jButton_p27a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p27a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p27a3.setText("27");
         jButton_p27a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p27a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -618,6 +673,7 @@ public void desactivar(){
         jButton_p27a3.setBounds(200, 210, 50, 40);
 
         jButton_p28a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p28a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p28a3.setText("28");
         jButton_p28a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p28a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -626,6 +682,7 @@ public void desactivar(){
         jButton_p28a3.setBounds(250, 210, 50, 40);
 
         jButton_p29a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p29a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p29a3.setText("29");
         jButton_p29a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p29a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -634,6 +691,7 @@ public void desactivar(){
         jButton_p29a3.setBounds(300, 210, 50, 40);
 
         jButton_p30a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p30a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p30a3.setText("30");
         jButton_p30a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p30a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -647,6 +705,7 @@ public void desactivar(){
         jButton_p30a3.setBounds(350, 210, 50, 40);
 
         jButton_p31a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p31a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p31a3.setText("31");
         jButton_p31a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p31a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -660,6 +719,7 @@ public void desactivar(){
         jButton_p31a3.setBounds(400, 210, 50, 40);
 
         jButton_p32a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p32a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p32a3.setText("32");
         jButton_p32a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p32a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -668,6 +728,7 @@ public void desactivar(){
         jButton_p32a3.setBounds(450, 210, 50, 40);
 
         jButton_p33a3.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p33a3.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p33a3.setText("33");
         jButton_p33a3.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p33a3.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -688,6 +749,7 @@ public void desactivar(){
         jPanel_segunda2.setLayout(null);
 
         jButton_p34a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p34a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p34a4.setText("34");
         jButton_p34a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p34a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -696,6 +758,7 @@ public void desactivar(){
         jButton_p34a4.setBounds(550, 110, 50, 40);
 
         jButton_p35a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p35a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p35a4.setText("35");
         jButton_p35a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p35a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -704,6 +767,7 @@ public void desactivar(){
         jButton_p35a4.setBounds(600, 110, 50, 40);
 
         jButton_p36a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p36a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p36a4.setText("36");
         jButton_p36a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p36a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -712,6 +776,7 @@ public void desactivar(){
         jButton_p36a4.setBounds(650, 110, 50, 40);
 
         jButton_p37a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p37a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p37a4.setText("37");
         jButton_p37a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p37a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -720,6 +785,7 @@ public void desactivar(){
         jButton_p37a4.setBounds(100, 150, 50, 40);
 
         jButton_p38a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p38a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p38a4.setText("38");
         jButton_p38a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p38a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -728,6 +794,7 @@ public void desactivar(){
         jButton_p38a4.setBounds(150, 150, 50, 40);
 
         jButton_p39a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p39a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p39a4.setText("39");
         jButton_p39a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p39a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -736,6 +803,7 @@ public void desactivar(){
         jButton_p39a4.setBounds(200, 150, 50, 40);
 
         jButton_p40a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p40a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p40a4.setText("40");
         jButton_p40a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p40a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -744,6 +812,7 @@ public void desactivar(){
         jButton_p40a4.setBounds(250, 150, 50, 40);
 
         jButton_p41a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p41a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p41a4.setText("41");
         jButton_p41a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p41a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -752,6 +821,7 @@ public void desactivar(){
         jButton_p41a4.setBounds(300, 150, 50, 40);
 
         jButton_p42a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p42a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p42a4.setText("42");
         jButton_p42a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p42a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -760,6 +830,7 @@ public void desactivar(){
         jButton_p42a4.setBounds(350, 150, 50, 40);
 
         jButton_p43a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p43a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p43a4.setText("43");
         jButton_p43a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p43a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -768,6 +839,7 @@ public void desactivar(){
         jButton_p43a4.setBounds(400, 150, 50, 40);
 
         jButton_p44a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p44a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p44a4.setText("44");
         jButton_p44a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p44a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -776,6 +848,7 @@ public void desactivar(){
         jButton_p44a4.setBounds(450, 150, 50, 40);
 
         jButton_p45a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p45a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p45a4.setText("45");
         jButton_p45a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p45a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -784,6 +857,7 @@ public void desactivar(){
         jButton_p45a4.setBounds(500, 150, 50, 40);
 
         jButton_p46a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p46a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p46a4.setText("46");
         jButton_p46a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p46a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -792,6 +866,7 @@ public void desactivar(){
         jButton_p46a4.setBounds(550, 150, 50, 40);
 
         jButton_p47a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p47a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p47a4.setText("47");
         jButton_p47a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p47a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -800,6 +875,7 @@ public void desactivar(){
         jButton_p47a4.setBounds(600, 150, 50, 40);
 
         jButton_p48a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p48a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p48a4.setText("48");
         jButton_p48a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p48a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -808,6 +884,7 @@ public void desactivar(){
         jButton_p48a4.setBounds(650, 150, 50, 40);
 
         jButton_p49a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p49a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p49a4.setText("49");
         jButton_p49a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p49a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -816,6 +893,7 @@ public void desactivar(){
         jButton_p49a4.setBounds(100, 190, 50, 40);
 
         jButton_p50a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p50a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p50a4.setText("50");
         jButton_p50a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p50a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -824,6 +902,7 @@ public void desactivar(){
         jButton_p50a4.setBounds(150, 190, 50, 40);
 
         jButton_p51a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p51a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p51a4.setText("51");
         jButton_p51a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p51a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -837,6 +916,7 @@ public void desactivar(){
         jButton_p51a4.setBounds(200, 190, 50, 40);
 
         jButton_p52a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p52a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p52a4.setText("52");
         jButton_p52a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p52a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -850,6 +930,7 @@ public void desactivar(){
         jButton_p52a4.setBounds(250, 190, 50, 40);
 
         jButton_p53a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p53a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p53a4.setText("53");
         jButton_p53a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p53a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -858,6 +939,7 @@ public void desactivar(){
         jButton_p53a4.setBounds(300, 190, 50, 40);
 
         jButton_p54a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p54a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p54a4.setText("54");
         jButton_p54a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p54a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -866,6 +948,7 @@ public void desactivar(){
         jButton_p54a4.setBounds(350, 190, 50, 40);
 
         jButton_p55a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p55a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p55a4.setText("55");
         jButton_p55a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p55a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -874,6 +957,7 @@ public void desactivar(){
         jButton_p55a4.setBounds(400, 190, 50, 40);
 
         jButton_p56a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p56a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p56a4.setText("56");
         jButton_p56a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p56a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -882,6 +966,7 @@ public void desactivar(){
         jButton_p56a4.setBounds(450, 190, 50, 40);
 
         jButton_p57a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p57a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p57a4.setText("57");
         jButton_p57a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p57a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -890,6 +975,7 @@ public void desactivar(){
         jButton_p57a4.setBounds(500, 190, 50, 40);
 
         jButton_p58a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p58a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p58a4.setText("58");
         jButton_p58a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p58a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -898,6 +984,7 @@ public void desactivar(){
         jButton_p58a4.setBounds(550, 190, 50, 40);
 
         jButton_p59a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p59a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p59a4.setText("59");
         jButton_p59a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p59a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -906,6 +993,7 @@ public void desactivar(){
         jButton_p59a4.setBounds(600, 190, 50, 40);
 
         jButton_p60a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p60a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p60a4.setText("60");
         jButton_p60a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p60a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -919,6 +1007,7 @@ public void desactivar(){
         jButton_p60a4.setBounds(650, 190, 50, 40);
 
         jButton_p61a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p61a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p61a4.setText("61");
         jButton_p61a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p61a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -927,6 +1016,7 @@ public void desactivar(){
         jButton_p61a4.setBounds(100, 230, 50, 40);
 
         jButton_p62a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p62a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p62a4.setText("62");
         jButton_p62a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p62a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -935,6 +1025,7 @@ public void desactivar(){
         jButton_p62a4.setBounds(150, 230, 50, 40);
 
         jButton_p63a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p63a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p63a4.setText("63");
         jButton_p63a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p63a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -948,6 +1039,7 @@ public void desactivar(){
         jButton_p63a4.setBounds(200, 230, 50, 40);
 
         jButton_p64a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p64a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p64a4.setText("64");
         jButton_p64a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p64a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -956,6 +1048,7 @@ public void desactivar(){
         jButton_p64a4.setBounds(250, 230, 50, 40);
 
         jButton_p65a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p65a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p65a4.setText("65");
         jButton_p65a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p65a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -964,6 +1057,7 @@ public void desactivar(){
         jButton_p65a4.setBounds(300, 230, 50, 40);
 
         jButton_p66a4.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p66a4.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p66a4.setText("66");
         jButton_p66a4.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p66a4.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -982,6 +1076,7 @@ public void desactivar(){
         jPanel_tercera3.setLayout(null);
 
         jButton_p67a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p67a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p67a2.setText("67");
         jButton_p67a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p67a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -995,6 +1090,7 @@ public void desactivar(){
         jButton_p67a2.setBounds(400, 130, 50, 40);
 
         jButton_p68a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p68a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p68a2.setText("68");
         jButton_p68a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p68a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1003,6 +1099,7 @@ public void desactivar(){
         jButton_p68a2.setBounds(450, 130, 50, 40);
 
         jButton_p69a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p69a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p69a2.setText("69");
         jButton_p69a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p69a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1011,6 +1108,7 @@ public void desactivar(){
         jButton_p69a2.setBounds(500, 130, 50, 40);
 
         jButton_p70a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p70a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p70a2.setText("70");
         jButton_p70a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p70a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1019,6 +1117,7 @@ public void desactivar(){
         jButton_p70a2.setBounds(550, 130, 50, 40);
 
         jButton_p71a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p71a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p71a2.setText("71");
         jButton_p71a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p71a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1032,6 +1131,7 @@ public void desactivar(){
         jButton_p71a2.setBounds(600, 130, 50, 40);
 
         jButton_p72a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p72a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p72a2.setText("72");
         jButton_p72a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p72a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1045,6 +1145,7 @@ public void desactivar(){
         jButton_p72a2.setBounds(650, 130, 50, 40);
 
         jButton_p73a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p73a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p73a2.setText("73");
         jButton_p73a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p73a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1053,6 +1154,7 @@ public void desactivar(){
         jButton_p73a2.setBounds(100, 170, 50, 40);
 
         jButton_p74a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p74a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p74a2.setText("74");
         jButton_p74a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p74a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1061,6 +1163,7 @@ public void desactivar(){
         jButton_p74a2.setBounds(150, 170, 50, 40);
 
         jButton_p75a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p75a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p75a2.setText("75");
         jButton_p75a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p75a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1069,6 +1172,7 @@ public void desactivar(){
         jButton_p75a2.setBounds(200, 170, 50, 40);
 
         jButton_p76a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p76a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p76a2.setText("76");
         jButton_p76a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p76a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1077,6 +1181,7 @@ public void desactivar(){
         jButton_p76a2.setBounds(250, 170, 50, 40);
 
         jButton_p77a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p77a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p77a2.setText("77");
         jButton_p77a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p77a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1085,6 +1190,7 @@ public void desactivar(){
         jButton_p77a2.setBounds(300, 170, 50, 40);
 
         jButton_p78a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p78a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p78a2.setText("78");
         jButton_p78a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p78a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1093,6 +1199,7 @@ public void desactivar(){
         jButton_p78a2.setBounds(350, 170, 50, 40);
 
         jButton_p79a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p79a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p79a2.setText("79");
         jButton_p79a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p79a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1106,6 +1213,7 @@ public void desactivar(){
         jButton_p79a2.setBounds(400, 170, 50, 40);
 
         jButton_p80a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p80a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p80a2.setText("80");
         jButton_p80a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p80a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1114,6 +1222,7 @@ public void desactivar(){
         jButton_p80a2.setBounds(450, 170, 50, 40);
 
         jButton_p81a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p81a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p81a2.setText("81");
         jButton_p81a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p81a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1122,6 +1231,7 @@ public void desactivar(){
         jButton_p81a2.setBounds(500, 170, 50, 40);
 
         jButton_p82a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p82a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p82a2.setText("82");
         jButton_p82a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p82a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1135,6 +1245,7 @@ public void desactivar(){
         jButton_p82a2.setBounds(550, 170, 50, 40);
 
         jButton_p83a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p83a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p83a2.setText("83");
         jButton_p83a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p83a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1143,6 +1254,7 @@ public void desactivar(){
         jButton_p83a2.setBounds(600, 170, 50, 40);
 
         jButton_p84a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p84a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p84a2.setText("84");
         jButton_p84a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p84a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1151,6 +1263,7 @@ public void desactivar(){
         jButton_p84a2.setBounds(650, 170, 50, 40);
 
         jButton_p85a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p85a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p85a2.setText("85");
         jButton_p85a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p85a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1159,6 +1272,7 @@ public void desactivar(){
         jButton_p85a2.setBounds(100, 210, 50, 40);
 
         jButton_p86a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p86a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p86a2.setText("86");
         jButton_p86a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p86a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1167,6 +1281,7 @@ public void desactivar(){
         jButton_p86a2.setBounds(150, 210, 50, 40);
 
         jButton_p87a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p87a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p87a2.setText("87");
         jButton_p87a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p87a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1180,6 +1295,7 @@ public void desactivar(){
         jButton_p87a2.setBounds(200, 210, 50, 40);
 
         jButton_p88a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p88a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p88a2.setText("88");
         jButton_p88a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p88a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1188,6 +1304,7 @@ public void desactivar(){
         jButton_p88a2.setBounds(250, 210, 50, 40);
 
         jButton_p89a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p89a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p89a2.setText("89");
         jButton_p89a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p89a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1196,6 +1313,7 @@ public void desactivar(){
         jButton_p89a2.setBounds(300, 210, 50, 40);
 
         jButton_p90a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p90a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p90a2.setText("90");
         jButton_p90a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p90a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1209,6 +1327,7 @@ public void desactivar(){
         jButton_p90a2.setBounds(350, 210, 50, 40);
 
         jButton_p91a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p91a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p91a2.setText("91");
         jButton_p91a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p91a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1217,6 +1336,7 @@ public void desactivar(){
         jButton_p91a2.setBounds(400, 210, 50, 40);
 
         jButton_p92a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p92a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p92a2.setText("92");
         jButton_p92a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p92a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1225,6 +1345,7 @@ public void desactivar(){
         jButton_p92a2.setBounds(450, 210, 50, 40);
 
         jButton_p93a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p93a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p93a2.setText("93");
         jButton_p93a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p93a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1233,6 +1354,7 @@ public void desactivar(){
         jButton_p93a2.setBounds(500, 210, 50, 40);
 
         jButton_p94a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p94a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p94a2.setText("94");
         jButton_p94a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p94a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1241,6 +1363,7 @@ public void desactivar(){
         jButton_p94a2.setBounds(550, 210, 50, 40);
 
         jButton_p95a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p95a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p95a2.setText("95");
         jButton_p95a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p95a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1249,6 +1372,7 @@ public void desactivar(){
         jButton_p95a2.setBounds(600, 210, 50, 40);
 
         jButton_p96a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p96a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p96a2.setText("96");
         jButton_p96a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p96a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1257,6 +1381,7 @@ public void desactivar(){
         jButton_p96a2.setBounds(650, 210, 50, 40);
 
         jButton_p97a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p97a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p97a2.setText("97");
         jButton_p97a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p97a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1265,6 +1390,7 @@ public void desactivar(){
         jButton_p97a2.setBounds(100, 250, 50, 40);
 
         jButton_p98a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p98a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p98a2.setText("98");
         jButton_p98a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p98a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1273,6 +1399,7 @@ public void desactivar(){
         jButton_p98a2.setBounds(150, 250, 50, 40);
 
         jButton_p99a2.setBackground(new java.awt.Color(204, 255, 255));
+        jButton_p99a2.setForeground(new java.awt.Color(0, 153, 153));
         jButton_p99a2.setText("99");
         jButton_p99a2.setMaximumSize(new java.awt.Dimension(50, 40));
         jButton_p99a2.setMinimumSize(new java.awt.Dimension(50, 40));
@@ -1543,7 +1670,7 @@ public void desactivar(){
 
                        registro.eliminar(qrq);
                        JOptionPane.showMessageDialog(null, "Registro grabado satisfactoriamente");
-                       
+                       this.desactivar();
                        
 
                    }catch(Exception e){

@@ -55,7 +55,6 @@ public void resibir(admindentro admin1){
         tx_modelo = new javax.swing.JTextField();
         tx_marca = new javax.swing.JTextField();
         bn_buscarcliente = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
         tx_celular = new javax.swing.JTextField();
         jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
@@ -185,10 +184,6 @@ public void resibir(admindentro admin1){
         });
         getContentPane().add(bn_buscarcliente);
         bn_buscarcliente.setBounds(360, 90, 130, 60);
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "automovil", "motocicleta", "cicla" }));
-        getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(480, 300, 100, 20);
 
         tx_celular.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -406,7 +401,6 @@ public void resibir(admindentro admin1){
     private javax.swing.JButton bn_buscarcliente;
     private javax.swing.JButton bn_editarcliente;
     private javax.swing.JButton jButton_cancelar;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

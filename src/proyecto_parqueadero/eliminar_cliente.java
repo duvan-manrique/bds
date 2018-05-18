@@ -63,7 +63,7 @@ public class eliminar_cliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(290, 130, 130, 22);
+        jTextField1.setBounds(290, 130, 130, 20);
 
         jButton1.setText("cancelar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -72,7 +72,7 @@ public class eliminar_cliente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(30, 350, 100, 25);
+        jButton1.setBounds(30, 350, 100, 23);
 
         jLabel4.setBackground(new java.awt.Color(255, 0, 0));
         jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N

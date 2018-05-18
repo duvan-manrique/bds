@@ -185,8 +185,10 @@ public void resibir(admindentro admin1){
        String fin ;
        String inicio;
        if(jDate_fin.getDate()!= null && jDate_inicio.getDate()!= null){
-        inicio =(""+(jDate_inicio.getCalendar().get(Calendar.YEAR))+"-"+(jDate_inicio.getCalendar().get(Calendar.MONTH))+"-"+(jDate_inicio.getCalendar().get(Calendar.DAY_OF_MONTH)));
-        fin = (""+(jDate_fin.getCalendar().get(Calendar.YEAR))+"-"+(jDate_fin.getCalendar().get(Calendar.MONTH))+"-"+(jDate_fin.getCalendar().get(Calendar.DAY_OF_MONTH)));
+         
+        inicio =(""+(jDate_inicio.getCalendar().get(Calendar.YEAR))+"-"+((jDate_inicio.getCalendar().get(Calendar.MONTH)) +1)+"-"+(jDate_inicio.getCalendar().get(Calendar.DAY_OF_MONTH)));
+        fin = (""+(jDate_fin.getCalendar().get(Calendar.YEAR))+"-"+((jDate_fin.getCalendar().get(Calendar.MONTH))+1)+"-"+(jDate_fin.getCalendar().get(Calendar.DAY_OF_MONTH)));
+        System.err.println(fin+"/*/*/*"+inicio);
         TableModel tabla = registro.consultar("select * from historico where fecha_salida <= '"+fin+"' and fecha_entrada >= '"+inicio+"';").getModel();
         tabla_lista.setModel(tabla);
         
@@ -203,6 +205,18 @@ public void resibir(admindentro admin1){
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+       String fin ;
+       String inicio;
+        if(jDate_fin.getDate()!= null && jDate_inicio.getDate()!= null){
+        inicio =(""+(jDate_inicio.getCalendar().get(Calendar.YEAR))+"-"+((jDate_inicio.getCalendar().get(Calendar.MONTH)) +1)+"-"+(jDate_inicio.getCalendar().get(Calendar.DAY_OF_MONTH)));
+        fin = (""+(jDate_fin.getCalendar().get(Calendar.YEAR))+"-"+((jDate_fin.getCalendar().get(Calendar.MONTH))+1)+"-"+(jDate_fin.getCalendar().get(Calendar.DAY_OF_MONTH)));
+       System.err.println(fin+"/*/*/*"+inicio);
+        String query = String.format("delete from factura");
+        registro.eliminar(query);
+        registro.consultar("insert into factura ( placa, posicion, fecha_entrada, fecha_salida, hora_entrada, hora_salida, ident, pago)\n" +
+                           "select * from  historico   where fecha_salida <= '"+fin+"' and fecha_entrada >= '"+inicio+"';");
+       
+       }
         String path = "C:\\Users\\reide\\OneDrive\\Documentos\\proyecto no borrar\\bds\\src\\proyecto_parqueadero\\report1.jasper";
         JasperReport jr = null;
         String user="postgres";

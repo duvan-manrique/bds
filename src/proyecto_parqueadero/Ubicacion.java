@@ -1813,7 +1813,7 @@ public class Ubicacion extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton_p90a2ActionPerformed
 
     private void jButton_p99a2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_p99a2ActionPerformed
-        inscribir(99);
+     inscribir(99);
      this.dispose();
      inicio.setVisible(true);
      inicio.desactivar();
